@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './styles.css';
+import EditEvent from './EditEvent';
 
 class Container extends React.Component {
   constructor(props) {
@@ -9,7 +10,7 @@ class Container extends React.Component {
   render() {
     return (
       <div >
-        HELLO WORLD!!!!!
+        <EditEvent />
       </div>
     );
   }

@@ -42,9 +42,9 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/*!******************************!*\
-  !*** ./1client/src/index.js ***!
-  \******************************/
+/*!*****************************!*\
+  !*** ./client/src/index.js ***!
+  \*****************************/
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -61,9 +61,9 @@
 	
 	var _App2 = _interopRequireDefault(_App);
 	
-	var _reactRedux = __webpack_require__(/*! react-redux */ 191);
+	var _reactRedux = __webpack_require__(/*! react-redux */ 192);
 	
-	var _store = __webpack_require__(/*! ./store.js */ 230);
+	var _store = __webpack_require__(/*! ./store.js */ 231);
 	
 	var _store2 = _interopRequireDefault(_store);
 	
@@ -22493,9 +22493,9 @@
 
 /***/ }),
 /* 184 */
-/*!****************************!*\
-  !*** ./1client/src/App.js ***!
-  \****************************/
+/*!***************************!*\
+  !*** ./client/src/App.js ***!
+  \***************************/
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22518,7 +22518,7 @@
 	
 	var _Container2 = _interopRequireDefault(_Container);
 	
-	var _reactRedux = __webpack_require__(/*! react-redux */ 191);
+	var _reactRedux = __webpack_require__(/*! react-redux */ 192);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -22596,9 +22596,9 @@
 
 /***/ }),
 /* 185 */
-/*!********************************!*\
-  !*** ./1client/src/styles.css ***!
-  \********************************/
+/*!*******************************!*\
+  !*** ./client/src/styles.css ***!
+  \*******************************/
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -22630,9 +22630,9 @@
 
 /***/ }),
 /* 186 */
-/*!*********************************************************************************************************************!*\
-  !*** ./~/css-loader?{"modules":true,"localIdentName":"[name]__[local]___[hash:base64:5]"}!./1client/src/styles.css ***!
-  \*********************************************************************************************************************/
+/*!********************************************************************************************************************!*\
+  !*** ./~/css-loader?{"modules":true,"localIdentName":"[name]__[local]___[hash:base64:5]"}!./client/src/styles.css ***!
+  \********************************************************************************************************************/
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(/*! ../../~/css-loader/lib/css-base.js */ 187)(false);
@@ -22640,10 +22640,19 @@
 	
 	
 	// module
-	exports.push([module.id, "", ""]);
+	exports.push([module.id, ".styles__editorContainer___1Cg_p {\n   display: flex;\n   flex-direction: column;\n   justify-content: space-around;\n   margin: 0 auto;\n   margin-top: 300px;\n   height: 1000px;\n   width: 60%;\n   border: 1px solid grey;\n}\n\n.styles__row___yxAup {\n  margin: 10px;\n}\n\n.styles__titleRow___2Wo7J{\n width: 80%;\n height: 25px;\n transform: translate(10%, 0);\n}\n\n.styles__locationRow___4pUnc{\n  width: 80%;\n  height: 25px;\n  transform: translate(10%, 0);\n}\n\n.styles__calendarContainer___1VJEg{\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__dateAndTimeRow___2slG1{\n    height: 25px;\n\n}\n\n.styles__dateAndTimeRow___2slG1{\n\n}\n\n.styles__dateAndTimeRow___2slG1 {\n\n}\n\n.styles__imageRow___3LvJv{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n\n}\n\n.styles__descriptionRow___2P7IU{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n}", ""]);
 	
 	// exports
-
+	exports.locals = {
+		"editorContainer": "styles__editorContainer___1Cg_p",
+		"row": "styles__row___yxAup",
+		"titleRow": "styles__titleRow___2Wo7J",
+		"locationRow": "styles__locationRow___4pUnc",
+		"calendarContainer": "styles__calendarContainer___1VJEg",
+		"dateAndTimeRow": "styles__dateAndTimeRow___2slG1",
+		"imageRow": "styles__imageRow___3LvJv",
+		"descriptionRow": "styles__descriptionRow___2P7IU"
+	};
 
 /***/ }),
 /* 187 */
@@ -23192,9 +23201,9 @@
 
 /***/ }),
 /* 190 */
-/*!**********************************!*\
-  !*** ./1client/src/Container.js ***!
-  \**********************************/
+/*!*********************************!*\
+  !*** ./client/src/Container.js ***!
+  \*********************************/
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23208,6 +23217,10 @@
 	var _styles = __webpack_require__(/*! ./styles.css */ 185);
 	
 	var _styles2 = _interopRequireDefault(_styles);
+	
+	var _EditEvent = __webpack_require__(/*! ./EditEvent */ 191);
+	
+	var _EditEvent2 = _interopRequireDefault(_EditEvent);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -23235,7 +23248,7 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        'HELLO WORLD!!!!!'
+	        _react2.default.createElement(_EditEvent2.default, null)
 	      );
 	    }
 	  }]);
@@ -23247,6 +23260,120 @@
 
 /***/ }),
 /* 191 */
+/*!*********************************!*\
+  !*** ./client/src/EditEvent.js ***!
+  \*********************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _styles = __webpack_require__(/*! ./styles.css */ 185);
+	
+	var _styles2 = _interopRequireDefault(_styles);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var EditEvent = function (_React$Component) {
+	  _inherits(EditEvent, _React$Component);
+	
+	  function EditEvent(props) {
+	    _classCallCheck(this, EditEvent);
+	
+	    var _this = _possibleConstructorReturn(this, (EditEvent.__proto__ || Object.getPrototypeOf(EditEvent)).call(this, props));
+	
+	    _this.state = {
+	      startTime: '9:00 am',
+	      endTIme: '5:00  pm',
+	      day: 'some day',
+	      month: 'some month ',
+	      title: 'some title',
+	      location: 'some location',
+	      host: 'some host',
+	      guest: ['guest 1', 'guest 2', 'guest 3'],
+	      value: ""
+	    };
+	    _this.dummyFunc = _this.dummyFunc.bind(_this);
+	    return _this;
+	  }
+	
+	  _createClass(EditEvent, [{
+	    key: 'dummyFunc',
+	    value: function dummyFunc(e) {
+	      console.log(e.target.value);
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: _styles2.default.editorContainer },
+	        _react2.default.createElement('input', { className: _styles2.default.titleRow,
+	          type: 'text', value: this.state.value,
+	          onChange: this.dummyFunc,
+	          placeholder: 'Title' }),
+	        _react2.default.createElement('input', { className: _styles2.default.locationRow,
+	          type: 'text', value: this.state.value,
+	          onChange: this.dummyFunc,
+	          placeholder: 'Location' }),
+	        _react2.default.createElement(
+	          'div',
+	          { className: _styles2.default.calendarContainer },
+	          _react2.default.createElement('input', { className: _styles2.default.dateAndTimeRow,
+	            type: 'text', value: this.state.value,
+	            onChange: this.dummyFunc,
+	            placeholder: 'Start Day' }),
+	          _react2.default.createElement('input', { className: _styles2.default.dateAndTimeRow,
+	            type: 'text', value: this.state.value,
+	            onChange: this.dummyFunc,
+	            placeholder: 'Start Time' }),
+	          _react2.default.createElement('input', { className: _styles2.default.dateAndTimeRow,
+	            type: 'text', value: this.state.value,
+	            onChange: this.dummyFunc,
+	            placeholder: 'End Day' }),
+	          _react2.default.createElement('input', { className: _styles2.default.dateAndTimeRow,
+	            type: 'text', value: this.state.value,
+	            onChange: this.dummyFunc,
+	            placeholder: 'End Time' })
+	        ),
+	        _react2.default.createElement(
+	          'form',
+	          null,
+	          _react2.default.createElement('input', { className: _styles2.default.imageRow,
+	            type: 'text', value: this.state.value,
+	            onChange: this.dummyFunc,
+	            placeholder: 'Add Event Image' })
+	        ),
+	        _react2.default.createElement(
+	          'form',
+	          null,
+	          _react2.default.createElement('textarea', { className: _styles2.default.descriptionRow,
+	            type: 'text', value: this.state.value,
+	            onChange: this.dummyFunc,
+	            placeholder: 'Add a Description' })
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return EditEvent;
+	}(_react2.default.Component);
+	
+	module.exports = EditEvent;
+
+/***/ }),
+/* 192 */
 /*!************************************!*\
   !*** ./~/react-redux/lib/index.js ***!
   \************************************/
@@ -23257,15 +23384,15 @@
 	exports.__esModule = true;
 	exports.connect = exports.connectAdvanced = exports.createProvider = exports.Provider = undefined;
 	
-	var _Provider = __webpack_require__(/*! ./components/Provider */ 192);
+	var _Provider = __webpack_require__(/*! ./components/Provider */ 193);
 	
 	var _Provider2 = _interopRequireDefault(_Provider);
 	
-	var _connectAdvanced = __webpack_require__(/*! ./components/connectAdvanced */ 197);
+	var _connectAdvanced = __webpack_require__(/*! ./components/connectAdvanced */ 198);
 	
 	var _connectAdvanced2 = _interopRequireDefault(_connectAdvanced);
 	
-	var _connect = __webpack_require__(/*! ./connect/connect */ 201);
+	var _connect = __webpack_require__(/*! ./connect/connect */ 202);
 	
 	var _connect2 = _interopRequireDefault(_connect);
 	
@@ -23277,7 +23404,7 @@
 	exports.connect = _connect2.default;
 
 /***/ }),
-/* 192 */
+/* 193 */
 /*!**************************************************!*\
   !*** ./~/react-redux/lib/components/Provider.js ***!
   \**************************************************/
@@ -23290,13 +23417,13 @@
 	
 	var _react = __webpack_require__(/*! react */ 1);
 	
-	var _propTypes = __webpack_require__(/*! prop-types */ 193);
+	var _propTypes = __webpack_require__(/*! prop-types */ 194);
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _PropTypes = __webpack_require__(/*! ../utils/PropTypes */ 195);
+	var _PropTypes = __webpack_require__(/*! ../utils/PropTypes */ 196);
 	
-	var _warning = __webpack_require__(/*! ../utils/warning */ 196);
+	var _warning = __webpack_require__(/*! ../utils/warning */ 197);
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
@@ -23372,7 +23499,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../../process/browser.js */ 3)))
 
 /***/ }),
-/* 193 */
+/* 194 */
 /*!*******************************!*\
   !*** ./~/prop-types/index.js ***!
   \*******************************/
@@ -23404,13 +23531,13 @@
 	} else {
 	  // By explicitly using `prop-types` you are opting into new production behavior.
 	  // http://fb.me/prop-types-in-prod
-	  module.exports = __webpack_require__(/*! ./factoryWithThrowingShims */ 194)();
+	  module.exports = __webpack_require__(/*! ./factoryWithThrowingShims */ 195)();
 	}
 	
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../process/browser.js */ 3)))
 
 /***/ }),
-/* 194 */
+/* 195 */
 /*!**************************************************!*\
   !*** ./~/prop-types/factoryWithThrowingShims.js ***!
   \**************************************************/
@@ -23477,7 +23604,7 @@
 
 
 /***/ }),
-/* 195 */
+/* 196 */
 /*!**********************************************!*\
   !*** ./~/react-redux/lib/utils/PropTypes.js ***!
   \**********************************************/
@@ -23488,7 +23615,7 @@
 	exports.__esModule = true;
 	exports.storeShape = exports.subscriptionShape = undefined;
 	
-	var _propTypes = __webpack_require__(/*! prop-types */ 193);
+	var _propTypes = __webpack_require__(/*! prop-types */ 194);
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
@@ -23508,7 +23635,7 @@
 	});
 
 /***/ }),
-/* 196 */
+/* 197 */
 /*!********************************************!*\
   !*** ./~/react-redux/lib/utils/warning.js ***!
   \********************************************/
@@ -23541,7 +23668,7 @@
 	}
 
 /***/ }),
-/* 197 */
+/* 198 */
 /*!*********************************************************!*\
   !*** ./~/react-redux/lib/components/connectAdvanced.js ***!
   \*********************************************************/
@@ -23555,21 +23682,21 @@
 	
 	exports.default = connectAdvanced;
 	
-	var _hoistNonReactStatics = __webpack_require__(/*! hoist-non-react-statics */ 198);
+	var _hoistNonReactStatics = __webpack_require__(/*! hoist-non-react-statics */ 199);
 	
 	var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 	
-	var _invariant = __webpack_require__(/*! invariant */ 199);
+	var _invariant = __webpack_require__(/*! invariant */ 200);
 	
 	var _invariant2 = _interopRequireDefault(_invariant);
 	
 	var _react = __webpack_require__(/*! react */ 1);
 	
-	var _Subscription = __webpack_require__(/*! ../utils/Subscription */ 200);
+	var _Subscription = __webpack_require__(/*! ../utils/Subscription */ 201);
 	
 	var _Subscription2 = _interopRequireDefault(_Subscription);
 	
-	var _PropTypes = __webpack_require__(/*! ../utils/PropTypes */ 195);
+	var _PropTypes = __webpack_require__(/*! ../utils/PropTypes */ 196);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -23856,7 +23983,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../../process/browser.js */ 3)))
 
 /***/ }),
-/* 198 */
+/* 199 */
 /*!********************************************!*\
   !*** ./~/hoist-non-react-statics/index.js ***!
   \********************************************/
@@ -23937,7 +24064,7 @@
 
 
 /***/ }),
-/* 199 */
+/* 200 */
 /*!********************************!*\
   !*** ./~/invariant/browser.js ***!
   \********************************/
@@ -23996,7 +24123,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../process/browser.js */ 3)))
 
 /***/ }),
-/* 200 */
+/* 201 */
 /*!*************************************************!*\
   !*** ./~/react-redux/lib/utils/Subscription.js ***!
   \*************************************************/
@@ -24100,7 +24227,7 @@
 	exports.default = Subscription;
 
 /***/ }),
-/* 201 */
+/* 202 */
 /*!**********************************************!*\
   !*** ./~/react-redux/lib/connect/connect.js ***!
   \**********************************************/
@@ -24114,27 +24241,27 @@
 	
 	exports.createConnect = createConnect;
 	
-	var _connectAdvanced = __webpack_require__(/*! ../components/connectAdvanced */ 197);
+	var _connectAdvanced = __webpack_require__(/*! ../components/connectAdvanced */ 198);
 	
 	var _connectAdvanced2 = _interopRequireDefault(_connectAdvanced);
 	
-	var _shallowEqual = __webpack_require__(/*! ../utils/shallowEqual */ 202);
+	var _shallowEqual = __webpack_require__(/*! ../utils/shallowEqual */ 203);
 	
 	var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 	
-	var _mapDispatchToProps = __webpack_require__(/*! ./mapDispatchToProps */ 203);
+	var _mapDispatchToProps = __webpack_require__(/*! ./mapDispatchToProps */ 204);
 	
 	var _mapDispatchToProps2 = _interopRequireDefault(_mapDispatchToProps);
 	
-	var _mapStateToProps = __webpack_require__(/*! ./mapStateToProps */ 226);
+	var _mapStateToProps = __webpack_require__(/*! ./mapStateToProps */ 227);
 	
 	var _mapStateToProps2 = _interopRequireDefault(_mapStateToProps);
 	
-	var _mergeProps = __webpack_require__(/*! ./mergeProps */ 227);
+	var _mergeProps = __webpack_require__(/*! ./mergeProps */ 228);
 	
 	var _mergeProps2 = _interopRequireDefault(_mergeProps);
 	
-	var _selectorFactory = __webpack_require__(/*! ./selectorFactory */ 228);
+	var _selectorFactory = __webpack_require__(/*! ./selectorFactory */ 229);
 	
 	var _selectorFactory2 = _interopRequireDefault(_selectorFactory);
 	
@@ -24236,7 +24363,7 @@
 	exports.default = createConnect();
 
 /***/ }),
-/* 202 */
+/* 203 */
 /*!*************************************************!*\
   !*** ./~/react-redux/lib/utils/shallowEqual.js ***!
   \*************************************************/
@@ -24278,7 +24405,7 @@
 	}
 
 /***/ }),
-/* 203 */
+/* 204 */
 /*!*********************************************************!*\
   !*** ./~/react-redux/lib/connect/mapDispatchToProps.js ***!
   \*********************************************************/
@@ -24291,9 +24418,9 @@
 	exports.whenMapDispatchToPropsIsMissing = whenMapDispatchToPropsIsMissing;
 	exports.whenMapDispatchToPropsIsObject = whenMapDispatchToPropsIsObject;
 	
-	var _redux = __webpack_require__(/*! redux */ 204);
+	var _redux = __webpack_require__(/*! redux */ 205);
 	
-	var _wrapMapToProps = __webpack_require__(/*! ./wrapMapToProps */ 224);
+	var _wrapMapToProps = __webpack_require__(/*! ./wrapMapToProps */ 225);
 	
 	function whenMapDispatchToPropsIsFunction(mapDispatchToProps) {
 	  return typeof mapDispatchToProps === 'function' ? (0, _wrapMapToProps.wrapMapToPropsFunc)(mapDispatchToProps, 'mapDispatchToProps') : undefined;
@@ -24314,7 +24441,7 @@
 	exports.default = [whenMapDispatchToPropsIsFunction, whenMapDispatchToPropsIsMissing, whenMapDispatchToPropsIsObject];
 
 /***/ }),
-/* 204 */
+/* 205 */
 /*!******************************!*\
   !*** ./~/redux/lib/index.js ***!
   \******************************/
@@ -24325,27 +24452,27 @@
 	exports.__esModule = true;
 	exports.compose = exports.applyMiddleware = exports.bindActionCreators = exports.combineReducers = exports.createStore = undefined;
 	
-	var _createStore = __webpack_require__(/*! ./createStore */ 205);
+	var _createStore = __webpack_require__(/*! ./createStore */ 206);
 	
 	var _createStore2 = _interopRequireDefault(_createStore);
 	
-	var _combineReducers = __webpack_require__(/*! ./combineReducers */ 219);
+	var _combineReducers = __webpack_require__(/*! ./combineReducers */ 220);
 	
 	var _combineReducers2 = _interopRequireDefault(_combineReducers);
 	
-	var _bindActionCreators = __webpack_require__(/*! ./bindActionCreators */ 221);
+	var _bindActionCreators = __webpack_require__(/*! ./bindActionCreators */ 222);
 	
 	var _bindActionCreators2 = _interopRequireDefault(_bindActionCreators);
 	
-	var _applyMiddleware = __webpack_require__(/*! ./applyMiddleware */ 222);
+	var _applyMiddleware = __webpack_require__(/*! ./applyMiddleware */ 223);
 	
 	var _applyMiddleware2 = _interopRequireDefault(_applyMiddleware);
 	
-	var _compose = __webpack_require__(/*! ./compose */ 223);
+	var _compose = __webpack_require__(/*! ./compose */ 224);
 	
 	var _compose2 = _interopRequireDefault(_compose);
 	
-	var _warning = __webpack_require__(/*! ./utils/warning */ 220);
+	var _warning = __webpack_require__(/*! ./utils/warning */ 221);
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
@@ -24369,7 +24496,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../process/browser.js */ 3)))
 
 /***/ }),
-/* 205 */
+/* 206 */
 /*!************************************!*\
   !*** ./~/redux/lib/createStore.js ***!
   \************************************/
@@ -24381,11 +24508,11 @@
 	exports.ActionTypes = undefined;
 	exports['default'] = createStore;
 	
-	var _isPlainObject = __webpack_require__(/*! lodash/isPlainObject */ 206);
+	var _isPlainObject = __webpack_require__(/*! lodash/isPlainObject */ 207);
 	
 	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
 	
-	var _symbolObservable = __webpack_require__(/*! symbol-observable */ 216);
+	var _symbolObservable = __webpack_require__(/*! symbol-observable */ 217);
 	
 	var _symbolObservable2 = _interopRequireDefault(_symbolObservable);
 	
@@ -24638,15 +24765,15 @@
 	}
 
 /***/ }),
-/* 206 */
+/* 207 */
 /*!***********************************!*\
   !*** ./~/lodash/isPlainObject.js ***!
   \***********************************/
 /***/ (function(module, exports, __webpack_require__) {
 
-	var baseGetTag = __webpack_require__(/*! ./_baseGetTag */ 207),
-	    getPrototype = __webpack_require__(/*! ./_getPrototype */ 213),
-	    isObjectLike = __webpack_require__(/*! ./isObjectLike */ 215);
+	var baseGetTag = __webpack_require__(/*! ./_baseGetTag */ 208),
+	    getPrototype = __webpack_require__(/*! ./_getPrototype */ 214),
+	    isObjectLike = __webpack_require__(/*! ./isObjectLike */ 216);
 	
 	/** `Object#toString` result references. */
 	var objectTag = '[object Object]';
@@ -24709,15 +24836,15 @@
 
 
 /***/ }),
-/* 207 */
+/* 208 */
 /*!*********************************!*\
   !*** ./~/lodash/_baseGetTag.js ***!
   \*********************************/
 /***/ (function(module, exports, __webpack_require__) {
 
-	var Symbol = __webpack_require__(/*! ./_Symbol */ 208),
-	    getRawTag = __webpack_require__(/*! ./_getRawTag */ 211),
-	    objectToString = __webpack_require__(/*! ./_objectToString */ 212);
+	var Symbol = __webpack_require__(/*! ./_Symbol */ 209),
+	    getRawTag = __webpack_require__(/*! ./_getRawTag */ 212),
+	    objectToString = __webpack_require__(/*! ./_objectToString */ 213);
 	
 	/** `Object#toString` result references. */
 	var nullTag = '[object Null]',
@@ -24746,13 +24873,13 @@
 
 
 /***/ }),
-/* 208 */
+/* 209 */
 /*!*****************************!*\
   !*** ./~/lodash/_Symbol.js ***!
   \*****************************/
 /***/ (function(module, exports, __webpack_require__) {
 
-	var root = __webpack_require__(/*! ./_root */ 209);
+	var root = __webpack_require__(/*! ./_root */ 210);
 	
 	/** Built-in value references. */
 	var Symbol = root.Symbol;
@@ -24761,13 +24888,13 @@
 
 
 /***/ }),
-/* 209 */
+/* 210 */
 /*!***************************!*\
   !*** ./~/lodash/_root.js ***!
   \***************************/
 /***/ (function(module, exports, __webpack_require__) {
 
-	var freeGlobal = __webpack_require__(/*! ./_freeGlobal */ 210);
+	var freeGlobal = __webpack_require__(/*! ./_freeGlobal */ 211);
 	
 	/** Detect free variable `self`. */
 	var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
@@ -24779,7 +24906,7 @@
 
 
 /***/ }),
-/* 210 */
+/* 211 */
 /*!*********************************!*\
   !*** ./~/lodash/_freeGlobal.js ***!
   \*********************************/
@@ -24793,13 +24920,13 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ }),
-/* 211 */
+/* 212 */
 /*!********************************!*\
   !*** ./~/lodash/_getRawTag.js ***!
   \********************************/
 /***/ (function(module, exports, __webpack_require__) {
 
-	var Symbol = __webpack_require__(/*! ./_Symbol */ 208);
+	var Symbol = __webpack_require__(/*! ./_Symbol */ 209);
 	
 	/** Used for built-in method references. */
 	var objectProto = Object.prototype;
@@ -24848,7 +24975,7 @@
 
 
 /***/ }),
-/* 212 */
+/* 213 */
 /*!*************************************!*\
   !*** ./~/lodash/_objectToString.js ***!
   \*************************************/
@@ -24879,13 +25006,13 @@
 
 
 /***/ }),
-/* 213 */
+/* 214 */
 /*!***********************************!*\
   !*** ./~/lodash/_getPrototype.js ***!
   \***********************************/
 /***/ (function(module, exports, __webpack_require__) {
 
-	var overArg = __webpack_require__(/*! ./_overArg */ 214);
+	var overArg = __webpack_require__(/*! ./_overArg */ 215);
 	
 	/** Built-in value references. */
 	var getPrototype = overArg(Object.getPrototypeOf, Object);
@@ -24894,7 +25021,7 @@
 
 
 /***/ }),
-/* 214 */
+/* 215 */
 /*!******************************!*\
   !*** ./~/lodash/_overArg.js ***!
   \******************************/
@@ -24918,7 +25045,7 @@
 
 
 /***/ }),
-/* 215 */
+/* 216 */
 /*!**********************************!*\
   !*** ./~/lodash/isObjectLike.js ***!
   \**********************************/
@@ -24956,7 +25083,7 @@
 
 
 /***/ }),
-/* 216 */
+/* 217 */
 /*!******************************************!*\
   !*** ./~/symbol-observable/lib/index.js ***!
   \******************************************/
@@ -24968,7 +25095,7 @@
 	  value: true
 	});
 	
-	var _ponyfill = __webpack_require__(/*! ./ponyfill.js */ 218);
+	var _ponyfill = __webpack_require__(/*! ./ponyfill.js */ 219);
 	
 	var _ponyfill2 = _interopRequireDefault(_ponyfill);
 	
@@ -24991,10 +25118,10 @@
 	
 	var result = (0, _ponyfill2['default'])(root);
 	exports['default'] = result;
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(/*! ./../../webpack/buildin/module.js */ 217)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(/*! ./../../webpack/buildin/module.js */ 218)(module)))
 
 /***/ }),
-/* 217 */
+/* 218 */
 /*!***********************************!*\
   !*** (webpack)/buildin/module.js ***!
   \***********************************/
@@ -25013,7 +25140,7 @@
 
 
 /***/ }),
-/* 218 */
+/* 219 */
 /*!*********************************************!*\
   !*** ./~/symbol-observable/lib/ponyfill.js ***!
   \*********************************************/
@@ -25044,7 +25171,7 @@
 	};
 
 /***/ }),
-/* 219 */
+/* 220 */
 /*!****************************************!*\
   !*** ./~/redux/lib/combineReducers.js ***!
   \****************************************/
@@ -25055,13 +25182,13 @@
 	exports.__esModule = true;
 	exports['default'] = combineReducers;
 	
-	var _createStore = __webpack_require__(/*! ./createStore */ 205);
+	var _createStore = __webpack_require__(/*! ./createStore */ 206);
 	
-	var _isPlainObject = __webpack_require__(/*! lodash/isPlainObject */ 206);
+	var _isPlainObject = __webpack_require__(/*! lodash/isPlainObject */ 207);
 	
 	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
 	
-	var _warning = __webpack_require__(/*! ./utils/warning */ 220);
+	var _warning = __webpack_require__(/*! ./utils/warning */ 221);
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
@@ -25196,7 +25323,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../process/browser.js */ 3)))
 
 /***/ }),
-/* 220 */
+/* 221 */
 /*!**************************************!*\
   !*** ./~/redux/lib/utils/warning.js ***!
   \**************************************/
@@ -25229,7 +25356,7 @@
 	}
 
 /***/ }),
-/* 221 */
+/* 222 */
 /*!*******************************************!*\
   !*** ./~/redux/lib/bindActionCreators.js ***!
   \*******************************************/
@@ -25288,7 +25415,7 @@
 	}
 
 /***/ }),
-/* 222 */
+/* 223 */
 /*!****************************************!*\
   !*** ./~/redux/lib/applyMiddleware.js ***!
   \****************************************/
@@ -25302,7 +25429,7 @@
 	
 	exports['default'] = applyMiddleware;
 	
-	var _compose = __webpack_require__(/*! ./compose */ 223);
+	var _compose = __webpack_require__(/*! ./compose */ 224);
 	
 	var _compose2 = _interopRequireDefault(_compose);
 	
@@ -25354,7 +25481,7 @@
 	}
 
 /***/ }),
-/* 223 */
+/* 224 */
 /*!********************************!*\
   !*** ./~/redux/lib/compose.js ***!
   \********************************/
@@ -25398,7 +25525,7 @@
 	}
 
 /***/ }),
-/* 224 */
+/* 225 */
 /*!*****************************************************!*\
   !*** ./~/react-redux/lib/connect/wrapMapToProps.js ***!
   \*****************************************************/
@@ -25411,7 +25538,7 @@
 	exports.getDependsOnOwnProps = getDependsOnOwnProps;
 	exports.wrapMapToPropsFunc = wrapMapToPropsFunc;
 	
-	var _verifyPlainObject = __webpack_require__(/*! ../utils/verifyPlainObject */ 225);
+	var _verifyPlainObject = __webpack_require__(/*! ../utils/verifyPlainObject */ 226);
 	
 	var _verifyPlainObject2 = _interopRequireDefault(_verifyPlainObject);
 	
@@ -25485,7 +25612,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../../process/browser.js */ 3)))
 
 /***/ }),
-/* 225 */
+/* 226 */
 /*!******************************************************!*\
   !*** ./~/react-redux/lib/utils/verifyPlainObject.js ***!
   \******************************************************/
@@ -25496,11 +25623,11 @@
 	exports.__esModule = true;
 	exports.default = verifyPlainObject;
 	
-	var _isPlainObject = __webpack_require__(/*! lodash/isPlainObject */ 206);
+	var _isPlainObject = __webpack_require__(/*! lodash/isPlainObject */ 207);
 	
 	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
 	
-	var _warning = __webpack_require__(/*! ./warning */ 196);
+	var _warning = __webpack_require__(/*! ./warning */ 197);
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
@@ -25513,7 +25640,7 @@
 	}
 
 /***/ }),
-/* 226 */
+/* 227 */
 /*!******************************************************!*\
   !*** ./~/react-redux/lib/connect/mapStateToProps.js ***!
   \******************************************************/
@@ -25525,7 +25652,7 @@
 	exports.whenMapStateToPropsIsFunction = whenMapStateToPropsIsFunction;
 	exports.whenMapStateToPropsIsMissing = whenMapStateToPropsIsMissing;
 	
-	var _wrapMapToProps = __webpack_require__(/*! ./wrapMapToProps */ 224);
+	var _wrapMapToProps = __webpack_require__(/*! ./wrapMapToProps */ 225);
 	
 	function whenMapStateToPropsIsFunction(mapStateToProps) {
 	  return typeof mapStateToProps === 'function' ? (0, _wrapMapToProps.wrapMapToPropsFunc)(mapStateToProps, 'mapStateToProps') : undefined;
@@ -25540,7 +25667,7 @@
 	exports.default = [whenMapStateToPropsIsFunction, whenMapStateToPropsIsMissing];
 
 /***/ }),
-/* 227 */
+/* 228 */
 /*!*************************************************!*\
   !*** ./~/react-redux/lib/connect/mergeProps.js ***!
   \*************************************************/
@@ -25557,7 +25684,7 @@
 	exports.whenMergePropsIsFunction = whenMergePropsIsFunction;
 	exports.whenMergePropsIsOmitted = whenMergePropsIsOmitted;
 	
-	var _verifyPlainObject = __webpack_require__(/*! ../utils/verifyPlainObject */ 225);
+	var _verifyPlainObject = __webpack_require__(/*! ../utils/verifyPlainObject */ 226);
 	
 	var _verifyPlainObject2 = _interopRequireDefault(_verifyPlainObject);
 	
@@ -25607,7 +25734,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../../process/browser.js */ 3)))
 
 /***/ }),
-/* 228 */
+/* 229 */
 /*!******************************************************!*\
   !*** ./~/react-redux/lib/connect/selectorFactory.js ***!
   \******************************************************/
@@ -25620,7 +25747,7 @@
 	exports.pureFinalPropsSelectorFactory = pureFinalPropsSelectorFactory;
 	exports.default = finalPropsSelectorFactory;
 	
-	var _verifySubselectors = __webpack_require__(/*! ./verifySubselectors */ 229);
+	var _verifySubselectors = __webpack_require__(/*! ./verifySubselectors */ 230);
 	
 	var _verifySubselectors2 = _interopRequireDefault(_verifySubselectors);
 	
@@ -25729,7 +25856,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../../process/browser.js */ 3)))
 
 /***/ }),
-/* 229 */
+/* 230 */
 /*!*********************************************************!*\
   !*** ./~/react-redux/lib/connect/verifySubselectors.js ***!
   \*********************************************************/
@@ -25740,7 +25867,7 @@
 	exports.__esModule = true;
 	exports.default = verifySubselectors;
 	
-	var _warning = __webpack_require__(/*! ../utils/warning */ 196);
+	var _warning = __webpack_require__(/*! ../utils/warning */ 197);
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
@@ -25763,10 +25890,10 @@
 	}
 
 /***/ }),
-/* 230 */
-/*!******************************!*\
-  !*** ./1client/src/store.js ***!
-  \******************************/
+/* 231 */
+/*!*****************************!*\
+  !*** ./client/src/store.js ***!
+  \*****************************/
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25775,15 +25902,15 @@
 	  value: true
 	});
 	
-	var _redux = __webpack_require__(/*! redux */ 204);
+	var _redux = __webpack_require__(/*! redux */ 205);
 	
-	var _reduxLogger = __webpack_require__(/*! redux-logger */ 231);
+	var _reduxLogger = __webpack_require__(/*! redux-logger */ 232);
 	
 	var _reduxLogger2 = _interopRequireDefault(_reduxLogger);
 	
-	var _reactRedux = __webpack_require__(/*! react-redux */ 191);
+	var _reactRedux = __webpack_require__(/*! react-redux */ 192);
 	
-	var _SomeReducer = __webpack_require__(/*! ./Reducers/SomeReducer */ 232);
+	var _SomeReducer = __webpack_require__(/*! ./Reducers/SomeReducer */ 233);
 	
 	var _SomeReducer2 = _interopRequireDefault(_SomeReducer);
 	
@@ -25811,7 +25938,7 @@
 	exports.default = store;
 
 /***/ }),
-/* 231 */
+/* 232 */
 /*!*********************************************!*\
   !*** ./~/redux-logger/dist/redux-logger.js ***!
   \*********************************************/
@@ -25822,10 +25949,10 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ }),
-/* 232 */
-/*!*********************************************!*\
-  !*** ./1client/src/Reducers/SomeReducer.js ***!
-  \*********************************************/
+/* 233 */
+/*!********************************************!*\
+  !*** ./client/src/Reducers/SomeReducer.js ***!
+  \********************************************/
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25834,7 +25961,7 @@
 	  value: true
 	});
 	
-	var _init = __webpack_require__(/*! ../init.js */ 233);
+	var _init = __webpack_require__(/*! ../init.js */ 234);
 	
 	var _init2 = _interopRequireDefault(_init);
 	
@@ -25864,10 +25991,10 @@
 	exports.default = someReducer;
 
 /***/ }),
-/* 233 */
-/*!*****************************!*\
-  !*** ./1client/src/init.js ***!
-  \*****************************/
+/* 234 */
+/*!****************************!*\
+  !*** ./client/src/init.js ***!
+  \****************************/
 /***/ (function(module, exports) {
 
 	"use strict";
