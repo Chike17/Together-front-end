@@ -22640,7 +22640,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".styles__editorContainer___1Cg_p {\n   display: flex;\n   flex-direction: column;\n   justify-content: space-around;\n   margin: 0 auto;\n   margin-top: 300px;\n   height: 1000px;\n   width: 60%;\n   border: 1px solid grey;\n}\n\n.styles__row___yxAup {\n  margin: 10px;\n}\n\n.styles__titleRow___2Wo7J{\n width: 80%;\n height: 25px;\n transform: translate(10%, 0);\n}\n\n.styles__locationRow___4pUnc{\n  width: 80%;\n  height: 25px;\n  transform: translate(10%, 0);\n}\n\n.styles__calendarContainer___1VJEg{\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__dateAndTimeRow___2slG1{\n    height: 25px;\n\n}\n\n.styles__dateAndTimeRow___2slG1{\n\n}\n\n.styles__dateAndTimeRow___2slG1 {\n\n}\n\n.styles__imageRow___3LvJv{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n\n}\n\n.styles__descriptionRow___2P7IU{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n}", ""]);
+	exports.push([module.id, ".styles__editorContainer___1Cg_p {\n   display: flex;\n   flex-direction: column;\n   justify-content: space-around;\n   margin: 0 auto;\n   margin-top: 300px;\n   height: 1000px;\n   width: 60%;\n   border: 1px solid grey;\n}\n\n.styles__row___yxAup {\n  margin: 10px;\n}\n\n.styles__titleRow___2Wo7J{\n width: 80%;\n height: 25px;\n transform: translate(10%, 0);\n z-index: 3;\n}\n\n.styles__locationRow___4pUnc{\n  width: 80%;\n  height: 25px;\n  transform: translate(10%, 0);\n}\n\n.styles__friendContainer___1hYOB {\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__friendsRow___2i8Mh {\n  height: 25px;\n}\n\n.styles__addItemRow___23xUp {\n    width: 80%;\n    height: 25px;\n    transform: translate(10%, 0);\n    z-index: 3;\n}\n.styles__calendarContainer___1VJEg{\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__dateAndTimeRow___2slG1{\n    height: 25px;\n}\n\n.styles__dateAndTimeRow___2slG1{\n\n}\n\n.styles__dateAndTimeRow___2slG1 {\n\n}\n\n.styles__imageRow___3LvJv{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n\n}\n\n.styles__descriptionRow___2P7IU{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n}", ""]);
 	
 	// exports
 	exports.locals = {
@@ -22648,6 +22648,9 @@
 		"row": "styles__row___yxAup",
 		"titleRow": "styles__titleRow___2Wo7J",
 		"locationRow": "styles__locationRow___4pUnc",
+		"friendContainer": "styles__friendContainer___1hYOB",
+		"friendsRow": "styles__friendsRow___2i8Mh",
+		"addItemRow": "styles__addItemRow___23xUp",
 		"calendarContainer": "styles__calendarContainer___1VJEg",
 		"dateAndTimeRow": "styles__dateAndTimeRow___2slG1",
 		"imageRow": "styles__imageRow___3LvJv",
@@ -23286,88 +23289,107 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var EditEvent = function (_React$Component) {
-	  _inherits(EditEvent, _React$Component);
+	    _inherits(EditEvent, _React$Component);
 	
-	  function EditEvent(props) {
-	    _classCallCheck(this, EditEvent);
+	    function EditEvent(props) {
+	        _classCallCheck(this, EditEvent);
 	
-	    var _this = _possibleConstructorReturn(this, (EditEvent.__proto__ || Object.getPrototypeOf(EditEvent)).call(this, props));
+	        var _this = _possibleConstructorReturn(this, (EditEvent.__proto__ || Object.getPrototypeOf(EditEvent)).call(this, props));
 	
-	    _this.state = {
-	      startTime: '9:00 am',
-	      endTIme: '5:00  pm',
-	      day: 'some day',
-	      month: 'some month ',
-	      title: 'some title',
-	      location: 'some location',
-	      host: 'some host',
-	      guest: ['guest 1', 'guest 2', 'guest 3'],
-	      value: ""
-	    };
-	    _this.dummyFunc = _this.dummyFunc.bind(_this);
-	    return _this;
-	  }
-	
-	  _createClass(EditEvent, [{
-	    key: 'dummyFunc',
-	    value: function dummyFunc(e) {
-	      console.log(e.target.value);
+	        _this.state = {
+	            startTime: '9:00 am',
+	            endTIme: '5:00  pm',
+	            day: 'some day',
+	            month: 'some month ',
+	            title: 'some title',
+	            location: 'some location',
+	            host: 'some host',
+	            guest: ['guest 1', 'guest 2', 'guest 3']
+	        };
+	        _this.dummyFunc = _this.dummyFunc.bind(_this);
+	        return _this;
 	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        { className: _styles2.default.editorContainer },
-	        _react2.default.createElement('input', { className: _styles2.default.titleRow,
-	          type: 'text', value: this.state.value,
-	          onChange: this.dummyFunc,
-	          placeholder: 'Title' }),
-	        _react2.default.createElement('input', { className: _styles2.default.locationRow,
-	          type: 'text', value: this.state.value,
-	          onChange: this.dummyFunc,
-	          placeholder: 'Location' }),
-	        _react2.default.createElement(
-	          'div',
-	          { className: _styles2.default.calendarContainer },
-	          _react2.default.createElement('input', { className: _styles2.default.dateAndTimeRow,
-	            type: 'text', value: this.state.value,
-	            onChange: this.dummyFunc,
-	            placeholder: 'Start Day' }),
-	          _react2.default.createElement('input', { className: _styles2.default.dateAndTimeRow,
-	            type: 'text', value: this.state.value,
-	            onChange: this.dummyFunc,
-	            placeholder: 'Start Time' }),
-	          _react2.default.createElement('input', { className: _styles2.default.dateAndTimeRow,
-	            type: 'text', value: this.state.value,
-	            onChange: this.dummyFunc,
-	            placeholder: 'End Day' }),
-	          _react2.default.createElement('input', { className: _styles2.default.dateAndTimeRow,
-	            type: 'text', value: this.state.value,
-	            onChange: this.dummyFunc,
-	            placeholder: 'End Time' })
-	        ),
-	        _react2.default.createElement(
-	          'form',
-	          null,
-	          _react2.default.createElement('input', { className: _styles2.default.imageRow,
-	            type: 'text', value: this.state.value,
-	            onChange: this.dummyFunc,
-	            placeholder: 'Add Event Image' })
-	        ),
-	        _react2.default.createElement(
-	          'form',
-	          null,
-	          _react2.default.createElement('textarea', { className: _styles2.default.descriptionRow,
-	            type: 'text', value: this.state.value,
-	            onChange: this.dummyFunc,
-	            placeholder: 'Add a Description' })
-	        )
-	      );
-	    }
-	  }]);
 	
-	  return EditEvent;
+	    _createClass(EditEvent, [{
+	        key: 'dummyFunc',
+	        value: function dummyFunc(e) {
+	            console.log(e.target.value);
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: _styles2.default.editorContainer },
+	                _react2.default.createElement('input', { className: _styles2.default.titleRow,
+	                    type: 'text',
+	                    onChange: this.dummyFunc,
+	                    placeholder: 'Title' }),
+	                _react2.default.createElement('input', { className: _styles2.default.locationRow,
+	                    type: 'text',
+	                    onChange: this.dummyFunc,
+	                    placeholder: 'Location' }),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: _styles2.default.calendarContainer },
+	                    _react2.default.createElement('input', { className: _styles2.default.dateAndTimeRow,
+	                        type: 'text',
+	                        onChange: this.dummyFunc,
+	                        placeholder: 'Start Day' }),
+	                    _react2.default.createElement('input', { className: _styles2.default.dateAndTimeRow,
+	                        type: 'text',
+	                        onChange: this.dummyFunc,
+	                        placeholder: 'Start Time' }),
+	                    _react2.default.createElement('input', { className: _styles2.default.dateAndTimeRow,
+	                        type: 'text',
+	                        onChange: this.dummyFunc,
+	                        placeholder: 'End Day' }),
+	                    _react2.default.createElement('input', { className: _styles2.default.dateAndTimeRow,
+	                        type: 'text',
+	                        onChange: this.dummyFunc,
+	                        placeholder: 'End Time' })
+	                ),
+	                _react2.default.createElement(
+	                    'form',
+	                    null,
+	                    _react2.default.createElement('input', { className: _styles2.default.imageRow,
+	                        type: 'text',
+	                        onChange: this.dummyFunc,
+	                        placeholder: 'Add Event Image' })
+	                ),
+	                _react2.default.createElement(
+	                    'form',
+	                    null,
+	                    _react2.default.createElement('textarea', { className: _styles2.default.descriptionRow,
+	                        type: 'text',
+	                        onChange: this.dummyFunc,
+	                        placeholder: 'Add a Description' })
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: _styles2.default.friendContainer },
+	                    _react2.default.createElement('input', { className: _styles2.default.friendsRow,
+	                        type: 'text',
+	                        onChange: this.dummyFunc,
+	                        placeholder: 'Add A Friend\'s Name' }),
+	                    _react2.default.createElement('input', { className: _styles2.default.friendsRow,
+	                        type: 'text',
+	                        onChange: this.dummyFunc,
+	                        placeholder: 'Add A Friend\'s Email' }),
+	                    _react2.default.createElement('input', { className: _styles2.default.friendsRow,
+	                        type: 'text',
+	                        onChange: this.dummyFunc,
+	                        placeholder: 'Add Dish' })
+	                ),
+	                _react2.default.createElement('input', { className: _styles2.default.addItemRow,
+	                    type: 'text',
+	                    onChange: this.dummyFunc,
+	                    placeholder: 'Dish to bring' })
+	            );
+	        }
+	    }]);
+	
+	    return EditEvent;
 	}(_react2.default.Component);
 	
 	module.exports = EditEvent;

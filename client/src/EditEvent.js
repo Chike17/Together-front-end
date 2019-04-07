@@ -12,8 +12,7 @@ class EditEvent extends React.Component {
         title:  'some title', 
         location: 'some location', 
         host: 'some host',
-        guest: ['guest 1', 'guest 2', 'guest 3'],
-        value: ""
+        guest: ['guest 1', 'guest 2', 'guest 3']
       };
       this.dummyFunc = this.dummyFunc.bind(this);
     }
@@ -26,56 +25,81 @@ class EditEvent extends React.Component {
         
       
             <input className = {styles.titleRow}
-            type="text" value = {this.state.value}
+            type="text"
             onChange={this.dummyFunc}  
             placeholder = "Title" />
 
 
 
             <input className = {styles.locationRow}
-            type="text" value = {this.state.value}
+            type="text"
             onChange={this.dummyFunc}  
             placeholder = "Location" />
        
             
-        <div className={styles.calendarContainer}> 
+            <div className={styles.calendarContainer}> 
             
-            <input className = {styles.dateAndTimeRow}
-            type="text" value = {this.state.value}
-            onChange={this.dummyFunc}  
-            placeholder = "Start Day" />
+                <input className = {styles.dateAndTimeRow}
+                type="text"
+                onChange={this.dummyFunc}  
+                placeholder = "Start Day" />
 
-            <input className = {styles.dateAndTimeRow}
-            type="text" value = {this.state.value}
-            onChange={this.dummyFunc}  
-            placeholder = "Start Time" />
+                <input className = {styles.dateAndTimeRow}
+                type="text"
+                onChange={this.dummyFunc}  
+                placeholder = "Start Time" />
 
-            <input className = {styles.dateAndTimeRow}
-            type="text" value = {this.state.value}
-            onChange={this.dummyFunc}  
-            placeholder = "End Day" />
+                <input className = {styles.dateAndTimeRow}
+                type="text"
+                onChange={this.dummyFunc}  
+                placeholder = "End Day" />
 
-            <input className = {styles.dateAndTimeRow}
-            type="text" value = {this.state.value}
-            onChange={this.dummyFunc}  
-            placeholder = "End Time" />
+                <input className = {styles.dateAndTimeRow}
+                type="text"
+                onChange={this.dummyFunc}  
+                placeholder = "End Time" />
             </div>
 
             <form >
                 <input className = {styles.imageRow}
-                type="text" value = {this.state.value}
+                type="text"
                 onChange={this.dummyFunc}  
                 placeholder = "Add Event Image" />
             </form>
 
             <form >
                 <textarea className = {styles.descriptionRow}
-                type="text" value = {this.state.value}
+                type="text"
                 onChange={this.dummyFunc}  
                 placeholder = "Add a Description" />
             </form>
 
+            <div className = {styles.friendContainer}> 
+                <input className = {styles.friendsRow}
+                type="text"
+                onChange={this.dummyFunc}  
+                placeholder = "Add A Friend's Name" />
+
+                <input className = {styles.friendsRow}
+                type="text"
+                onChange={this.dummyFunc}  
+                placeholder = "Add A Friend's Email" />
+
+                <input className = {styles.friendsRow}
+                type="text"
+                onChange={this.dummyFunc}  
+                placeholder = "Add Dish" />         
+            </div>
+
+                <input className = {styles.addItemRow}
+                type="text"
+                onChange={this.dummyFunc}  
+                placeholder = "Dish to bring" />   
+
         </div>
+            
+
+         
       );
     }
   }

@@ -17,6 +17,7 @@
  width: 80%;
  height: 25px;
  transform: translate(10%, 0);
+ z-index: 3;
 }
 
 .locationRow{
@@ -25,6 +26,21 @@
   transform: translate(10%, 0);
 }
 
+.friendContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.friendsRow {
+  height: 25px;
+}
+
+.addItemRow {
+    width: 80%;
+    height: 25px;
+    transform: translate(10%, 0);
+    z-index: 3;
+}
 .calendarContainer{
   display: flex;
   justify-content: space-around;
@@ -32,7 +48,6 @@
 
 .dateAndTimeRow{
     height: 25px;
-
 }
 
 .dateAndTimeRow{
