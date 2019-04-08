@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './styles.css';
 import Container from './Container.js';
 import { connect } from 'react-redux';
+console.log('test');
 
 class App extends React.Component {
   constructor (props) {
