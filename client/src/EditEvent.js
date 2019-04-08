@@ -22,8 +22,7 @@ class EditEvent extends React.Component {
         title:  'some title', 
         location: 'some location', 
         host: 'some host',
-        guest: ['guest 1', 'guest 2', 'guest 3'],
-        value: "some data"
+        guest: ['guest 1', 'guest 2', 'guest 3']
       };
       this.dummyFunc = this.dummyFunc.bind(this);
     }
@@ -36,54 +35,75 @@ class EditEvent extends React.Component {
         <div className={styles.editorContainer}>
         
             <input className = {styles.titleRow}
-            type="text" defaultValue= {this.state.value}
+            type="text"
             onChange={this.dummyFunc}  
             placeholder = "Title" />
 
             <input className = {styles.locationRow}
-            type="text" defaultValue= {this.state.value}
+            type="text"
             onChange={this.dummyFunc}  
             placeholder = "Location" />
+       
+            
+            <div className={styles.calendarContainer}> 
+            
+                <input className = {styles.dateAndTimeRow}
+                type="text"
+                onChange={this.dummyFunc}  
+                placeholder = "Start Day" />
 
-            {/* <div type="text" className={styles.dayTime}> Choose Date and Time</div> */}
-             
-            {/* <DayPicker /> */}
+                <input className = {styles.dateAndTimeRow}
+                type="text"
+                onChange={this.dummyFunc}  
+                placeholder = "Start Time" />
 
+                <input className = {styles.dateAndTimeRow}
+                type="text"
+                onChange={this.dummyFunc}  
+                placeholder = "End Day" />
 
-            <MuiPickersUtilsProvider utils={DateFnsUtils}>
-                <DatePicker
-                margin="normal"
-                label=""
-                value={'2014-08-18T21:11:54'}
-                onChange={this.handleDateChange}
-                className = {styles.dayInput}
-                />
-            </MuiPickersUtilsProvider>
-             
-            <div className = {styles.timeContainer}> 
-                <TimeInput
-                label = "start time"
-                className= {styles.timeInputStart}
-                />
-                <TimeInput
-                label = "end Time"
-                className= {styles.timeInputEnd}
-                />
+                <input className = {styles.dateAndTimeRow}
+                type="text"
+                onChange={this.dummyFunc}  
+                placeholder = "End Time" />
             </div>
 
             <form >
                 <input className = {styles.imageRow}
-                type="text" defaultValue= {this.state.value}
+                type="text"
                 onChange={this.dummyFunc}  
                 placeholder = "Add Event Image" />
             </form>
 
             <form >
                 <textarea className = {styles.descriptionRow}
-                type="text" defaultValue= {this.state.value}
+                type="text"
                 onChange={this.dummyFunc}  
                 placeholder = "Add a Description" />
             </form>
+
+            <div className = {styles.friendContainer}> 
+                <input className = {styles.friendsRow}
+                type="text"
+                onChange={this.dummyFunc}  
+                placeholder = "Add A Friend's Name" />
+
+                <input className = {styles.friendsRow}
+                type="text"
+                onChange={this.dummyFunc}  
+                placeholder = "Add A Friend's Email" />
+
+                <input className = {styles.friendsRow}
+                type="text"
+                onChange={this.dummyFunc}  
+                placeholder = "Add Dish" />         
+            </div>
+
+                <input className = {styles.addItemRow}
+                type="text"
+                onChange={this.dummyFunc}  
+                placeholder = "Dish to bring" />   
+
         </div>
       );
     }

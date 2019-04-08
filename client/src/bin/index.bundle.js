@@ -25584,7 +25584,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".styles__editorContainer___1Cg_p {\n   display: flex;\n   flex-direction: column;\n   justify-content: space-around;\n   margin: 0 auto;\n   margin-top: 300px;\n   height: 1500px;\n   width: 60%;\n   border: 1px solid grey;\n}\n\n.styles__row___yxAup {\n  margin: 10px;\n}\n\n.styles__titleRow___2Wo7J{\n width: 80%;\n height: 25px;\n transform: translate(10%, 0);\n}\n\n.styles__locationRow___4pUnc{\n  width: 80%;\n  height: 25px;\n  transform: translate(10%, 0);\n}\n\n.styles__calendarContainer___1VJEg{\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__dateAndTimeRow___2slG1{\n    height: 25px;\n\n}\n\n.styles__timeInputStart___3ks1Y {\n    margin: 0 auto;\n    margin-left: 35%;\n    width: 10%;\n    text-align: center;\n}\n\n\n.styles__timeInputEnd___3slub {\n    margin: 0 auto;\n    width: 10%;\n    margin-right: 35%;\n    text-align: center;\n}\n\n.styles__timeContainer___sGPPo {\n    display: flex;\n    justify-content: space-around;\n    align-items: baseline;\n}\n.styles__dateAndTimeRow___2slG1{\n\n}\n\n.styles__dateAndTimeRow___2slG1 {\n\n}\n\n.styles__dayInput___34ZEW {\n    margin: 0 auto;\n    width:  12%;\n    text-align: center;\n    transform: translate(350%, 0);\n}\n\n.styles__imageRow___3LvJv{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n\n}\n\n.styles__descriptionRow___2P7IU{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n}\n\n.styles__dayTime___2hbtx{\n  width: 50%;\n  height: 20px;\n  transform: translate(75%, 0);\n}\n\n/* .editorContainer {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n    margin: 0 auto;\n    margin-top: 300px;\n    height: 1000px;\n    width: 60%;\n    border: 1px solid grey;\n }\n \n .row {\n   margin: 10px;\n }\n \n .titleRow{\n  width: 80%;\n  height: 25px;\n  transform: translate(10%, 0);\n  z-index: 3;\n }\n \n .locationRow{\n   width: 80%;\n   height: 25px;\n   transform: translate(10%, 0);\n }\n \n .friendContainer {\n   display: flex;\n   justify-content: space-around;\n }\n \n .friendsRow {\n   height: 25px;\n }\n \n .addItemRow {\n     width: 80%;\n     height: 25px;\n     transform: translate(10%, 0);\n     z-index: 3;\n }\n .calendarContainer{\n   display: flex;\n   justify-content: space-around;\n }\n \n .dateAndTimeRow{\n     height: 25px;\n }\n \n .dateAndTimeRow{\n \n }\n \n .dateAndTimeRow {\n \n }\n \n .imageRow{\n   height: 300px;\n   width: 70%;\n   margin: 0 auto;\n   transform: translate(20%, 0);\n \n }\n \n .descriptionRow{\n   height: 300px;\n   width: 70%;\n   margin: 0 auto;\n   transform: translate(20%, 0);\n } */", ""]);
+	exports.push([module.id, ".styles__editorContainer___1Cg_p {\n   display: flex;\n   flex-direction: column;\n   justify-content: space-around;\n   margin: 0 auto;\n   margin-top: 300px;\n   height: 1500px;\n   width: 60%;\n   border: 1px solid grey;\n}\n\n.styles__row___yxAup {\n  margin: 10px;\n}\n\n.styles__titleRow___2Wo7J{\n width: 80%;\n height: 25px;\n transform: translate(10%, 0);\n z-index: 3;\n}\n\n.styles__locationRow___4pUnc{\n  width: 80%;\n  height: 25px;\n  transform: translate(10%, 0);\n}\n\n.styles__friendContainer___1hYOB {\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__friendsRow___2i8Mh {\n  height: 25px;\n}\n\n.styles__addItemRow___23xUp {\n    width: 80%;\n    height: 25px;\n    transform: translate(10%, 0);\n    z-index: 3;\n}\n.styles__calendarContainer___1VJEg{\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__dateAndTimeRow___2slG1{\n    height: 25px;\n}\n\n.styles__timeInputStart___3ks1Y {\n    margin: 0 auto;\n    margin-left: 35%;\n    width: 10%;\n    text-align: center;\n}\n\n\n.styles__timeInputEnd___3slub {\n    margin: 0 auto;\n    width: 10%;\n    margin-right: 35%;\n    text-align: center;\n}\n\n.styles__timeContainer___sGPPo {\n    display: flex;\n    justify-content: space-around;\n    align-items: baseline;\n}\n.styles__dateAndTimeRow___2slG1{\n\n}\n\n.styles__dateAndTimeRow___2slG1 {\n\n}\n\n.styles__dayInput___34ZEW {\n    margin: 0 auto;\n    width:  12%;\n    text-align: center;\n    transform: translate(350%, 0);\n}\n\n.styles__imageRow___3LvJv{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n\n}\n\n.styles__descriptionRow___2P7IU{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n}\n\n.styles__dayTime___2hbtx{\n  width: 50%;\n  height: 20px;\n  transform: translate(75%, 0);\n}\n\n/* .editorContainer {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n    margin: 0 auto;\n    margin-top: 300px;\n    height: 1000px;\n    width: 60%;\n    border: 1px solid grey;\n }\n \n .row {\n   margin: 10px;\n }\n \n .titleRow{\n  width: 80%;\n  height: 25px;\n  transform: translate(10%, 0);\n  z-index: 3;\n }\n \n .locationRow{\n   width: 80%;\n   height: 25px;\n   transform: translate(10%, 0);\n }\n \n .friendContainer {\n   display: flex;\n   justify-content: space-around;\n }\n \n .friendsRow {\n   height: 25px;\n }\n \n .addItemRow {\n     width: 80%;\n     height: 25px;\n     transform: translate(10%, 0);\n     z-index: 3;\n }\n .calendarContainer{\n   display: flex;\n   justify-content: space-around;\n }\n \n .dateAndTimeRow{\n     height: 25px;\n }\n \n .dateAndTimeRow{\n \n }\n \n .dateAndTimeRow {\n \n }\n \n .imageRow{\n   height: 300px;\n   width: 70%;\n   margin: 0 auto;\n   transform: translate(20%, 0);\n \n }\n \n .descriptionRow{\n   height: 300px;\n   width: 70%;\n   margin: 0 auto;\n   transform: translate(20%, 0);\n } */", ""]);
 	
 	// exports
 	exports.locals = {
@@ -25592,6 +25592,9 @@
 		"row": "styles__row___yxAup",
 		"titleRow": "styles__titleRow___2Wo7J",
 		"locationRow": "styles__locationRow___4pUnc",
+		"friendContainer": "styles__friendContainer___1hYOB",
+		"friendsRow": "styles__friendsRow___2i8Mh",
+		"addItemRow": "styles__addItemRow___23xUp",
 		"calendarContainer": "styles__calendarContainer___1VJEg",
 		"dateAndTimeRow": "styles__dateAndTimeRow___2slG1",
 		"timeInputStart": "styles__timeInputStart___3ks1Y",
@@ -26276,8 +26279,7 @@
 	            title: 'some title',
 	            location: 'some location',
 	            host: 'some host',
-	            guest: ['guest 1', 'guest 2', 'guest 3'],
-	            value: "some data"
+	            guest: ['guest 1', 'guest 2', 'guest 3']
 	        };
 	        _this.dummyFunc = _this.dummyFunc.bind(_this);
 	        return _this;
@@ -26295,41 +26297,38 @@
 	                'div',
 	                { className: _styles2.default.editorContainer },
 	                _react2.default.createElement('input', { className: _styles2.default.titleRow,
-	                    type: 'text', defaultValue: this.state.value,
+	                    type: 'text',
 	                    onChange: this.dummyFunc,
 	                    placeholder: 'Title' }),
 	                _react2.default.createElement('input', { className: _styles2.default.locationRow,
-	                    type: 'text', defaultValue: this.state.value,
+	                    type: 'text',
 	                    onChange: this.dummyFunc,
 	                    placeholder: 'Location' }),
 	                _react2.default.createElement(
-	                    _materialUiPickers.MuiPickersUtilsProvider,
-	                    { utils: _dateFns2.default },
-	                    _react2.default.createElement(_materialUiPickers.DatePicker, {
-	                        margin: 'normal',
-	                        label: '',
-	                        value: '2014-08-18T21:11:54',
-	                        onChange: this.handleDateChange,
-	                        className: _styles2.default.dayInput
-	                    })
-	                ),
-	                _react2.default.createElement(
 	                    'div',
-	                    { className: _styles2.default.timeContainer },
-	                    _react2.default.createElement(_materialUiTimePicker2.default, {
-	                        label: 'start time',
-	                        className: _styles2.default.timeInputStart
-	                    }),
-	                    _react2.default.createElement(_materialUiTimePicker2.default, {
-	                        label: 'end Time',
-	                        className: _styles2.default.timeInputEnd
-	                    })
+	                    { className: _styles2.default.calendarContainer },
+	                    _react2.default.createElement('input', { className: _styles2.default.dateAndTimeRow,
+	                        type: 'text',
+	                        onChange: this.dummyFunc,
+	                        placeholder: 'Start Day' }),
+	                    _react2.default.createElement('input', { className: _styles2.default.dateAndTimeRow,
+	                        type: 'text',
+	                        onChange: this.dummyFunc,
+	                        placeholder: 'Start Time' }),
+	                    _react2.default.createElement('input', { className: _styles2.default.dateAndTimeRow,
+	                        type: 'text',
+	                        onChange: this.dummyFunc,
+	                        placeholder: 'End Day' }),
+	                    _react2.default.createElement('input', { className: _styles2.default.dateAndTimeRow,
+	                        type: 'text',
+	                        onChange: this.dummyFunc,
+	                        placeholder: 'End Time' })
 	                ),
 	                _react2.default.createElement(
 	                    'form',
 	                    null,
 	                    _react2.default.createElement('input', { className: _styles2.default.imageRow,
-	                        type: 'text', defaultValue: this.state.value,
+	                        type: 'text',
 	                        onChange: this.dummyFunc,
 	                        placeholder: 'Add Event Image' })
 	                ),
@@ -26337,10 +26336,30 @@
 	                    'form',
 	                    null,
 	                    _react2.default.createElement('textarea', { className: _styles2.default.descriptionRow,
-	                        type: 'text', defaultValue: this.state.value,
+	                        type: 'text',
 	                        onChange: this.dummyFunc,
 	                        placeholder: 'Add a Description' })
-	                )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: _styles2.default.friendContainer },
+	                    _react2.default.createElement('input', { className: _styles2.default.friendsRow,
+	                        type: 'text',
+	                        onChange: this.dummyFunc,
+	                        placeholder: 'Add A Friend\'s Name' }),
+	                    _react2.default.createElement('input', { className: _styles2.default.friendsRow,
+	                        type: 'text',
+	                        onChange: this.dummyFunc,
+	                        placeholder: 'Add A Friend\'s Email' }),
+	                    _react2.default.createElement('input', { className: _styles2.default.friendsRow,
+	                        type: 'text',
+	                        onChange: this.dummyFunc,
+	                        placeholder: 'Add Dish' })
+	                ),
+	                _react2.default.createElement('input', { className: _styles2.default.addItemRow,
+	                    type: 'text',
+	                    onChange: this.dummyFunc,
+	                    placeholder: 'Dish to bring' })
 	            );
 	        }
 	    }]);
