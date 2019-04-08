@@ -25584,7 +25584,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".styles__editorContainer___1Cg_p {\n   display: flex;\n   flex-direction: column;\n   justify-content: space-around;\n   margin: 0 auto;\n   margin-top: 300px;\n   height: 1500px;\n   width: 60%;\n   border: 1px solid grey;\n}\n\n.styles__row___yxAup {\n  margin: 10px;\n}\n\n.styles__titleRow___2Wo7J{\n width: 80%;\n height: 25px;\n transform: translate(10%, 0);\n}\n\n.styles__locationRow___4pUnc{\n  width: 80%;\n  height: 25px;\n  transform: translate(10%, 0);\n}\n\n.styles__calendarContainer___1VJEg{\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__dateAndTimeRow___2slG1{\n    height: 25px;\n\n}\n\n.styles__timeInputStart___3ks1Y {\n    margin: 0 auto;\n    margin-left: 35%;\n    width: 10%;\n    text-align: center;\n}\n\n\n.styles__timeInputEnd___3slub {\n    margin: 0 auto;\n    width: 10%;\n    margin-right: 35%;\n    text-align: center;\n}\n\n.styles__timeContainer___sGPPo {\n    display: flex;\n    justify-content: space-around;\n    align-items: baseline;\n}\n.styles__dateAndTimeRow___2slG1{\n\n}\n\n.styles__dateAndTimeRow___2slG1 {\n\n}\n\n.styles__dayInput___34ZEW {\n    margin: 0 auto;\n    width:  12%;\n    text-align: center;\n    transform: translate(350%, 0);\n}\n\n.styles__imageRow___3LvJv{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n\n}\n\n.styles__descriptionRow___2P7IU{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n}\n\n.styles__dayTime___2hbtx{\n  width: 50%;\n  height: 20px;\n  transform: translate(75%, 0);\n}\n\n/* .editorContainer {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n    margin: 0 auto;\n    margin-top: 300px;\n    height: 1000px;\n    width: 60%;\n    border: 1px solid grey;\n }\n \n .row {\n   margin: 10px;\n }\n \n .titleRow{\n  width: 80%;\n  height: 25px;\n  transform: translate(10%, 0);\n  z-index: 3;\n }\n \n .locationRow{\n   width: 80%;\n   height: 25px;\n   transform: translate(10%, 0);\n }\n \n .friendContainer {\n   display: flex;\n   justify-content: space-around;\n }\n \n .friendsRow {\n   height: 25px;\n }\n \n .addItemRow {\n     width: 80%;\n     height: 25px;\n     transform: translate(10%, 0);\n     z-index: 3;\n }\n .calendarContainer{\n   display: flex;\n   justify-content: space-around;\n }\n \n .dateAndTimeRow{\n     height: 25px;\n }\n \n .dateAndTimeRow{\n \n }\n \n .dateAndTimeRow {\n \n }\n \n .imageRow{\n   height: 300px;\n   width: 70%;\n   margin: 0 auto;\n   transform: translate(20%, 0);\n \n }\n \n .descriptionRow{\n   height: 300px;\n   width: 70%;\n   margin: 0 auto;\n   transform: translate(20%, 0);\n } */", ""]);
+	exports.push([module.id, ".styles__editorContainer___1Cg_p {\n   display: flex;\n   flex-direction: column;\n   justify-content: space-around;\n   margin: 0 auto;\n   margin-top: 300px;\n   height: 2000px;\n   width: 75%;\n   border: 1px solid grey;\n}\n\n.styles__row___yxAup {\n  margin: 10px;\n}\n\n.styles__titleRow___2Wo7J{\n width: 80%;\n height: 25px;\n transform: translate(10%, 0);\n}\n\n.styles__locationRow___4pUnc{\n  width: 80%;\n  height: 25px;\n  transform: translate(10%, 0);\n}\n\n.styles__calendarContainer___1VJEg{\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__dateAndTimeRow___2slG1{\n    height: 25px;\n\n}\n\n.styles__timeInputStart___3ks1Y {\n    margin: 0 auto;\n    margin-left: 35%;\n    width: 10%;\n    text-align: center;\n}\n\n\n.styles__timeInputEnd___3slub {\n    margin: 0 auto;\n    width: 10%;\n    margin-right: 35%;\n    text-align: center;\n}\n\n.styles__timeContainer___sGPPo {\n    display: flex;\n    justify-content: space-around;\n    align-items: baseline;\n}\n.styles__dateAndTimeRow___2slG1{\n\n}\n\n.styles__dateAndTimeRow___2slG1 {\n\n}\n\n.styles__dayInput___34ZEW {\n    margin: 0 auto;\n    width:  12%;\n    text-align: center;\n    transform: translate(350%, 0);\n}\n\n.styles__imageRow___3LvJv{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n\n}\n\n.styles__descriptionRow___2P7IU{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n}\n\n.styles__dayTime___2hbtx{\n  width: 50%;\n  height: 20px;\n  transform: translate(75%, 0);\n}\n\n.styles__friendContainer___1hYOB {\n    display: flex;\n    justify-content: space-around;\n    align-items: baseline;\n}\n  \n.styles__friendsRow___2i8Mh {\n    height: 25px;\n}\n\n.styles__addItemRow___23xUp {\n    width: 80%;\n    height: 25px;\n    transform: translate(10%, 0);\n    z-index: 3;\n}\n\n.styles__addFriend___1M2M9 {\n}\n\n\n\n/* .editorContainer {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n    margin: 0 auto;\n    margin-top: 300px;\n    height: 1000px;\n    width: 60%;\n    border: 1px solid grey;\n }\n \n .row {\n   margin: 10px;\n }\n \n .titleRow{\n  width: 80%;\n  height: 25px;\n  transform: translate(10%, 0);\n  z-index: 3;\n }\n \n .locationRow{\n   width: 80%;\n   height: 25px;\n   transform: translate(10%, 0);\n }\n \n .friendContainer {\n   display: flex;\n   justify-content: space-around;\n }\n \n .friendsRow {\n   height: 25px;\n }\n \n .addItemRow {\n     width: 80%;\n     height: 25px;\n     transform: translate(10%, 0);\n     z-index: 3;\n }\n .calendarContainer{\n   display: flex;\n   justify-content: space-around;\n }\n \n .dateAndTimeRow{\n     height: 25px;\n }\n \n .dateAndTimeRow{\n \n }\n \n .dateAndTimeRow {\n \n }\n \n .imageRow{\n   height: 300px;\n   width: 70%;\n   margin: 0 auto;\n   transform: translate(20%, 0);\n \n }\n \n .descriptionRow{\n   height: 300px;\n   width: 70%;\n   margin: 0 auto;\n   transform: translate(20%, 0);\n } */", ""]);
 	
 	// exports
 	exports.locals = {
@@ -25600,7 +25600,11 @@
 		"dayInput": "styles__dayInput___34ZEW",
 		"imageRow": "styles__imageRow___3LvJv",
 		"descriptionRow": "styles__descriptionRow___2P7IU",
-		"dayTime": "styles__dayTime___2hbtx"
+		"dayTime": "styles__dayTime___2hbtx",
+		"friendContainer": "styles__friendContainer___1hYOB",
+		"friendsRow": "styles__friendsRow___2i8Mh",
+		"addItemRow": "styles__addItemRow___23xUp",
+		"addFriend": "styles__addFriend___1M2M9"
 	};
 
 /***/ }),
@@ -26226,6 +26230,10 @@
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
+	var _FriendInvite = __webpack_require__(/*! ./FriendInvite */ 549);
+	
+	var _FriendInvite2 = _interopRequireDefault(_FriendInvite);
+	
 	var _reactDayPicker = __webpack_require__(/*! react-day-picker */ 27);
 	
 	var _reactDayPicker2 = _interopRequireDefault(_reactDayPicker);
@@ -26254,6 +26262,8 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -26277,9 +26287,13 @@
 	            location: 'some location',
 	            host: 'some host',
 	            guest: ['guest 1', 'guest 2', 'guest 3'],
-	            value: "some data"
+	            value: "some data",
+	            friendFields: [],
+	            friendNum: 1
 	        };
 	        _this.dummyFunc = _this.dummyFunc.bind(_this);
+	        _this.addFriend = _this.addFriend.bind(_this);
+	        //   this.deleteFriendField = this.deleteFriendField.bind(this);
 	        return _this;
 	    }
 	
@@ -26287,6 +26301,16 @@
 	        key: 'dummyFunc',
 	        value: function dummyFunc(e) {
 	            console.log(e.target.value);
+	        }
+	    }, {
+	        key: 'addFriend',
+	        value: function addFriend() {
+	            this.setState({ friendFields: [].concat(_toConsumableArray(this.state.friendFields), [_react2.default.createElement(_FriendInvite2.default, null)]) });
+	        }
+	    }, {
+	        key: 'deleteFriendField',
+	        value: function deleteFriendField(friendIndex) {
+	            this.state.friendFields.splice(friendIndex, 1);
 	        }
 	    }, {
 	        key: 'render',
@@ -26340,7 +26364,14 @@
 	                        type: 'text', defaultValue: this.state.value,
 	                        onChange: this.dummyFunc,
 	                        placeholder: 'Add a Description' })
-	                )
+	                ),
+	                _react2.default.createElement(
+	                    'button',
+	                    { onClick: this.addFriend, className: _styles2.default.addFriend },
+	                    ' Add A Friend'
+	                ),
+	                this.state.friendFields,
+	                this.state.friendNum
 	            );
 	        }
 	    }]);
@@ -26348,116 +26379,7 @@
 	    return EditEvent;
 	}(_react2.default.Component);
 	
-	// module.exports = EditEvent;
-	
 	module.exports = (0, _styles3.withStyles)(_styles2.default)(EditEvent);
-	
-	// import React from 'react';
-	// import styles from './styles.css';
-	
-	
-	// class EditEvent extends React.Component {
-	//     constructor(props) {
-	//       super(props);
-	//       this.state = {
-	//         startTime: '9:00 am',
-	//         endTIme: '5:00  pm',
-	//         startDate: new Date(),
-	//         title:  'some title', 
-	//         location: 'some location', 
-	//         host: 'some host',
-	//         guest: ['guest 1', 'guest 2', 'guest 3']
-	//       };
-	//       this.handleChange = this.handleChange.bind(this);
-	//       this.dummyFunc = this.dummyFunc.bind(this);
-	//     }
-	//     dummyFunc (e) {
-	//         this.setState({arget: e.target.value});
-	//         console.log(e.target.value);
-	//     }
-	//     render() {
-	//       return (
-	//         <div className={styles.editorContainer}>
-	
-	//             <input className = {styles.titleRow}
-	//             type="text"
-	//             onChange={this.dummyFunc}
-	//             defaultValue = {this.state.target}
-	//             placeholder = "Title" />
-	
-	//             <input className = {styles.locationRow}
-	//             type="text"
-	//             onChange={this.dummyFunc}
-	//             defaultValue = {this.state.target}  
-	//             placeholder = "Location" />
-	
-	//             <div className={styles.calendarContainer}> 
-	
-	//                 <input className = {styles.dateAndTimeRow}
-	//                 type="date"
-	//                 onChange={this.dummyFunc}  
-	//                 defaultValue = {this.state.target}
-	//                 placeholder = "Start Day" />
-	
-	//                 <input className = {styles.dateAndTimeRow}
-	//                 type="time"
-	//                 onChange={this.dummyFunc}  
-	//                 defaultValue = {this.state.target}
-	//                 placeholder = "Start Time" />
-	
-	//                 <input className = {styles.dateAndTimeRow}
-	//                 type="date"
-	//                 onChange={this.dummyFunc}
-	//                 defaultValue = {this.state.target}
-	//                 placeholder = "End Day" />
-	
-	//                 <input className = {styles.dateAndTimeRow}
-	//                 type="time"
-	//                 onChange={this.dummyFunc}  
-	//                 defaultValue = {this.state.target}
-	//                 placeholder = "End Time" />
-	//             </div>
-	
-	//             <form >
-	//                 <textarea className = {styles.imageRow}
-	//                 type="text"
-	//                 onChange={this.dummyFunc}  
-	//                 placeholder = "Add Event Image" />
-	//             </form>
-	
-	//             <form >
-	//                 <textarea className = {styles.descriptionRow}
-	//                 type="text"
-	//                 onChange={this.dummyFunc}  
-	//                 defaultValue = {this.state.target}
-	//                 placeholder = "Add a Description" />
-	//             </form>
-	
-	//             <div className = {styles.friendContainer}> 
-	//                 <input className = {styles.friendsRow}
-	//                 type="text"
-	//                 onChange={this.dummyFunc}  
-	//                 placeholder = "Add A Friend's Name" />
-	
-	//                 <input className = {styles.friendsRow}
-	//                 type="text"
-	//                 onChange={this.dummyFunc}  
-	//                 placeholder = "Add A Friend's Email" />
-	
-	//                 <input className = {styles.friendsRow}
-	//                 type="text"
-	//                 onChange={this.dummyFunc}  
-	//                 placeholder = "Add Dish" />         
-	//             </div>
-	
-	//                 <input className = {styles.addItemRow}
-	//                 type="text"
-	//                 onChange={this.dummyFunc}  
-	//                 placeholder = "Dish to bring" />
-	//         </div>
-	//       );
-	//     }
-	//   }
 
 /***/ }),
 /* 27 */
@@ -99095,6 +99017,102 @@
 	var initialState2 = {};
 	
 	module.exports = { initialState1: initialState1, initialState2: initialState2 };
+
+/***/ }),
+/* 549 */
+/*!************************************!*\
+  !*** ./client/src/FriendInvite.js ***!
+  \************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _styles = __webpack_require__(/*! ./styles.css */ 20);
+	
+	var _styles2 = _interopRequireDefault(_styles);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var FriendInvite = function (_React$Component) {
+	  _inherits(FriendInvite, _React$Component);
+	
+	  function FriendInvite(props) {
+	    _classCallCheck(this, FriendInvite);
+	
+	    var _this = _possibleConstructorReturn(this, (FriendInvite.__proto__ || Object.getPrototypeOf(FriendInvite)).call(this, props));
+	
+	    _this.state = {};
+	    return _this;
+	  }
+	
+	  _createClass(FriendInvite, [{
+	    key: 'render',
+	    value: function render() {
+	      // add delete dish button
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'div',
+	          { className: _styles2.default.friendContainer },
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            ' ',
+	            this.props.number,
+	            ' '
+	          ),
+	          _react2.default.createElement('input', { className: _styles2.default.friendsRow,
+	            type: 'text',
+	            onChange: this.dummyFunc,
+	            placeholder: 'Add A Friend\'s Name' }),
+	          _react2.default.createElement('input', { className: _styles2.default.friendsRow,
+	            type: 'text',
+	            onChange: this.dummyFunc,
+	            placeholder: 'Add A Friend\'s Email' }),
+	          _react2.default.createElement(
+	            'button',
+	            null,
+	            'Add a Dish'
+	          ),
+	          _react2.default.createElement(
+	            'button',
+	            null,
+	            'Delete Friend'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'ul',
+	          null,
+	          _react2.default.createElement('input', { className: _styles2.default.addItemRow,
+	            type: 'text',
+	            onChange: this.dummyFunc,
+	            placeholder: 'Dish to bring' }),
+	          _react2.default.createElement('input', { className: _styles2.default.addItemRow,
+	            type: 'text',
+	            onChange: this.dummyFunc,
+	            placeholder: 'Dish to bring' })
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return FriendInvite;
+	}(_react2.default.Component);
+	
+	module.exports = FriendInvite;
 
 /***/ })
 /******/ ]);
