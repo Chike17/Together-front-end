@@ -4,7 +4,7 @@
    justify-content: space-around;
    margin: 0 auto;
    margin-top: 300px;
-   height: 1000px;
+   height: 1500px;
    width: 60%;
    border: 1px solid grey;
 }
@@ -35,12 +35,39 @@
 
 }
 
+.timeInputStart {
+    margin: 0 auto;
+    margin-left: 35%;
+    width: 10%;
+    text-align: center;
+}
+
+
+.timeInputEnd {
+    margin: 0 auto;
+    width: 10%;
+    margin-right: 35%;
+    text-align: center;
+}
+
+.timeContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
 .dateAndTimeRow{
 
 }
 
 .dateAndTimeRow {
 
+}
+
+.dayInput {
+    margin: 0 auto;
+    width:  12%;
+    text-align: center;
+    transform: translate(350%, 0);
 }
 
 .imageRow{
@@ -57,3 +84,84 @@
   margin: 0 auto;
   transform: translate(20%, 0);
 }
+
+.dayTime{
+  width: 50%;
+  height: 20px;
+  transform: translate(75%, 0);
+}
+
+/* .editorContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 300px;
+    height: 1000px;
+    width: 60%;
+    border: 1px solid grey;
+ }
+ 
+ .row {
+   margin: 10px;
+ }
+ 
+ .titleRow{
+  width: 80%;
+  height: 25px;
+  transform: translate(10%, 0);
+  z-index: 3;
+ }
+ 
+ .locationRow{
+   width: 80%;
+   height: 25px;
+   transform: translate(10%, 0);
+ }
+ 
+ .friendContainer {
+   display: flex;
+   justify-content: space-around;
+ }
+ 
+ .friendsRow {
+   height: 25px;
+ }
+ 
+ .addItemRow {
+     width: 80%;
+     height: 25px;
+     transform: translate(10%, 0);
+     z-index: 3;
+ }
+ .calendarContainer{
+   display: flex;
+   justify-content: space-around;
+ }
+ 
+ .dateAndTimeRow{
+     height: 25px;
+ }
+ 
+ .dateAndTimeRow{
+ 
+ }
+ 
+ .dateAndTimeRow {
+ 
+ }
+ 
+ .imageRow{
+   height: 300px;
+   width: 70%;
+   margin: 0 auto;
+   transform: translate(20%, 0);
+ 
+ }
+ 
+ .descriptionRow{
+   height: 300px;
+   width: 70%;
+   margin: 0 auto;
+   transform: translate(20%, 0);
+ } */
