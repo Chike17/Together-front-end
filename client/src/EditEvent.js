@@ -8,7 +8,13 @@ import LuxonUtils from '@date-io/luxon';
 import DateFnsUtils from '@date-io/date-fns';
 import { withStyles } from '@material-ui/core/styles';
 import { MuiPickersUtilsProvider, DatePicker } from 'material-ui-pickers';
-import TimeInput from 'material-ui-time-picker';
+import TimeInput from 'material-ui-time-picker'
+import axios from 'axios';
+const BASE_URL = 'http://localhost:8888/';
+
+
+// import ImageUploader from  './ImageUploader';
+
 class EditEvent extends React.Component {
     constructor(props) {
       super(props);
@@ -23,20 +29,51 @@ class EditEvent extends React.Component {
         guest: ['guest 1', 'guest 2', 'guest 3'],
         value: "some data",
         friendFields: [],
-        friendNum: 0
+        friendNum: 0,
+        images: [],
+        imageUrls: [],
+        message: ''
       };
+      this.selectImages = this.selectImages.bind(this);
+      this.uploadImages = this.uploadImages.bind(this);
       this.dummyFunc = this.dummyFunc.bind(this);
       this.addFriend = this.addFriend.bind(this);
       this.deleteFriendField = this.deleteFriendField.bind(this);
     }
-    dummyFunc (e) {
+    selectImages(event) {
+        let images = []
+        for (let i = 0; i < event.target.files.length; i++) {
+        images[i] = event.target.files.item(i);
+        }
+        images = images.filter(image => image.name.match(/\.(jpg|jpeg|png|gif)$/))
+        let message = `${images.length} valid image(s) selected`
+        this.setState({ images, message });
+    }
+    uploadImages() {
+        const uploaders = this.state.images.map(image => {
+        const data = new FormData();
+        data.append("image", image, image.name);
+        // Make an AJAX upload request using Axios
+        return axios.post(BASE_URL + 'upload', data)
+        .then(response => {
+        this.setState({
+            imageUrls: [ response.data.imageUrl, ...this.state.imageUrls ]
+        });
+        })
+        });
+        // Once all the files are uploaded 
+        axios.all(uploaders).then(() => {
+        console.log('done');
+        }).catch(err => alert(err.message));
+    } 
+    dummyFunc(e) {
         console.log(e.target.value);
     }
-    addFriend () {    
+    addFriend() {    
         this.state.friendNum++;    
         this.setState({friendFields: [...this.state.friendFields, <FriendInvite friendNum = {this.state.friendNum}/>]});
     }
-    deleteFriendField () {    
+    deleteFriendField(){    
         this.state.friendFields.splice(this.state.friendFields.length -1, 1);
         this.setState({friendFields: [...this.state.friendFields]}); 
     }
@@ -75,13 +112,33 @@ class EditEvent extends React.Component {
                 className= {styles.timeInputEnd}
                 />
             </div>
+            <br/>
 
-            <form >
-                <input className = {styles.imageRow}
-                type="text" defaultValue= {this.state.value}
-                onChange={this.dummyFunc}  
-                placeholder = "Add Event Image" />
-            </form>
+                <div className="">
+                    <h1>Image Uploader</h1><hr/>
+                    <div className="">
+                    <input className="form-control " type="file" 
+                    onChange={this.selectImages} multiple/>
+                    </div>
+                    <p className="text-info">{this.state.message}</p>
+                    <br/><br/><br/>
+                    <div className="">
+                    <button className="btn btn-primary" value="Submit" 
+                    onClick={this.uploadImages}>Submit</button>
+                    </div>
+                    </div>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><hr/><br/>
+                    <div className="r">
+                    { 
+                    this.state.imageUrls.map((url, i) => (
+                    <div className="" key={i}>
+                    {console.log(url)}
+                    <img src={BASE_URL + url} className="img-rounded img-responsive"
+                    alt="not available"/><br/>
+                    </div>
+                    ))
+                    }
+                </div>
 
             <form >
                 <textarea className = {styles.descriptionRow}
@@ -101,3 +158,12 @@ class EditEvent extends React.Component {
   }
 
 module.exports =  withStyles(styles)(EditEvent);
+
+
+
+
+
+
+
+
+
