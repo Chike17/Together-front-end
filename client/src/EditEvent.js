@@ -40,6 +40,14 @@ class EditEvent extends React.Component {
       this.addFriend = this.addFriend.bind(this);
       this.deleteFriendField = this.deleteFriendField.bind(this);
     }
+    componentDidMount () {
+        this.setState({friendFields: [...this.state.friendFields, 
+        <FriendInvite friendNum = {++this.state.friendNum}/>,
+        <FriendInvite friendNum = {++this.state.friendNum}/>,
+        <FriendInvite friendNum = {++this.state.friendNum}/>
+    ]});
+
+    }
     selectImages(event) {
         let images = []
         for (let i = 0; i < event.target.files.length; i++) {
@@ -73,7 +81,8 @@ class EditEvent extends React.Component {
         this.state.friendNum++;    
         this.setState({friendFields: [...this.state.friendFields, <FriendInvite friendNum = {this.state.friendNum}/>]});
     }
-    deleteFriendField(){    
+    deleteFriendField(){
+        this.state.friendNum--;
         this.state.friendFields.splice(this.state.friendFields.length -1, 1);
         this.setState({friendFields: [...this.state.friendFields]}); 
     }
@@ -112,32 +121,30 @@ class EditEvent extends React.Component {
                 className= {styles.timeInputEnd}
                 />
             </div>
-            <br/>
-
-                <div className="">
-                    <h1>Image Uploader</h1><hr/>
+                <div className = {styles.imageUploadContainer}>
                     <div className="">
-                    <input className="form-control " type="file" 
-                    onChange={this.selectImages} multiple/>
+                        <h3>Upload an Image</h3>
+                        <div className="">
+                        <input className="" type="file" 
+                        onChange={this.selectImages} multiple/>
+                        </div>
+                        <p className="">{this.state.message}</p>
+                        <div className="">
+                        <button className="btn btn-primary" value="Submit" 
+                        onClick={this.uploadImages}>Submit</button>
+                        </div>
+                        </div>
+                        <div className="r">
+                        { 
+                        this.state.imageUrls.map((url, i) => (
+                        <div className="" key={i}>
+                        {console.log(url)}
+                        <img src={BASE_URL + url} className= {styles.eventImage}
+                        alt="not available"/><br/>
+                        </div>
+                        ))
+                        }
                     </div>
-                    <p className="text-info">{this.state.message}</p>
-                    <br/><br/><br/>
-                    <div className="">
-                    <button className="btn btn-primary" value="Submit" 
-                    onClick={this.uploadImages}>Submit</button>
-                    </div>
-                    </div>
-                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><hr/><br/>
-                    <div className="r">
-                    { 
-                    this.state.imageUrls.map((url, i) => (
-                    <div className="" key={i}>
-                    {console.log(url)}
-                    <img src={BASE_URL + url} className="img-rounded img-responsive"
-                    alt="not available"/><br/>
-                    </div>
-                    ))
-                    }
                 </div>
 
             <form >
@@ -158,12 +165,6 @@ class EditEvent extends React.Component {
   }
 
 module.exports =  withStyles(styles)(EditEvent);
-
-
-
-
-
-
 
 
 

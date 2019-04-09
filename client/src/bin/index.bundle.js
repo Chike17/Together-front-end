@@ -25584,7 +25584,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".styles__editorContainer___1Cg_p {\n   display: flex;\n   flex-direction: column;\n   justify-content: space-around;\n   margin: 0 auto;\n   margin-top: 300px;\n   height: 2000px;\n   width: 75%;\n   border: 1px solid grey;\n}\n\n.styles__row___yxAup {\n  margin: 10px;\n}\n\n.styles__titleRow___2Wo7J{\n width: 80%;\n height: 25px;\n transform: translate(10%, 0);\n}\n\n.styles__locationRow___4pUnc{\n  width: 80%;\n  height: 25px;\n  transform: translate(10%, 0);\n}\n\n.styles__calendarContainer___1VJEg{\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__dateAndTimeRow___2slG1{\n    height: 25px;\n\n}\n\n.styles__timeInputStart___3ks1Y {\n    margin: 0 auto;\n    margin-left: 35%;\n    width: 10%;\n    text-align: center;\n}\n\n\n.styles__timeInputEnd___3slub {\n    margin: 0 auto;\n    width: 10%;\n    margin-right: 35%;\n    text-align: center;\n}\n\n.styles__timeContainer___sGPPo {\n    display: flex;\n    justify-content: space-around;\n    align-items: baseline;\n}\n.styles__dateAndTimeRow___2slG1{\n\n}\n\n.styles__dateAndTimeRow___2slG1 {\n\n}\n\n.styles__addFriend___1M2M9 {\n  margin-right: 3%;\n}\n\n.styles__deleteFriend___24kv_ {\n  margin-left: 3%; \n}\n\n.styles__dayInput___34ZEW {\n    margin: 0 auto;\n    width:  12%;\n    text-align: center;\n    transform: translate(350%, 0);\n}\n\n.styles__imageRow___3LvJv{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n\n}\n\n.styles__addDeleteFriend___3OR6-{\n   transform: translate(35%, 0);\n}\n\n.styles__descriptionRow___2P7IU{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n}\n\n.styles__dayTime___2hbtx{\n  width: 50%;\n  height: 20px;\n  transform: translate(75%, 0);\n}\n\n.styles__friendContainer___1hYOB {\n    display: flex;\n    justify-content: space-around;\n    align-items: baseline;\n}\n  \n.styles__friendsRow___2i8Mh {\n    height: 25px;\n}\n\n.styles__addItemRow___23xUp {\n    width: 80%;\n    height: 25px;\n    transform: translate(10%, 0);\n    z-index: 3;\n}\n\n\n\n\n/* .editorContainer {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n    margin: 0 auto;\n    margin-top: 300px;\n    height: 1000px;\n    width: 60%;\n    border: 1px solid grey;\n }\n \n .row {\n   margin: 10px;\n }\n \n .titleRow{\n  width: 80%;\n  height: 25px;\n  transform: translate(10%, 0);\n  z-index: 3;\n }\n \n .locationRow{\n   width: 80%;\n   height: 25px;\n   transform: translate(10%, 0);\n }\n \n .friendContainer {\n   display: flex;\n   justify-content: space-around;\n }\n \n .friendsRow {\n   height: 25px;\n }\n \n .addItemRow {\n     width: 80%;\n     height: 25px;\n     transform: translate(10%, 0);\n     z-index: 3;\n }\n .calendarContainer{\n   display: flex;\n   justify-content: space-around;\n }\n \n .dateAndTimeRow{\n     height: 25px;\n }\n \n .dateAndTimeRow{\n \n }\n \n .dateAndTimeRow {\n \n }\n \n .imageRow{\n   height: 300px;\n   width: 70%;\n   margin: 0 auto;\n   transform: translate(20%, 0);\n \n }\n \n .descriptionRow{\n   height: 300px;\n   width: 70%;\n   margin: 0 auto;\n   transform: translate(20%, 0);\n } */", ""]);
+	exports.push([module.id, ".styles__editorContainer___1Cg_p {\n   display: flex;\n   flex-direction: column;\n   justify-content: space-around;\n   margin: 0 auto;\n   margin-top: 300px;\n   height: 2000px;\n   width: 75%;\n   border: 1px solid grey;\n}\n\n.styles__row___yxAup {\n  margin: 10px;\n}\n\n.styles__titleRow___2Wo7J{\n width: 80%;\n height: 25px;\n transform: translate(10%, 0);\n}\n\n.styles__locationRow___4pUnc{\n  width: 80%;\n  height: 25px;\n  transform: translate(10%, 0);\n}\n\n.styles__calendarContainer___1VJEg{\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__dateAndTimeRow___2slG1{\n    height: 25px;\n\n}\n\n.styles__timeInputStart___3ks1Y {\n    margin: 0 auto;\n    margin-left: 35%;\n    width: 10%;\n    text-align: center;\n}\n\n.styles__imageUploadContainer___ZsFyH{\n    transform: translate(38%, 0);\n}\n\n.styles__eventImage___3iZrl {\n    width: 30%;\n    height: 30%;\n    border-radius: 14px;\n}\n\n.styles__timeInputEnd___3slub {\n    margin: 0 auto;\n    width: 10%;\n    margin-right: 35%;\n    text-align: center;\n}\n\n.styles__timeContainer___sGPPo {\n    display: flex;\n    justify-content: space-around;\n    align-items: baseline;\n}\n.styles__dateAndTimeRow___2slG1{\n\n}\n\n.styles__dateAndTimeRow___2slG1 {\n\n}\n\n.styles__addFriend___1M2M9 {\n  margin-right: 3%;\n}\n\n.styles__deleteFriend___24kv_ {\n  margin-left: 3%; \n}\n\n.styles__dayInput___34ZEW {\n    margin: 0 auto;\n    width:  12%;\n    text-align: center;\n    transform: translate(350%, 0);\n}\n\n.styles__imageRow___3LvJv{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n\n}\n\n.styles__addDeleteFriend___3OR6-{\n   transform: translate(35%, 0);\n}\n\n.styles__descriptionRow___2P7IU{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n}\n\n.styles__dayTime___2hbtx{\n  width: 50%;\n  height: 20px;\n  transform: translate(75%, 0);\n}\n\n.styles__friendContainer___1hYOB {\n    display: flex;\n    justify-content: space-around;\n    align-items: baseline;\n}\n  \n.styles__friendsRow___2i8Mh {\n    height: 25px;\n}\n\n.styles__addItemRow___23xUp {\n    width: 80%;\n    height: 25px;\n    transform: translate(10%, 0);\n    z-index: 3;\n}\n\n\n\n\n/* .editorContainer {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n    margin: 0 auto;\n    margin-top: 300px;\n    height: 1000px;\n    width: 60%;\n    border: 1px solid grey;\n }\n \n .row {\n   margin: 10px;\n }\n \n .titleRow{\n  width: 80%;\n  height: 25px;\n  transform: translate(10%, 0);\n  z-index: 3;\n }\n \n .locationRow{\n   width: 80%;\n   height: 25px;\n   transform: translate(10%, 0);\n }\n \n .friendContainer {\n   display: flex;\n   justify-content: space-around;\n }\n \n .friendsRow {\n   height: 25px;\n }\n \n .addItemRow {\n     width: 80%;\n     height: 25px;\n     transform: translate(10%, 0);\n     z-index: 3;\n }\n .calendarContainer{\n   display: flex;\n   justify-content: space-around;\n }\n \n .dateAndTimeRow{\n     height: 25px;\n }\n \n .dateAndTimeRow{\n \n }\n \n .dateAndTimeRow {\n \n }\n \n .imageRow{\n   height: 300px;\n   width: 70%;\n   margin: 0 auto;\n   transform: translate(20%, 0);\n \n }\n \n .descriptionRow{\n   height: 300px;\n   width: 70%;\n   margin: 0 auto;\n   transform: translate(20%, 0);\n } */", ""]);
 	
 	// exports
 	exports.locals = {
@@ -25595,6 +25595,8 @@
 		"calendarContainer": "styles__calendarContainer___1VJEg",
 		"dateAndTimeRow": "styles__dateAndTimeRow___2slG1",
 		"timeInputStart": "styles__timeInputStart___3ks1Y",
+		"imageUploadContainer": "styles__imageUploadContainer___ZsFyH",
+		"eventImage": "styles__eventImage___3iZrl",
 		"timeInputEnd": "styles__timeInputEnd___3slub",
 		"timeContainer": "styles__timeContainer___sGPPo",
 		"addFriend": "styles__addFriend___1M2M9",
@@ -26315,6 +26317,11 @@
 	    }
 	
 	    _createClass(EditEvent, [{
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {
+	            this.setState({ friendFields: [].concat(_toConsumableArray(this.state.friendFields), [_react2.default.createElement(_FriendInvite2.default, { friendNum: ++this.state.friendNum }), _react2.default.createElement(_FriendInvite2.default, { friendNum: ++this.state.friendNum }), _react2.default.createElement(_FriendInvite2.default, { friendNum: ++this.state.friendNum })]) });
+	        }
+	    }, {
 	        key: 'selectImages',
 	        value: function selectImages(event) {
 	            var images = [];
@@ -26363,6 +26370,7 @@
 	    }, {
 	        key: 'deleteFriendField',
 	        value: function deleteFriendField() {
+	            this.state.friendNum--;
 	            this.state.friendFields.splice(this.state.friendFields.length - 1, 1);
 	            this.setState({ friendFields: [].concat(_toConsumableArray(this.state.friendFields)) });
 	        }
@@ -26403,67 +26411,53 @@
 	                        className: _styles2.default.timeInputEnd
 	                    })
 	                ),
-	                _react2.default.createElement('br', null),
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: '' },
-	                    _react2.default.createElement(
-	                        'h1',
-	                        null,
-	                        'Image Uploader'
-	                    ),
-	                    _react2.default.createElement('hr', null),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: '' },
-	                        _react2.default.createElement('input', { className: 'form-control ', type: 'file',
-	                            onChange: this.selectImages, multiple: true })
-	                    ),
-	                    _react2.default.createElement(
-	                        'p',
-	                        { className: 'text-info' },
-	                        this.state.message
-	                    ),
-	                    _react2.default.createElement('br', null),
-	                    _react2.default.createElement('br', null),
-	                    _react2.default.createElement('br', null),
+	                    { className: _styles2.default.imageUploadContainer },
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: '' },
 	                        _react2.default.createElement(
-	                            'button',
-	                            { className: 'btn btn-primary', value: 'Submit',
-	                                onClick: this.uploadImages },
-	                            'Submit'
-	                        )
-	                    )
-	                ),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement('hr', null),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'r' },
-	                    this.state.imageUrls.map(function (url, i) {
-	                        return _react2.default.createElement(
+	                            'h3',
+	                            null,
+	                            'Upload an Image'
+	                        ),
+	                        _react2.default.createElement(
 	                            'div',
-	                            { className: '', key: i },
-	                            console.log(url),
-	                            _react2.default.createElement('img', { src: BASE_URL + url, className: 'img-rounded img-responsive',
-	                                alt: 'not available' }),
-	                            _react2.default.createElement('br', null)
-	                        );
-	                    })
+	                            { className: '' },
+	                            _react2.default.createElement('input', { className: '', type: 'file',
+	                                onChange: this.selectImages, multiple: true })
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            { className: '' },
+	                            this.state.message
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: '' },
+	                            _react2.default.createElement(
+	                                'button',
+	                                { className: 'btn btn-primary', value: 'Submit',
+	                                    onClick: this.uploadImages },
+	                                'Submit'
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'r' },
+	                        this.state.imageUrls.map(function (url, i) {
+	                            return _react2.default.createElement(
+	                                'div',
+	                                { className: '', key: i },
+	                                console.log(url),
+	                                _react2.default.createElement('img', { src: BASE_URL + url, className: _styles2.default.eventImage,
+	                                    alt: 'not available' }),
+	                                _react2.default.createElement('br', null)
+	                            );
+	                        })
+	                    )
 	                ),
 	                _react2.default.createElement(
 	                    'form',
