@@ -25584,7 +25584,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".styles__editorContainer___1Cg_p {\n   display: flex;\n   flex-direction: column;\n   justify-content: space-around;\n   margin: 0 auto;\n   margin-top: 300px;\n   height: 2000px;\n   width: 75%;\n   border: 1px solid grey;\n}\n\n.styles__row___yxAup {\n  margin: 10px;\n}\n\n.styles__titleRow___2Wo7J{\n width: 80%;\n height: 25px;\n transform: translate(10%, 0);\n}\n\n.styles__locationRow___4pUnc{\n  width: 80%;\n  height: 25px;\n  transform: translate(10%, 0);\n}\n\n.styles__calendarContainer___1VJEg{\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__dateAndTimeRow___2slG1{\n    height: 25px;\n\n}\n\n.styles__timeInputStart___3ks1Y {\n    margin: 0 auto;\n    margin-left: 35%;\n    width: 10%;\n    text-align: center;\n}\n\n\n.styles__timeInputEnd___3slub {\n    margin: 0 auto;\n    width: 10%;\n    margin-right: 35%;\n    text-align: center;\n}\n\n.styles__timeContainer___sGPPo {\n    display: flex;\n    justify-content: space-around;\n    align-items: baseline;\n}\n.styles__dateAndTimeRow___2slG1{\n\n}\n\n.styles__dateAndTimeRow___2slG1 {\n\n}\n\n.styles__dayInput___34ZEW {\n    margin: 0 auto;\n    width:  12%;\n    text-align: center;\n    transform: translate(350%, 0);\n}\n\n.styles__imageRow___3LvJv{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n\n}\n\n.styles__descriptionRow___2P7IU{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n}\n\n.styles__dayTime___2hbtx{\n  width: 50%;\n  height: 20px;\n  transform: translate(75%, 0);\n}\n\n.styles__friendContainer___1hYOB {\n    display: flex;\n    justify-content: space-around;\n    align-items: baseline;\n}\n  \n.styles__friendsRow___2i8Mh {\n    height: 25px;\n}\n\n.styles__addItemRow___23xUp {\n    width: 80%;\n    height: 25px;\n    transform: translate(10%, 0);\n    z-index: 3;\n}\n\n.styles__addFriend___1M2M9 {\n}\n\n\n\n/* .editorContainer {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n    margin: 0 auto;\n    margin-top: 300px;\n    height: 1000px;\n    width: 60%;\n    border: 1px solid grey;\n }\n \n .row {\n   margin: 10px;\n }\n \n .titleRow{\n  width: 80%;\n  height: 25px;\n  transform: translate(10%, 0);\n  z-index: 3;\n }\n \n .locationRow{\n   width: 80%;\n   height: 25px;\n   transform: translate(10%, 0);\n }\n \n .friendContainer {\n   display: flex;\n   justify-content: space-around;\n }\n \n .friendsRow {\n   height: 25px;\n }\n \n .addItemRow {\n     width: 80%;\n     height: 25px;\n     transform: translate(10%, 0);\n     z-index: 3;\n }\n .calendarContainer{\n   display: flex;\n   justify-content: space-around;\n }\n \n .dateAndTimeRow{\n     height: 25px;\n }\n \n .dateAndTimeRow{\n \n }\n \n .dateAndTimeRow {\n \n }\n \n .imageRow{\n   height: 300px;\n   width: 70%;\n   margin: 0 auto;\n   transform: translate(20%, 0);\n \n }\n \n .descriptionRow{\n   height: 300px;\n   width: 70%;\n   margin: 0 auto;\n   transform: translate(20%, 0);\n } */", ""]);
+	exports.push([module.id, ".styles__editorContainer___1Cg_p {\n   display: flex;\n   flex-direction: column;\n   justify-content: space-around;\n   margin: 0 auto;\n   margin-top: 300px;\n   height: 2000px;\n   width: 75%;\n   border: 1px solid grey;\n}\n\n.styles__row___yxAup {\n  margin: 10px;\n}\n\n.styles__titleRow___2Wo7J{\n width: 80%;\n height: 25px;\n transform: translate(10%, 0);\n}\n\n.styles__locationRow___4pUnc{\n  width: 80%;\n  height: 25px;\n  transform: translate(10%, 0);\n}\n\n.styles__calendarContainer___1VJEg{\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__dateAndTimeRow___2slG1{\n    height: 25px;\n\n}\n\n.styles__timeInputStart___3ks1Y {\n    margin: 0 auto;\n    margin-left: 35%;\n    width: 10%;\n    text-align: center;\n}\n\n\n.styles__timeInputEnd___3slub {\n    margin: 0 auto;\n    width: 10%;\n    margin-right: 35%;\n    text-align: center;\n}\n\n.styles__timeContainer___sGPPo {\n    display: flex;\n    justify-content: space-around;\n    align-items: baseline;\n}\n.styles__dateAndTimeRow___2slG1{\n\n}\n\n.styles__dateAndTimeRow___2slG1 {\n\n}\n\n.styles__addFriend___1M2M9 {\n  margin-right: 3%;\n}\n\n.styles__deleteFriend___24kv_ {\n  margin-left: 3%; \n}\n\n.styles__dayInput___34ZEW {\n    margin: 0 auto;\n    width:  12%;\n    text-align: center;\n    transform: translate(350%, 0);\n}\n\n.styles__imageRow___3LvJv{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n\n}\n\n.styles__addDeleteFriend___3OR6-{\n   transform: translate(35%, 0);\n}\n\n.styles__descriptionRow___2P7IU{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n}\n\n.styles__dayTime___2hbtx{\n  width: 50%;\n  height: 20px;\n  transform: translate(75%, 0);\n}\n\n.styles__friendContainer___1hYOB {\n    display: flex;\n    justify-content: space-around;\n    align-items: baseline;\n}\n  \n.styles__friendsRow___2i8Mh {\n    height: 25px;\n}\n\n.styles__addItemRow___23xUp {\n    width: 80%;\n    height: 25px;\n    transform: translate(10%, 0);\n    z-index: 3;\n}\n\n\n\n\n/* .editorContainer {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n    margin: 0 auto;\n    margin-top: 300px;\n    height: 1000px;\n    width: 60%;\n    border: 1px solid grey;\n }\n \n .row {\n   margin: 10px;\n }\n \n .titleRow{\n  width: 80%;\n  height: 25px;\n  transform: translate(10%, 0);\n  z-index: 3;\n }\n \n .locationRow{\n   width: 80%;\n   height: 25px;\n   transform: translate(10%, 0);\n }\n \n .friendContainer {\n   display: flex;\n   justify-content: space-around;\n }\n \n .friendsRow {\n   height: 25px;\n }\n \n .addItemRow {\n     width: 80%;\n     height: 25px;\n     transform: translate(10%, 0);\n     z-index: 3;\n }\n .calendarContainer{\n   display: flex;\n   justify-content: space-around;\n }\n \n .dateAndTimeRow{\n     height: 25px;\n }\n \n .dateAndTimeRow{\n \n }\n \n .dateAndTimeRow {\n \n }\n \n .imageRow{\n   height: 300px;\n   width: 70%;\n   margin: 0 auto;\n   transform: translate(20%, 0);\n \n }\n \n .descriptionRow{\n   height: 300px;\n   width: 70%;\n   margin: 0 auto;\n   transform: translate(20%, 0);\n } */", ""]);
 	
 	// exports
 	exports.locals = {
@@ -25597,14 +25597,16 @@
 		"timeInputStart": "styles__timeInputStart___3ks1Y",
 		"timeInputEnd": "styles__timeInputEnd___3slub",
 		"timeContainer": "styles__timeContainer___sGPPo",
+		"addFriend": "styles__addFriend___1M2M9",
+		"deleteFriend": "styles__deleteFriend___24kv_",
 		"dayInput": "styles__dayInput___34ZEW",
 		"imageRow": "styles__imageRow___3LvJv",
+		"addDeleteFriend": "styles__addDeleteFriend___3OR6-",
 		"descriptionRow": "styles__descriptionRow___2P7IU",
 		"dayTime": "styles__dayTime___2hbtx",
 		"friendContainer": "styles__friendContainer___1hYOB",
 		"friendsRow": "styles__friendsRow___2i8Mh",
-		"addItemRow": "styles__addItemRow___23xUp",
-		"addFriend": "styles__addFriend___1M2M9"
+		"addItemRow": "styles__addItemRow___23xUp"
 	};
 
 /***/ }),
@@ -26262,6 +26264,8 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+	
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26306,7 +26310,7 @@
 	        key: 'addFriend',
 	        value: function addFriend() {
 	            this.state.friendNum++;
-	            this.setState({ friendFields: [].concat(_toConsumableArray(this.state.friendFields), [_react2.default.createElement(_FriendInvite2.default, null)]) });
+	            this.setState({ friendFields: [].concat(_toConsumableArray(this.state.friendFields), [_react2.default.createElement(_FriendInvite2.default, { friendNum: this.state.friendNum })]) });
 	        }
 	    }, {
 	        key: 'deleteFriendField',
@@ -26369,15 +26373,15 @@
 	                ),
 	                _react2.default.createElement(
 	                    'ul',
-	                    null,
+	                    { className: _styles2.default.addDeleteFriend },
 	                    _react2.default.createElement(
 	                        'button',
-	                        { onClick: this.addFriend, className: _styles2.default.addFriend },
+	                        _defineProperty({ className: _styles2.default.addFriend, onClick: this.addFriend }, 'className', _styles2.default.addFriend),
 	                        ' Add Guest'
 	                    ),
 	                    _react2.default.createElement(
 	                        'button',
-	                        { onClick: this.deleteFriendField, className: _styles2.default.addFriend },
+	                        _defineProperty({ className: _styles2.default.deleteFriend, onClick: this.deleteFriendField }, 'className', _styles2.default.addFriend),
 	                        ' Delete Guest '
 	                    )
 	                ),
@@ -26457,8 +26461,6 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var _this2 = this;
-	
 	      var dishes = this.state.dishes;
 	      return _react2.default.createElement(
 	        'div',
@@ -26470,7 +26472,7 @@
 	            'div',
 	            null,
 	            ' ',
-	            this.props.number,
+	            this.props.friendNum,
 	            ' '
 	          ),
 	          _react2.default.createElement('input', { className: _styles2.default.friendsRow,
@@ -26489,13 +26491,6 @@
 	            'button',
 	            { onClick: this.deleteDish },
 	            'Delete a Dish'
-	          ),
-	          _react2.default.createElement(
-	            'button',
-	            { onClick: function onClick() {
-	                _this2.deleteDish;
-	              } },
-	            'Delete Friend'
 	          )
 	        ),
 	        _react2.default.createElement(

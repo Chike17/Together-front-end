@@ -63,6 +63,14 @@
 
 }
 
+.addFriend {
+  margin-right: 3%;
+}
+
+.deleteFriend {
+  margin-left: 3%; 
+}
+
 .dayInput {
     margin: 0 auto;
     width:  12%;
@@ -76,6 +84,10 @@
   margin: 0 auto;
   transform: translate(20%, 0);
 
+}
+
+.addDeleteFriend{
+   transform: translate(35%, 0);
 }
 
 .descriptionRow{
@@ -108,8 +120,6 @@
     z-index: 3;
 }
 
-.addFriend {
-}
 
 
 
