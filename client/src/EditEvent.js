@@ -9,7 +9,6 @@ import DateFnsUtils from '@date-io/date-fns';
 import { withStyles } from '@material-ui/core/styles';
 import { MuiPickersUtilsProvider, DatePicker } from 'material-ui-pickers';
 import TimeInput from 'material-ui-time-picker';
-
 class EditEvent extends React.Component {
     constructor(props) {
       super(props);
@@ -24,20 +23,23 @@ class EditEvent extends React.Component {
         guest: ['guest 1', 'guest 2', 'guest 3'],
         value: "some data",
         friendFields: [],
-        friendNum: 1
+        friendNum: 0
       };
       this.dummyFunc = this.dummyFunc.bind(this);
       this.addFriend = this.addFriend.bind(this);
-    //   this.deleteFriendField = this.deleteFriendField.bind(this);
+      this.deleteFriendField = this.deleteFriendField.bind(this);
     }
     dummyFunc (e) {
         console.log(e.target.value);
     }
-    addFriend () {        
-        this.setState({friendFields: [...this.state.friendFields, <FriendInvite />]});
+    addFriend () {    
+        this.state.friendNum++;    
+        this.setState({friendFields: [...this.state.friendFields, <FriendInvite 
+                                                                        number ={this.state.friendNum} />]});
     }
     deleteFriendField (friendIndex) {
-       this.state.friendFields.splice(friendIndex, 1);
+       this.state.friendFields.splice(friendIndex, 1); 
+       this.setState({friendFields: [...this.state.friendFields]});
     }
     render() {
     return (
@@ -92,7 +94,6 @@ class EditEvent extends React.Component {
             <button onClick = {this.addFriend} className={styles.addFriend} > Add A Friend</button> 
 
             {this.state.friendFields}
-            {this.state.friendNum}
         </div>
       );
     }
