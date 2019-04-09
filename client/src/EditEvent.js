@@ -34,12 +34,11 @@ class EditEvent extends React.Component {
     }
     addFriend () {    
         this.state.friendNum++;    
-        this.setState({friendFields: [...this.state.friendFields, <FriendInvite 
-                                                                        number ={this.state.friendNum} />]});
+        this.setState({friendFields: [...this.state.friendFields, <FriendInvite />]});
     }
-    deleteFriendField (friendIndex) {
-       this.state.friendFields.splice(friendIndex, 1); 
-       this.setState({friendFields: [...this.state.friendFields]});
+    deleteFriendField () {    
+        this.state.friendFields.splice(this.state.friendFields.length -1, 1);
+        this.setState({friendFields: [...this.state.friendFields]}); 
     }
     render() {
     return (
@@ -90,8 +89,10 @@ class EditEvent extends React.Component {
                 onChange={this.dummyFunc}  
                 placeholder = "Add a Description" />
             </form>
-            
-            <button onClick = {this.addFriend} className={styles.addFriend} > Add A Friend</button> 
+             <ul>
+                <button onClick = {this.addFriend} className={styles.addFriend} > Add Guest</button> 
+                <button onClick = {this.deleteFriendField} className={styles.addFriend} > Delete Guest </button>
+            </ul> 
 
             {this.state.friendFields}
         </div>

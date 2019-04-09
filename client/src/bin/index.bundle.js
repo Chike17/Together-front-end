@@ -26306,13 +26306,12 @@
 	        key: 'addFriend',
 	        value: function addFriend() {
 	            this.state.friendNum++;
-	            this.setState({ friendFields: [].concat(_toConsumableArray(this.state.friendFields), [_react2.default.createElement(_FriendInvite2.default, {
-	                    number: this.state.friendNum })]) });
+	            this.setState({ friendFields: [].concat(_toConsumableArray(this.state.friendFields), [_react2.default.createElement(_FriendInvite2.default, null)]) });
 	        }
 	    }, {
 	        key: 'deleteFriendField',
-	        value: function deleteFriendField(friendIndex) {
-	            this.state.friendFields.splice(friendIndex, 1);
+	        value: function deleteFriendField() {
+	            this.state.friendFields.splice(this.state.friendFields.length - 1, 1);
 	            this.setState({ friendFields: [].concat(_toConsumableArray(this.state.friendFields)) });
 	        }
 	    }, {
@@ -26369,9 +26368,18 @@
 	                        placeholder: 'Add a Description' })
 	                ),
 	                _react2.default.createElement(
-	                    'button',
-	                    { onClick: this.addFriend, className: _styles2.default.addFriend },
-	                    ' Add A Friend'
+	                    'ul',
+	                    null,
+	                    _react2.default.createElement(
+	                        'button',
+	                        { onClick: this.addFriend, className: _styles2.default.addFriend },
+	                        ' Add Guest'
+	                    ),
+	                    _react2.default.createElement(
+	                        'button',
+	                        { onClick: this.deleteFriendField, className: _styles2.default.addFriend },
+	                        ' Delete Guest '
+	                    )
 	                ),
 	                this.state.friendFields
 	            );
