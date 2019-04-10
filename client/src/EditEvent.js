@@ -18,7 +18,7 @@ class EditEvent extends React.Component {
       this.state = {
         startTime: '9:00 am',
         endTIme: '5:00  pm',
-        day: 'some day',
+        day: new Date(),
         month: 'some month ',
         title:  'some title', 
         location: 'some location', 
@@ -32,13 +32,13 @@ class EditEvent extends React.Component {
         message: '',
         title:'',
         location: '',
-        day: 'some day',
-        startTime: 'dummy start',
-        endTime: 'dummy end',
+        startTime: new Date(),
+        endTime: new Date(),
         description: 'description',
         guests: {},
         events: []
       };
+
       this.selectImages = this.selectImages.bind(this);
       this.uploadImages = this.uploadImages.bind(this);
       this.dummyFunc = this.dummyFunc.bind(this);
@@ -106,8 +106,36 @@ class EditEvent extends React.Component {
         this.state.friendFields.splice(this.state.friendFields.length -1, 1);
         this.setState({friendFields: [...this.state.friendFields]}); 
     }
-    submitEvent (friend) {
-        console.log(friend);
+    submitEvent () {
+        let event = {
+            description: this.state.description,
+            title: this.state.title,
+            endTime: this.state.endTime.toLocaleTimeString(),
+            startTime: this.state.startTime.toLocaleTimeString(),
+            day: this.state.day.toLocaleDateString(), 
+            location: this.state.location,
+            host: null,
+            guests: []
+        }
+        $('.friend').each(function(index, friend){
+            let inputs = $(friend).find(':input');
+            let guest = {
+                dishes: []
+            };
+            inputs.each((index, input)=>{
+                if (index === 0){
+                    guest.firstName = input.value
+                }  else if (index === 1) {
+                    guest.email = input.value;
+                } else {
+                    if  (input.value.length) {
+                        guest.dishes.push(input.value);
+                    }
+                }
+            });
+            event.guests.push(guest);
+          });
+        console.log(event);
     }
     handleStartChange(time) {
         let context = this;
@@ -184,12 +212,12 @@ class EditEvent extends React.Component {
         <div className={styles.editorContainer}>
         
             <input className = {styles.titleRow}
-            type="text" defaultValue= {this.state.value}
+            type="text" defaultValue= {""}
             onChange={this.handleTitle}  
             placeholder = "Title" />
 
             <input className = {styles.locationRow}
-            type="text" defaultValue= {this.state.value}
+            type="text" defaultValue= {""}
             onChange={this.handleLocation}  
             placeholder = "Location" />
 
@@ -197,7 +225,7 @@ class EditEvent extends React.Component {
                 <DatePicker
                 margin="normal"
                 label=""
-                value={new Date()}
+                value={this.state.day}
                 onChange={this.handleDayChange}
                 className = {styles.dayInput}
                 />
@@ -243,7 +271,7 @@ class EditEvent extends React.Component {
 
             <form >
                 <textarea className = {styles.descriptionRow}
-                type="text" defaultValue= {this.state.value}
+                type="text" defaultValue= {""}
                 onChange={this.handleDescription} 
                 placeholder = "Add a Description" />
             </form>
@@ -254,7 +282,7 @@ class EditEvent extends React.Component {
 
             {this.state.friendFields}
 
-            <button className={styles.submitButton} onClick = {this.submit}> Submit Event  </button>
+            <button className={styles.submitButton} onClick = {this.submitEvent}> Submit Event  </button>
             
         </div>
       );

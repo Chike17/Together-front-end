@@ -25584,7 +25584,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".styles__editorContainer___1Cg_p {\n   display: flex;\n   flex-direction: column;\n   justify-content: space-around;\n   margin: 0 auto;\n   margin-top: 300px;\n   height: 2000px;\n   width: 75%;\n   border: 1px solid grey;\n}\n\n.styles__row___yxAup {\n  margin: 10px;\n}\n\n.styles__titleRow___2Wo7J{\n width: 80%;\n height: 25px;\n transform: translate(10%, 0);\n}\n\n.styles__locationRow___4pUnc{\n  width: 80%;\n  height: 25px;\n  transform: translate(10%, 0);\n}\n\n.styles__calendarContainer___1VJEg{\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__dateAndTimeRow___2slG1{\n    height: 25px;\n\n}\n\n.styles__timeInputStart___3ks1Y {\n    margin: 0 auto;\n    margin-left: 35%;\n    width: 10%;\n    text-align: center;\n}\n\n.styles__imageUploadContainer___ZsFyH{\n    transform: translate(38%, 0);\n}\n\n.styles__eventImage___3iZrl {\n    width: 30%;\n    height: 30%;\n    border-radius: 14px;\n    border-top: 25px;\n}\n\n.styles__submitButton___cSXCx {\n    width: 30% !important;\n    height: 30px !important;\n}\n\n.styles__timeInputEnd___3slub {\n    margin: 0 auto;\n    width: 10%;\n    margin-right: 35%;\n    text-align: center;\n}\n\n.styles__timeContainer___sGPPo {\n    display: flex;\n    justify-content: space-around;\n    align-items: baseline;\n}\n.styles__dateAndTimeRow___2slG1{\n\n}\n\n.styles__dateAndTimeRow___2slG1 {\n\n}\n\n.styles__addFriend___1M2M9 {\n  margin-right: 3%;\n}\n\n.styles__deleteFriend___24kv_ {\n  margin-left: 3%; \n}\n\n.styles__dayInput___34ZEW {\n    margin: 0 auto;\n    width:  12%;\n    text-align: center;\n    transform: translate(350%, 0);\n}\n\n.styles__imageRow___3LvJv{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n\n}\n\n.styles__addDeleteFriend___3OR6-{\n   transform: translate(35%, 0);\n}\n\n.styles__descriptionRow___2P7IU{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n}\n\n.styles__dayTime___2hbtx{\n  width: 50%;\n  height: 20px;\n  transform: translate(75%, 0);\n}\n\n.styles__friendContainer___1hYOB {\n    display: flex;\n    justify-content: space-around;\n    align-items: baseline;\n}\n  \n.styles__friendsRow___2i8Mh {\n    height: 25px;\n}\n\n.styles__addItemRow___23xUp {\n    width: 80%;\n    height: 25px;\n    transform: translate(10%, 0);\n    z-index: 3;\n}", ""]);
+	exports.push([module.id, ".styles__editorContainer___1Cg_p {\n   display: flex;\n   flex-direction: column;\n   justify-content: space-around;\n   margin: 0 auto;\n   margin-top: 300px;\n   height: 2000px;\n   width: 75%;\n   border: 1px solid grey;\n}\n\n.styles__row___yxAup {\n  margin: 10px;\n}\n\n.styles__titleRow___2Wo7J{\n width: 80%;\n height: 25px;\n transform: translate(10%, 0);\n}\n\n.styles__locationRow___4pUnc{\n  width: 80%;\n  height: 25px;\n  transform: translate(10%, 0);\n}\n\n.styles__calendarContainer___1VJEg{\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__dateAndTimeRow___2slG1{\n    height: 25px;\n\n}\n\n.styles__timeInputStart___3ks1Y {\n    margin: 0 auto;\n    margin-left: 35%;\n    width: 10%;\n    text-align: center;\n}\n\n.styles__imageUploadContainer___ZsFyH{\n    transform: translate(38%, 0);\n}\n\n.styles__eventImage___3iZrl {\n    width: 30%;\n    height: 30%;\n    border-radius: 14px;\n    margin-top: 25px;\n}\n\n.styles__submitButton___cSXCx {\n    width: 30% !important;\n    height: 30px !important;\n}\n\n.styles__timeInputEnd___3slub {\n    margin: 0 auto;\n    width: 10%;\n    margin-right: 35%;\n    text-align: center;\n}\n\n.styles__timeContainer___sGPPo {\n    display: flex;\n    justify-content: space-around;\n    align-items: baseline;\n}\n.styles__dateAndTimeRow___2slG1{\n\n}\n\n.styles__dateAndTimeRow___2slG1 {\n\n}\n\n.styles__addFriend___1M2M9 {\n  margin-right: 3%;\n}\n\n.styles__deleteFriend___24kv_ {\n  margin-left: 3%; \n}\n\n.styles__dayInput___34ZEW {\n    margin: 0 auto;\n    width:  12%;\n    text-align: center;\n    transform: translate(350%, 0);\n}\n\n.styles__imageRow___3LvJv{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n\n}\n\n.styles__addDeleteFriend___3OR6-{\n   transform: translate(35%, 0);\n}\n\n.styles__descriptionRow___2P7IU{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n}\n\n.styles__dayTime___2hbtx{\n  width: 50%;\n  height: 20px;\n  transform: translate(75%, 0);\n}\n\n.styles__friendContainer___1hYOB {\n    display: flex;\n    justify-content: space-around;\n    align-items: baseline;\n}\n  \n.styles__friendsRow___2i8Mh {\n    height: 25px;\n}\n\n.styles__addItemRow___23xUp {\n    width: 80%;\n    height: 25px;\n    transform: translate(10%, 0);\n    z-index: 3;\n}", ""]);
 	
 	// exports
 	exports.locals = {
@@ -26296,7 +26296,7 @@
 	        _this.state = (_this$state = {
 	            startTime: '9:00 am',
 	            endTIme: '5:00  pm',
-	            day: 'some day',
+	            day: new Date(),
 	            month: 'some month ',
 	            title: 'some title',
 	            location: 'some location',
@@ -26308,7 +26308,8 @@
 	            images: [],
 	            imageUrls: [],
 	            message: ''
-	        }, _defineProperty(_this$state, 'title', ''), _defineProperty(_this$state, 'location', ''), _defineProperty(_this$state, 'day', 'some day'), _defineProperty(_this$state, 'startTime', 'dummy start'), _defineProperty(_this$state, 'endTime', 'dummy end'), _defineProperty(_this$state, 'description', 'description'), _defineProperty(_this$state, 'guests', {}), _defineProperty(_this$state, 'events', []), _this$state);
+	        }, _defineProperty(_this$state, 'title', ''), _defineProperty(_this$state, 'location', ''), _defineProperty(_this$state, 'startTime', new Date()), _defineProperty(_this$state, 'endTime', new Date()), _defineProperty(_this$state, 'description', 'description'), _defineProperty(_this$state, 'guests', {}), _defineProperty(_this$state, 'events', []), _this$state);
+	
 	        _this.selectImages = _this.selectImages.bind(_this);
 	        _this.uploadImages = _this.uploadImages.bind(_this);
 	        _this.dummyFunc = _this.dummyFunc.bind(_this);
@@ -26398,8 +26399,36 @@
 	        }
 	    }, {
 	        key: 'submitEvent',
-	        value: function submitEvent(friend) {
-	            console.log(friend);
+	        value: function submitEvent() {
+	            var event = {
+	                description: this.state.description,
+	                title: this.state.title,
+	                endTime: this.state.endTime.toLocaleTimeString(),
+	                startTime: this.state.startTime.toLocaleTimeString(),
+	                day: this.state.day.toLocaleDateString(),
+	                location: this.state.location,
+	                host: null,
+	                guests: []
+	            };
+	            $('.friend').each(function (index, friend) {
+	                var inputs = $(friend).find(':input');
+	                var guest = {
+	                    dishes: []
+	                };
+	                inputs.each(function (index, input) {
+	                    if (index === 0) {
+	                        guest.firstName = input.value;
+	                    } else if (index === 1) {
+	                        guest.email = input.value;
+	                    } else {
+	                        if (input.value.length) {
+	                            guest.dishes.push(input.value);
+	                        }
+	                    }
+	                });
+	                event.guests.push(guest);
+	            });
+	            console.log(event);
 	        }
 	    }, {
 	        key: 'handleStartChange',
@@ -26495,11 +26524,11 @@
 	                'div',
 	                { className: _styles2.default.editorContainer },
 	                _react2.default.createElement('input', { className: _styles2.default.titleRow,
-	                    type: 'text', defaultValue: this.state.value,
+	                    type: 'text', defaultValue: "",
 	                    onChange: this.handleTitle,
 	                    placeholder: 'Title' }),
 	                _react2.default.createElement('input', { className: _styles2.default.locationRow,
-	                    type: 'text', defaultValue: this.state.value,
+	                    type: 'text', defaultValue: "",
 	                    onChange: this.handleLocation,
 	                    placeholder: 'Location' }),
 	                _react2.default.createElement(
@@ -26508,7 +26537,7 @@
 	                    _react2.default.createElement(_materialUiPickers.DatePicker, {
 	                        margin: 'normal',
 	                        label: '',
-	                        value: new Date(),
+	                        value: this.state.day,
 	                        onChange: this.handleDayChange,
 	                        className: _styles2.default.dayInput
 	                    })
@@ -26579,7 +26608,7 @@
 	                    'form',
 	                    null,
 	                    _react2.default.createElement('textarea', { className: _styles2.default.descriptionRow,
-	                        type: 'text', defaultValue: this.state.value,
+	                        type: 'text', defaultValue: "",
 	                        onChange: this.handleDescription,
 	                        placeholder: 'Add a Description' })
 	                ),
@@ -26600,7 +26629,7 @@
 	                this.state.friendFields,
 	                _react2.default.createElement(
 	                    'button',
-	                    { className: _styles2.default.submitButton, onClick: this.submit },
+	                    { className: _styles2.default.submitButton, onClick: this.submitEvent },
 	                    ' Submit Event  '
 	                )
 	            );
@@ -26754,7 +26783,7 @@
 	      var dishes = this.state.dishes;
 	      return _react2.default.createElement(
 	        'div',
-	        null,
+	        { className: 'friend' },
 	        _react2.default.createElement(
 	          'div',
 	          { className: _styles2.default.friendContainer },

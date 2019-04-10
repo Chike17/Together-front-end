@@ -84,9 +84,9 @@ class FriendInvite extends React.Component {
     render() {
       let dishes = this.state.dishes;
       return (
-        <div>
+        <div  className = {'friend'}>
             <div className = {styles.friendContainer}> 
-                <div> {this.props.friendNum} </div>
+              <div> {this.props.friendNum} </div>
                 <input className = {styles.friendsRow}
                 type="text"
                 onChange={this.addFriendName}
@@ -103,10 +103,10 @@ class FriendInvite extends React.Component {
 
                 <button onClick = {this.deletDishEntry}> 
                   Delete a Dish
-                </button>  
-
+                </button>
                 </div>
-                  {dishes}
+                {dishes}
+                  
         </div>
       );
     }
