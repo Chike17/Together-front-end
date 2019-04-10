@@ -12,9 +12,6 @@ import TimeInput from 'material-ui-time-picker'
 import axios from 'axios';
 const BASE_URL = 'http://localhost:8888/';
 
-
-// import ImageUploader from  './ImageUploader';
-
 class EditEvent extends React.Component {
     constructor(props) {
       super(props);
@@ -32,21 +29,35 @@ class EditEvent extends React.Component {
         friendNum: 0,
         images: [],
         imageUrls: [],
-        message: ''
+        message: '',
+        title:'',
+        location: '',
+        day: 'some day',
+        startTime: 'dummy start',
+        endTime: 'dummy end',
+        description: 'description',
+        guests: {},
+        events: []
       };
       this.selectImages = this.selectImages.bind(this);
       this.uploadImages = this.uploadImages.bind(this);
       this.dummyFunc = this.dummyFunc.bind(this);
       this.addFriend = this.addFriend.bind(this);
       this.deleteFriendField = this.deleteFriendField.bind(this);
+      this.submitEvent = this.submitEvent.bind(this);
+      this.addEvent = this.addEvent.bind(this);
+      this.handleStartChange = this.handleStartChange.bind(this);
+      this.handleEndChange = this.handleEndChange.bind(this);
+      this.handleDayChange = this.handleDayChange.bind(this);
+      this.handleTitle= this.handleTitle.bind(this);
+      this.handleLocation= this.handleLocation.bind(this);
+      this.handleDescription= this.handleDescription.bind(this);
     }
     componentDidMount () {
         this.setState({friendFields: [...this.state.friendFields, 
-        <FriendInvite friendNum = {++this.state.friendNum}/>,
-        <FriendInvite friendNum = {++this.state.friendNum}/>,
-        <FriendInvite friendNum = {++this.state.friendNum}/>
+        <FriendInvite friendNum = {++this.state.friendNum} addEvent = {this.addEvent }/>,
+        <FriendInvite friendNum = {++this.state.friendNum} addEvent = {this.addEvent }/> 
     ]});
-
     }
     selectImages(event) {
         let images = []
@@ -77,14 +88,95 @@ class EditEvent extends React.Component {
     dummyFunc(e) {
         console.log(e.target.value);
     }
+    addGuest (guest, dishes){
+        this.guests[guest] = dishes;
+    }
+    addEvent(event) {
+        this.events.push(event);
+    }
     addFriend() {    
         this.state.friendNum++;    
-        this.setState({friendFields: [...this.state.friendFields, <FriendInvite friendNum = {this.state.friendNum}/>]});
+        this.setState({friendFields: [...this.state.friendFields, <FriendInvite 
+                                                                    friendNum = {this.state.friendNum}
+                                                                    submitEvent = {this.submitEvent}
+                                                                    addEvent = {this.addEvent}/>]});
     }
     deleteFriendField(){
         this.state.friendNum--;
         this.state.friendFields.splice(this.state.friendFields.length -1, 1);
         this.setState({friendFields: [...this.state.friendFields]}); 
+    }
+    submitEvent (friend) {
+        console.log(friend);
+    }
+    handleStartChange(time) {
+        let context = this;
+        this.setState({startTime: time}, () => {
+            console.log(context.state.startTime);
+        });
+    }
+    handleEndChange (time) {
+        let context = this;
+        this.setState({endTime:time}, () => {
+            console.log(context.state.endTime);
+        });
+    }
+    handleDayChange (day) {
+        let context = this;
+        console.log(day);
+        this.setState({day:day}, () => {
+            console.log(context.state.day);
+        });
+    }
+    addEvent (friend) {
+        // this.state.events.push({
+        //                         name: friend.name,
+        //                         email: friend.email,
+        //                         dishes: friend.bringDishes,
+        //                         startTime: this.state.startTime,
+        //                         endTime: this.state.endTime, 
+        //                         day: this.state.day
+        //                     });
+        let context = this;
+        this.state.events = [];
+        // this.setState({
+        //     startTime: 
+        // });
+        this.setState({events: [...this.state.events, {name: friend.name,
+                                                       email: friend.email,
+                                                       dishes: friend.bringDishes,
+                                                       startTime: this.state.startTime,
+                                                       endTime: this.state.endTime,
+                                                       day: this.state.day,
+                                                       description: this.state.description
+                                            
+                                                       }]}, () => {
+                                                        console.log(this.state.events, '000000000000000');
+                                                       });  
+    }
+    submit () {
+       console.log(this.state.events, '***********');
+    }
+    handleDescription(e) {
+        let context = this;
+        this.setState({description:e.target.value}, () => {
+            console.log(context.state.description); 
+        });
+    }
+    handleTitle(e) {
+        let context = this;
+        this.setState({title:e.target.value}, () => {
+            console.log(context.state.title); 
+        });
+    }
+    handleLocation(e) {
+        let context = this;
+        this.setState({location:e.target.value}, () => {
+            console.log(context.state.location); 
+        });
+    }
+    event() {
+
     }
     render() {
     return (
@@ -93,20 +185,20 @@ class EditEvent extends React.Component {
         
             <input className = {styles.titleRow}
             type="text" defaultValue= {this.state.value}
-            onChange={this.dummyFunc}  
+            onChange={this.handleTitle}  
             placeholder = "Title" />
 
             <input className = {styles.locationRow}
             type="text" defaultValue= {this.state.value}
-            onChange={this.dummyFunc}  
+            onChange={this.handleLocation}  
             placeholder = "Location" />
 
             <MuiPickersUtilsProvider utils={DateFnsUtils}>
                 <DatePicker
                 margin="normal"
                 label=""
-                value={'2014-08-18T21:11:54'}
-                onChange={this.handleDateChange}
+                value={new Date()}
+                onChange={this.handleDayChange}
                 className = {styles.dayInput}
                 />
             </MuiPickersUtilsProvider>
@@ -115,10 +207,12 @@ class EditEvent extends React.Component {
                 <TimeInput
                 label = "start time"
                 className= {styles.timeInputStart}
+                onChange= {this.handleStartChange}
                 />
                 <TimeInput
                 label = "end Time"
                 className= {styles.timeInputEnd}
+                onChange = {this.handleEndChange}
                 />
             </div>
                 <div className = {styles.imageUploadContainer}>
@@ -150,7 +244,7 @@ class EditEvent extends React.Component {
             <form >
                 <textarea className = {styles.descriptionRow}
                 type="text" defaultValue= {this.state.value}
-                onChange={this.dummyFunc}  
+                onChange={this.handleDescription} 
                 placeholder = "Add a Description" />
             </form>
              <ul className = {styles.addDeleteFriend}>
@@ -159,6 +253,9 @@ class EditEvent extends React.Component {
             </ul> 
 
             {this.state.friendFields}
+
+            <button className={styles.submitButton} onClick = {this.submit}> Submit Event  </button>
+            
         </div>
       );
     }
