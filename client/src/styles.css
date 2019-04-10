@@ -160,12 +160,12 @@
 }
 
 .titleEntry {
-  margin:5px;
+  margin:20px;
 }
 
 .entryImage {
   transform: translate(38%, 0);
-  margin:5px;
+  margin:20px;
 }
 
 .locationEntry {
@@ -179,3 +179,50 @@
   align-items: center;
   margin-top: 250px;
 }
+
+.eventReadContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 250px;
+  margin-bottom: 250px;
+  
+}
+
+.singleDateTitle {
+  display: flex;
+  align-items: baseline;
+}
+
+.singleDate {
+  margin: 30px;
+}
+
+.singleTitle {
+  margin: 30px;
+}
+
+.singleDescription {
+  margin: 30px;
+}
+
+.singleImage {
+  margin: 30px;
+}
+
+.singleStartEnd {
+   display: flex;
+}
+
+.singleStart {
+   margin: 30px;
+}
+
+.singleEnd {
+  margin: 30px;
+}
+
+
+
+
+

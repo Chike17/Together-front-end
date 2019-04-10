@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.css';
 import FriendInvite from './FriendInvite';
-import  EventList from './EventList'
+import  EventReadView from './EventReadView';
 import DayPicker from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
 import MomentUtils from '@date-io/moment';
@@ -209,12 +209,8 @@ class EditEvent extends React.Component {
     render() {
     return (
     
-        <div>
-            
-            <EventList />
-            
-        
-             {/* <input className = {styles.titleRow}
+        <div className = {styles.editorContainer}>
+             <input className = {styles.titleRow}
             type="text" defaultValue= {""}
             onChange={this.handleTitle}  
             placeholder = "Title" />
@@ -284,7 +280,7 @@ class EditEvent extends React.Component {
 
             {this.state.friendFields}
 
-            <button className={styles.submitButton} onClick = {this.submitEvent}>Submit Event</button> */}
+            <button className={styles.submitButton} onClick = {this.submitEvent}>Submit Event</button>
              
         </div>
       );
