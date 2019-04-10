@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './styles.css';
 import FriendInvite from './FriendInvite';
+import  EventList from './EventList'
 import DayPicker from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
 import MomentUtils from '@date-io/moment';
@@ -55,8 +56,7 @@ class EditEvent extends React.Component {
     }
     componentDidMount () {
         this.setState({friendFields: [...this.state.friendFields, 
-        <FriendInvite friendNum = {++this.state.friendNum} addEvent = {this.addEvent }/>,
-        <FriendInvite friendNum = {++this.state.friendNum} addEvent = {this.addEvent }/> 
+        <FriendInvite friendNum = {++this.state.friendNum} addEvent = {this.addEvent }/>
     ]});
     }
     selectImages(event) {
@@ -209,9 +209,12 @@ class EditEvent extends React.Component {
     render() {
     return (
     
-        <div className={styles.editorContainer}>
+        <div>
+            
+            <EventList />
+            
         
-            <input className = {styles.titleRow}
+             {/* <input className = {styles.titleRow}
             type="text" defaultValue= {""}
             onChange={this.handleTitle}  
             placeholder = "Title" />
@@ -268,7 +271,6 @@ class EditEvent extends React.Component {
                         }
                     </div>
                 </div>
-
             <form >
                 <textarea className = {styles.descriptionRow}
                 type="text" defaultValue= {""}
@@ -282,8 +284,8 @@ class EditEvent extends React.Component {
 
             {this.state.friendFields}
 
-            <button className={styles.submitButton} onClick = {this.submitEvent}>Submit Event</button>
-            
+            <button className={styles.submitButton} onClick = {this.submitEvent}>Submit Event</button> */}
+             
         </div>
       );
     }

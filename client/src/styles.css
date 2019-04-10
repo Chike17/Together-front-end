@@ -136,3 +136,46 @@
     transform: translate(10%, 0);
     z-index: 3;
 }
+
+
+.eventEntry {
+   display: flex;
+   flex-direction: column;
+   width: 40%;
+   margin: 50px;
+}
+
+.dateTitleRow {
+  display: flex;
+  justify-content: space-around;
+}
+
+.startEndTime {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dateEntry {
+  margin:5px;
+}
+
+.titleEntry {
+  margin:5px;
+}
+
+.entryImage {
+  transform: translate(38%, 0);
+  margin:5px;
+}
+
+.locationEntry {
+  transform: translate(42%, 0);
+  margin:10px;
+}
+
+.eventListContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 250px;
+}

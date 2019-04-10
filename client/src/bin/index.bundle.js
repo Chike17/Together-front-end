@@ -25584,7 +25584,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".styles__editorContainer___1Cg_p {\n   display: flex;\n   flex-direction: column;\n   justify-content: space-around;\n   margin: 0 auto;\n   margin-top: 300px;\n   height: 2000px;\n   width: 75%;\n   border: 1px solid grey;\n}\n\n.styles__row___yxAup {\n  margin: 10px;\n}\n\n.styles__titleRow___2Wo7J{\n width: 80%;\n height: 25px;\n transform: translate(10%, 0);\n}\n\n.styles__locationRow___4pUnc{\n  width: 80%;\n  height: 25px;\n  transform: translate(10%, 0);\n}\n\n.styles__calendarContainer___1VJEg{\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__dateAndTimeRow___2slG1{\n    height: 25px;\n\n}\n\n.styles__timeInputStart___3ks1Y {\n    margin: 0 auto;\n    margin-left: 35%;\n    width: 10%;\n    text-align: center;\n}\n\n.styles__imageUploadContainer___ZsFyH{\n    transform: translate(38%, 0);\n}\n\n.styles__eventImage___3iZrl {\n    width: 30%;\n    height: 30%;\n    border-radius: 14px;\n    margin-top: 25px;\n}\n\n.styles__submitButton___cSXCx {\n    width: 15% !important;\n    height: 30px !important;\n    margin-bottom: 80px;\n    transform: translate(285%, 0); \n}\n\n.styles__timeInputEnd___3slub {\n    margin: 0 auto;\n    width: 10%;\n    margin-right: 35%;\n    text-align: center;\n}\n\n.styles__timeContainer___sGPPo {\n    display: flex;\n    justify-content: space-around;\n    align-items: baseline;\n}\n.styles__dateAndTimeRow___2slG1{\n\n}\n\n.styles__dateAndTimeRow___2slG1 {\n\n}\n\n.styles__addFriend___1M2M9 {\n  margin-right: 3%;\n}\n\n.styles__deleteFriend___24kv_ {\n  margin-left: 3%; \n}\n\n.styles__dayInput___34ZEW {\n    margin: 0 auto;\n    width:  12%;\n    text-align: center;\n    transform: translate(350%, 0);\n}\n\n.styles__imageRow___3LvJv{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n\n}\n\n.styles__addDeleteFriend___3OR6-{\n   transform: translate(35%, 0);\n}\n\n.styles__descriptionRow___2P7IU{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n}\n\n.styles__dayTime___2hbtx{\n  width: 50%;\n  height: 20px;\n  transform: translate(75%, 0);\n}\n\n.styles__friendContainer___1hYOB {\n    display: flex;\n    justify-content: space-around;\n    align-items: baseline;\n}\n  \n.styles__friendsRow___2i8Mh {\n    height: 25px;\n}\n\n.styles__addItemRow___23xUp {\n    width: 80%;\n    height: 25px;\n    transform: translate(10%, 0);\n    z-index: 3;\n}", ""]);
+	exports.push([module.id, ".styles__editorContainer___1Cg_p {\n   display: flex;\n   flex-direction: column;\n   justify-content: space-around;\n   margin: 0 auto;\n   margin-top: 300px;\n   height: 2000px;\n   width: 75%;\n   border: 1px solid grey;\n}\n\n.styles__row___yxAup {\n  margin: 10px;\n}\n\n.styles__titleRow___2Wo7J{\n width: 80%;\n height: 25px;\n transform: translate(10%, 0);\n}\n\n.styles__locationRow___4pUnc{\n  width: 80%;\n  height: 25px;\n  transform: translate(10%, 0);\n}\n\n.styles__calendarContainer___1VJEg{\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__dateAndTimeRow___2slG1{\n    height: 25px;\n\n}\n\n.styles__timeInputStart___3ks1Y {\n    margin: 0 auto;\n    margin-left: 35%;\n    width: 10%;\n    text-align: center;\n}\n\n.styles__imageUploadContainer___ZsFyH{\n    transform: translate(38%, 0);\n}\n\n.styles__eventImage___3iZrl {\n    width: 30%;\n    height: 30%;\n    border-radius: 14px;\n    margin-top: 25px;\n}\n\n.styles__submitButton___cSXCx {\n    width: 15% !important;\n    height: 30px !important;\n    margin-bottom: 80px;\n    transform: translate(285%, 0); \n}\n\n.styles__timeInputEnd___3slub {\n    margin: 0 auto;\n    width: 10%;\n    margin-right: 35%;\n    text-align: center;\n}\n\n.styles__timeContainer___sGPPo {\n    display: flex;\n    justify-content: space-around;\n    align-items: baseline;\n}\n.styles__dateAndTimeRow___2slG1{\n\n}\n\n.styles__dateAndTimeRow___2slG1 {\n\n}\n\n.styles__addFriend___1M2M9 {\n  margin-right: 3%;\n}\n\n.styles__deleteFriend___24kv_ {\n  margin-left: 3%; \n}\n\n.styles__dayInput___34ZEW {\n    margin: 0 auto;\n    width:  12%;\n    text-align: center;\n    transform: translate(350%, 0);\n}\n\n.styles__imageRow___3LvJv{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n\n}\n\n.styles__addDeleteFriend___3OR6-{\n   transform: translate(35%, 0);\n}\n\n.styles__descriptionRow___2P7IU{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n}\n\n.styles__dayTime___2hbtx{\n  width: 50%;\n  height: 20px;\n  transform: translate(75%, 0);\n}\n\n.styles__friendContainer___1hYOB {\n    display: flex;\n    justify-content: space-around;\n    align-items: baseline;\n}\n  \n.styles__friendsRow___2i8Mh {\n    height: 25px;\n}\n\n.styles__addItemRow___23xUp {\n    width: 80%;\n    height: 25px;\n    transform: translate(10%, 0);\n    z-index: 3;\n}\n\n\n.styles__eventEntry___1V9CF {\n   display: flex;\n   flex-direction: column;\n   width: 40%;\n   margin: 50px;\n}\n\n.styles__dateTitleRow___3lTfy {\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__startEndTime___3nzme {\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__dateEntry___1mjTd {\n  margin:5px;\n}\n\n.styles__titleEntry___3ZUWa {\n  margin:5px;\n}\n\n.styles__entryImage___A4qNx {\n  transform: translate(38%, 0);\n  margin:5px;\n}\n\n.styles__locationEntry___45TJ2 {\n  transform: translate(42%, 0);\n  margin:10px;\n}\n\n.styles__eventListContainer___3crKy {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-top: 250px;\n}", ""]);
 	
 	// exports
 	exports.locals = {
@@ -25609,7 +25609,15 @@
 		"dayTime": "styles__dayTime___2hbtx",
 		"friendContainer": "styles__friendContainer___1hYOB",
 		"friendsRow": "styles__friendsRow___2i8Mh",
-		"addItemRow": "styles__addItemRow___23xUp"
+		"addItemRow": "styles__addItemRow___23xUp",
+		"eventEntry": "styles__eventEntry___1V9CF",
+		"dateTitleRow": "styles__dateTitleRow___3lTfy",
+		"startEndTime": "styles__startEndTime___3nzme",
+		"dateEntry": "styles__dateEntry___1mjTd",
+		"titleEntry": "styles__titleEntry___3ZUWa",
+		"entryImage": "styles__entryImage___A4qNx",
+		"locationEntry": "styles__locationEntry___45TJ2",
+		"eventListContainer": "styles__eventListContainer___3crKy"
 	};
 
 /***/ }),
@@ -26239,6 +26247,10 @@
 	
 	var _FriendInvite2 = _interopRequireDefault(_FriendInvite);
 	
+	var _EventList = __webpack_require__(/*! ./EventList */ 578);
+	
+	var _EventList2 = _interopRequireDefault(_EventList);
+	
 	var _reactDayPicker = __webpack_require__(/*! react-day-picker */ 29);
 	
 	var _reactDayPicker2 = _interopRequireDefault(_reactDayPicker);
@@ -26329,7 +26341,7 @@
 	    _createClass(EditEvent, [{
 	        key: 'componentDidMount',
 	        value: function componentDidMount() {
-	            this.setState({ friendFields: [].concat(_toConsumableArray(this.state.friendFields), [_react2.default.createElement(_FriendInvite2.default, { friendNum: ++this.state.friendNum, addEvent: this.addEvent }), _react2.default.createElement(_FriendInvite2.default, { friendNum: ++this.state.friendNum, addEvent: this.addEvent })]) });
+	            this.setState({ friendFields: [].concat(_toConsumableArray(this.state.friendFields), [_react2.default.createElement(_FriendInvite2.default, { friendNum: ++this.state.friendNum, addEvent: this.addEvent })]) });
 	        }
 	    }, {
 	        key: 'selectImages',
@@ -26522,116 +26534,8 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                { className: _styles2.default.editorContainer },
-	                _react2.default.createElement('input', { className: _styles2.default.titleRow,
-	                    type: 'text', defaultValue: "",
-	                    onChange: this.handleTitle,
-	                    placeholder: 'Title' }),
-	                _react2.default.createElement('input', { className: _styles2.default.locationRow,
-	                    type: 'text', defaultValue: "",
-	                    onChange: this.handleLocation,
-	                    placeholder: 'Location' }),
-	                _react2.default.createElement(
-	                    _materialUiPickers.MuiPickersUtilsProvider,
-	                    { utils: _dateFns2.default },
-	                    _react2.default.createElement(_materialUiPickers.DatePicker, {
-	                        margin: 'normal',
-	                        label: '',
-	                        value: this.state.day,
-	                        onChange: this.handleDayChange,
-	                        className: _styles2.default.dayInput
-	                    })
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: _styles2.default.timeContainer },
-	                    _react2.default.createElement(_materialUiTimePicker2.default, {
-	                        label: 'start time',
-	                        className: _styles2.default.timeInputStart,
-	                        onChange: this.handleStartChange
-	                    }),
-	                    _react2.default.createElement(_materialUiTimePicker2.default, {
-	                        label: 'end Time',
-	                        className: _styles2.default.timeInputEnd,
-	                        onChange: this.handleEndChange
-	                    })
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: _styles2.default.imageUploadContainer },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: '' },
-	                        _react2.default.createElement(
-	                            'h3',
-	                            null,
-	                            'Upload an Image'
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: '' },
-	                            _react2.default.createElement('input', { className: '', type: 'file',
-	                                onChange: this.selectImages, multiple: true })
-	                        ),
-	                        _react2.default.createElement(
-	                            'p',
-	                            { className: '' },
-	                            this.state.message
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: '' },
-	                            _react2.default.createElement(
-	                                'button',
-	                                { className: 'btn btn-primary', value: 'Submit',
-	                                    onClick: this.uploadImages },
-	                                'Submit'
-	                            )
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'r' },
-	                        this.state.imageUrls.map(function (url, i) {
-	                            return _react2.default.createElement(
-	                                'div',
-	                                { className: '', key: i },
-	                                console.log(url),
-	                                _react2.default.createElement('img', { src: BASE_URL + url, className: _styles2.default.eventImage,
-	                                    alt: 'not available' }),
-	                                _react2.default.createElement('br', null)
-	                            );
-	                        })
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'form',
-	                    null,
-	                    _react2.default.createElement('textarea', { className: _styles2.default.descriptionRow,
-	                        type: 'text', defaultValue: "",
-	                        onChange: this.handleDescription,
-	                        placeholder: 'Add a Description' })
-	                ),
-	                _react2.default.createElement(
-	                    'ul',
-	                    { className: _styles2.default.addDeleteFriend },
-	                    _react2.default.createElement(
-	                        'button',
-	                        _defineProperty({ className: _styles2.default.addFriend, onClick: this.addFriend }, 'className', _styles2.default.addFriend),
-	                        ' Add Guest'
-	                    ),
-	                    _react2.default.createElement(
-	                        'button',
-	                        _defineProperty({ className: _styles2.default.deleteFriend, onClick: this.deleteFriendField }, 'className', _styles2.default.addFriend),
-	                        ' Delete Guest '
-	                    )
-	                ),
-	                this.state.friendFields,
-	                _react2.default.createElement(
-	                    'button',
-	                    { className: _styles2.default.submitButton, onClick: this.submitEvent },
-	                    'Submit Event'
-	                )
+	                null,
+	                _react2.default.createElement(_EventList2.default, null)
 	            );
 	        }
 	    }]);
@@ -101147,6 +101051,160 @@
 	var initialState2 = {};
 	
 	module.exports = { initialState1: initialState1, initialState2: initialState2 };
+
+/***/ }),
+/* 577 */
+/*!**********************************!*\
+  !*** ./client/src/EventEntry.js ***!
+  \**********************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _styles = __webpack_require__(/*! ./styles.css */ 20);
+	
+	var _styles2 = _interopRequireDefault(_styles);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var EventEntry = function (_React$Component) {
+	    _inherits(EventEntry, _React$Component);
+	
+	    function EventEntry(props) {
+	        _classCallCheck(this, EventEntry);
+	
+	        var _this = _possibleConstructorReturn(this, (EventEntry.__proto__ || Object.getPrototypeOf(EventEntry)).call(this, props));
+	
+	        _this.state = {};
+	        return _this;
+	    }
+	
+	    _createClass(EventEntry, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: _styles2.default.eventEntry },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: _styles2.default.dateTitleRow },
+	                    _react2.default.createElement(
+	                        'h5',
+	                        { className: _styles2.default.dateEntry },
+	                        'Some Date'
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: _styles2.default.titleEntry },
+	                        'Some Title'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: _styles2.default.locationEntry },
+	                    'Some Location'
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: _styles2.default.startEndTime },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: _styles2.default.startEntry },
+	                        'some start time'
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: _styles2.default.endEntry },
+	                        'some end time'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'h2',
+	                    { className: _styles2.default.entryImage },
+	                    ' Some Image '
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return EventEntry;
+	}(_react2.default.Component);
+	
+	module.exports = EventEntry;
+
+/***/ }),
+/* 578 */
+/*!*********************************!*\
+  !*** ./client/src/EventList.js ***!
+  \*********************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _styles = __webpack_require__(/*! ./styles.css */ 20);
+	
+	var _styles2 = _interopRequireDefault(_styles);
+	
+	var _EventEntry = __webpack_require__(/*! ./EventEntry */ 577);
+	
+	var _EventEntry2 = _interopRequireDefault(_EventEntry);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var EventList = function (_React$Component) {
+	    _inherits(EventList, _React$Component);
+	
+	    function EventList(props) {
+	        _classCallCheck(this, EventList);
+	
+	        var _this = _possibleConstructorReturn(this, (EventList.__proto__ || Object.getPrototypeOf(EventList)).call(this, props));
+	
+	        _this.state = {};
+	        return _this;
+	    }
+	
+	    _createClass(EventList, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: _styles2.default.eventListContainer },
+	                _react2.default.createElement(_EventEntry2.default, null),
+	                _react2.default.createElement(_EventEntry2.default, null),
+	                _react2.default.createElement(_EventEntry2.default, null),
+	                _react2.default.createElement(_EventEntry2.default, null)
+	            );
+	        }
+	    }]);
+	
+	    return EventList;
+	}(_react2.default.Component);
+	
+	module.exports = EventList;
 
 /***/ })
 /******/ ]);
