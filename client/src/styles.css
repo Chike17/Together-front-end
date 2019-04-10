@@ -54,8 +54,10 @@
 }
 
 .submitButton {
-    width: 30% !important;
+    width: 15% !important;
     height: 30px !important;
+    margin-bottom: 80px;
+    transform: translate(285%, 0); 
 }
 
 .timeInputEnd {

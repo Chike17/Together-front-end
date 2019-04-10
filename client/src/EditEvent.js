@@ -282,7 +282,7 @@ class EditEvent extends React.Component {
 
             {this.state.friendFields}
 
-            <button className={styles.submitButton} onClick = {this.submitEvent}> Submit Event  </button>
+            <button className={styles.submitButton} onClick = {this.submitEvent}>Submit Event</button>
             
         </div>
       );
