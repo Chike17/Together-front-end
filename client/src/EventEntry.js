@@ -13,35 +13,36 @@ class EventEntry extends React.Component {
          <div className = {styles.eventEntry}>
             <div className = {styles.dateTitleRow}>
                 <h5 className = {styles.dateEntry}>
-                   Some Date
+                   {this.props.day}
                 </h5>
 
                 <div className = {styles.titleEntry}>
-                  Some Title
+                  {this.props.title}
                 </div>
     
             </div>
             <div className = {styles.locationEntry}> 
-                Some Location     
+                {this.props.location}    
             </div>
 
             <div className = {styles.startEndTime}> 
 
                 <div className = {styles.startEntry}>
-                  some start time          
+                    {this.props.startTime}         
                 </div>
 
                 <div className = {styles.endEntry}>
-                  some end time
+                    {this.props.endTime}
                 </div>
-        
             </div>
-            <h2 className = {styles.entryImage}> Some Image </h2>
+            <h2 className = {styles.entryImage}> {this.props.image} </h2>
              <div className={styles.readEditEntry}>
-                <button className= {styles.editEntry}>  Read Event</button>
-                <button className= {styles.readEntry}> Edit Event </button>
-                {/* <NavLink to="/"> Home
-                </Navlink> */}
+                <NavLink to={`/readevent/${this.props.id}`}>
+                    <button className= {styles.readEntry}> Read Event </button>
+                </NavLink>
+                <NavLink to={`/editevent/${this.props.id}`}>
+                    <button className= {styles.readEntry}> Edit Event </button>
+                </NavLink>
              </div>
          </div>
     );

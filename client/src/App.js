@@ -21,8 +21,8 @@ class App extends React.Component {
         <HashRouter>
           <Switch>
             <Route path ="/" component={EventList} exact/>
-            <Route path="/editevent" component={EditEvent} />
-            <Route path="/readevent" component={EventReadView}/>
+            <Route path="/editevent/:id" component={EditEvent} />
+            <Route path="/readevent/:id" component={EventReadView}/>
           </Switch>
         </HashRouter>
       </div>
