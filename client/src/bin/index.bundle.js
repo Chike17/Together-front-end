@@ -26953,6 +26953,10 @@
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
+	var _axios = __webpack_require__(/*! axios */ 512);
+	
+	var _axios2 = _interopRequireDefault(_axios);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26969,7 +26973,9 @@
 	
 	        var _this = _possibleConstructorReturn(this, (EventReadView.__proto__ || Object.getPrototypeOf(EventReadView)).call(this, props));
 	
-	        _this.state = {};
+	        _this.state = {
+	            event: {}
+	        };
 	        return _this;
 	    }
 	
@@ -26977,9 +26983,20 @@
 	        key: 'componentDidMount',
 	        value: function componentDidMount() {
 	            console.log(this.props.match.params.id);
-	            console.log(this.props.match.params.id);
-	            console.log(this.props.match.params.id);
-	            console.log(this.props.match.params.id);
+	            var context = this;
+	            _axios2.default.get('http://localhost:3000/event/' + this.props.match.params.id).then(function (response) {
+	                var data = response.data;
+	                var event = context.state.event;
+	                event.title = data.title;
+	                event.location = data.location;
+	                event.startTime = data.startTime;
+	                event.endTime = data.endTime;
+	                event.day = data.day;
+	                event.description = data.description;
+	                context.setState({ event: event });
+	            }).catch(function (error) {
+	                console.log(error);
+	            });
 	        }
 	    }, {
 	        key: 'render',
@@ -26993,18 +27010,23 @@
 	                    _react2.default.createElement(
 	                        'h2',
 	                        { className: _styles2.default.singleDate },
-	                        ' Some Date '
+	                        ' ',
+	                        this.state.event.day,
+	                        ' '
 	                    ),
 	                    _react2.default.createElement(
 	                        'h3',
 	                        { className: _styles2.default.singleTitle },
-	                        ' Some Title '
+	                        ' ',
+	                        this.state.event.title,
+	                        ' '
 	                    )
 	                ),
 	                _react2.default.createElement(
 	                    'div',
 	                    { classname: _styles2.default.singleLocation },
-	                    ' Some location '
+	                    ' ',
+	                    this.state.event.location
 	                ),
 	                _react2.default.createElement(
 	                    'h1',
@@ -27014,7 +27036,7 @@
 	                _react2.default.createElement(
 	                    'p',
 	                    { className: _styles2.default.singleDescription },
-	                    'Some Description Some Description Some Description Some Description Some Description Some Description'
+	                    this.state.event.description
 	                ),
 	                _react2.default.createElement(
 	                    'div',
@@ -27022,12 +27044,16 @@
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: _styles2.default.singleStart },
-	                        '  Some Start Time  '
+	                        '  ',
+	                        this.state.event.startTime,
+	                        '  '
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: _styles2.default.singleEnd },
-	                        '  Some End Time  '
+	                        '  ',
+	                        this.state.event.endTime,
+	                        '  '
 	                    )
 	                )
 	            );
