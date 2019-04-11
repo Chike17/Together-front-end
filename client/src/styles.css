@@ -222,6 +222,20 @@
   margin: 30px;
 }
 
+.readEditEntry {
+  display:  flex;
+  transform: translate(28%, 0);
+
+}
+
+.readEntry {
+  margin: 20px;
+}
+
+.editEntry {
+  margin: 20px;
+}
+
 
 
 

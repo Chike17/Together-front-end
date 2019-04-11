@@ -2,7 +2,8 @@ module.exports = {
   entry: './client/src/index.js',
   output: {
     path: './client/src/bin',
-    filename: 'index.bundle.js'
+    filename: 'index.bundle.js',
+    publicPath: '/'
   },
   module: {
     loaders: [{
@@ -14,14 +15,18 @@ module.exports = {
     {
       test: /\.css$/,
       loader: 'style-loader'
-    }, {
+    },
+    {
       test: /\.css$/,
       loader: 'css-loader',
       query: {
         modules: true,
         localIdentName: '[name]__[local]___[hash:base64:5]'
       }
-    }]
+    }],
+    devServer: {
+      historyApiFallback: true,
+    },
   }
 };
 

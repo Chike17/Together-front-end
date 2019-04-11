@@ -50,6 +50,7 @@
     "react-day-picker": "^7.3.0",
     "react-dom": "^16.8.6",
     "react-redux": "^5.0.6",
+    "react-router-dom": "^5.0.0",
     "react-time-picker": "^3.5.1",
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",

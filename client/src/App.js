@@ -2,6 +2,10 @@ import React from 'react';
 import styles from './styles.css';
 import Container from './Container.js';
 import { connect } from 'react-redux';
+import {HashRouter, Route, Switch} from 'react-router-dom';
+import EventList from "./EventList";
+import EditEvent from "./EditEvent"; 
+import EventReadView from "./EventReadView"; 
 
 class App extends React.Component {
   constructor (props) {
@@ -14,7 +18,13 @@ class App extends React.Component {
   render() {
     return (
       <div> 
-        <Container/>
+        <HashRouter>
+          <Switch>
+            <Route path ="/" component={EventList} exact/>
+            <Route path="/editevent" component={EditEvent} />
+            <Route path="/readevent" component={EventReadView}/>
+          </Switch>
+        </HashRouter>
       </div>
     );
   }
@@ -39,17 +49,6 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
-
-
-
-
-
-
-
-
-
-
-
 
 
 

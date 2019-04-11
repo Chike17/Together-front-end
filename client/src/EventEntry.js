@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './styles.css';  
+import {NavLink} from 'react-router-dom';
+
 class EventEntry extends React.Component {
     constructor(props) {
        super(props);
@@ -35,6 +37,12 @@ class EventEntry extends React.Component {
         
             </div>
             <h2 className = {styles.entryImage}> Some Image </h2>
+             <div className={styles.readEditEntry}>
+                <button className= {styles.editEntry}>  Read Event</button>
+                <button className= {styles.readEntry}> Edit Event </button>
+                {/* <NavLink to="/"> Home
+                </Navlink> */}
+             </div>
          </div>
     );
     }
