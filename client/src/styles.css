@@ -108,10 +108,9 @@
 }
 
 .descriptionRow{
-  height: 300px;
   width: 70%;
   margin: 0 auto;
-  transform: translate(20%, 0);
+  transform: translate(5%, 0);
 }
 
 .dayTime{

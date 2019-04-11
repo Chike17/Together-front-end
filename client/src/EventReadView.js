@@ -17,9 +17,9 @@ class EventReadView extends React.Component {
             let event = context.state.event;
             event.title =  data.title;
             event.location = data.location;
-            event.startTime = data.startTime;
-            event.endTime = data.endTime;
-            event.day = data.day;
+            event.startTime = new Date(data.startTime).toLocaleTimeString(),
+            event.endTime = new Date(data.endTime).toLocaleTimeString(),
+            event.day = new Date(data.endTime).toLocaleDateString(),
             event.description = data.description;
             context.setState({event: event});
         })

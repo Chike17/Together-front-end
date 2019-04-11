@@ -37,7 +37,8 @@ class EditEvent extends React.Component {
         endTime: new Date(),
         description: 'description',
         guests: {},
-        events: []
+        events: [],
+        event: {}
       };
 
       this.selectImages = this.selectImages.bind(this);
@@ -55,9 +56,28 @@ class EditEvent extends React.Component {
       this.handleDescription= this.handleDescription.bind(this);
     }
     componentDidMount () {
+        let context = this;
         this.setState({friendFields: [...this.state.friendFields, 
         <FriendInvite friendNum = {++this.state.friendNum} addEvent = {this.addEvent }/>
-    ]});
+    ]}, ()=> {
+        console.log(this.props.match.params.id);
+        axios.get(`http://localhost:3000/event/${this.props.match.params.id}`)
+        .then(function (response) {
+            let data = response.data;
+            console.log(data);
+            let event = context.state.event;
+            event.title =  data.title;
+            event.location = data.location;
+            event.startTime = data.startTime;
+            event.endTime = data.endTime;
+            event.day = data.day;
+            event.description = data.description;
+            context.setState({event: event});
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+    });
     }
     selectImages(event) {
         let images = []
@@ -114,8 +134,8 @@ class EditEvent extends React.Component {
             startTime: this.state.startTime.toLocaleTimeString(),
             day: this.state.day.toLocaleDateString(), 
             location: this.state.location,
-            host: null,
-            guests: []
+            host: 1,
+            guests: [] 
         }
         $('.friend').each(function(index, friend){
             let inputs = $(friend).find(':input');
@@ -207,16 +227,24 @@ class EditEvent extends React.Component {
 
     }
     render() {
+        console.log(this.state.event.description, '//////')
+        console.log(this.state.event.description, '/////')
+        console.log(this.state.event.description, '//////')
+        console.log(this.state.event.description, '//////')
+        console.log(this.state.event.description, '//////')
+        let description = this.state.event.description;
+        let startTime = new Date(this.state.event.startTime)
+        let endTime = new Date(this.state.event.endTime)
     return (
     
         <div className = {styles.editorContainer}>
              <input className = {styles.titleRow}
-            type="text" defaultValue= {""}
+            type="text" defaultValue= {this.state.event.title}
             onChange={this.handleTitle}  
             placeholder = "Title" />
 
             <input className = {styles.locationRow}
-            type="text" defaultValue= {""}
+            type="text" defaultValue= {this.state.event.location}
             onChange={this.handleLocation}  
             placeholder = "Location" />
 
@@ -235,11 +263,13 @@ class EditEvent extends React.Component {
                 label = "start time"
                 className= {styles.timeInputStart}
                 onChange= {this.handleStartChange}
+                value = {startTime}
                 />
                 <TimeInput
                 label = "end Time"
                 className= {styles.timeInputEnd}
                 onChange = {this.handleEndChange}
+                value = {endTime}
                 />
             </div>
                 <div className = {styles.imageUploadContainer}>
@@ -267,12 +297,11 @@ class EditEvent extends React.Component {
                         }
                     </div>
                 </div>
-            <form >
-                <textarea className = {styles.descriptionRow}
-                type="text" defaultValue= {""}
-                onChange={this.handleDescription} 
-                placeholder = "Add a Description" />
-            </form>
+                <input
+                    className = {styles.descriptionRow}
+                    type="text" 
+                    onChange={this.handleDescription} 
+                    placeholder = {"Description"} defaultValue = {description}/>
              <ul className = {styles.addDeleteFriend}>
                 <button className = {styles.addFriend} onClick = {this.addFriend} className={styles.addFriend} > Add Guest</button> 
                 <button className = {styles.deleteFriend}  onClick = {this.deleteFriendField} className={styles.addFriend} > Delete Guest </button>

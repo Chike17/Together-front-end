@@ -18,12 +18,11 @@ class EventList extends React.Component {
         response.data.forEach((event, index)=> {
             console.log(event);
             context.state.events.push( <EventEntry 
-                                        date = {event.date}
+                                        day = {new Date(event.day).toLocaleDateString()}
                                         title =  {event.title}
                                         location = {event.location}
-                                        day = {event.day}
-                                        startTime = {event.startTime}
-                                        endTime = {event.endTime}
+                                        startTime = {new Date(event.startTime).toLocaleTimeString()}
+                                        endTime = {new Date(event.endTime).toLocaleTimeString()}
                                         id = {event._id}
                                         image = {'placeholder'}/> );
         });
