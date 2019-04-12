@@ -8,26 +8,35 @@ class FriendInvite extends React.Component {
 
       this.addDishEntry = this.addDishEntry.bind(this);
       this.deletDishEntry = this.deletDishEntry.bind(this);
-      this.addDish = this.addDish.bind(this);
+      // this.addDish = this.addDish.bind(this);
       this.addFriendName = this.addFriendName.bind(this);
       this.addFriendEmail = this.addFriendEmail.bind(this);
 
       this.state = {
          dishNum: 1,
-         dishes: [<Dish addDish = {this.addDish}/>],
+         dishes: [],
          dishId: 1,
          name:'',
          email: '', 
          friend: {},
-         bringDishes: []
+         bringDishes: this.props.dishes
       };;
+      if (this.props.dishes){
+        for (let i = 0; i < this.props.dishes.length; i++) {
+          this.state.dishes.push(<Dish val = {this.props.dishes[i]}/>);
+        }
+      }
     }
     componentDidMount() {
-      console.log({firstName: this.state.name, 
-                    email: this.state.email, 
-                    bringDishes: this.state.bringDishes
-                  });
+        // for (let i = 0; i < this.props.dishes.length; i++) {
+        //   this.state.dishes.push(<Dish val = {this.props.dishes[i]}/>);
+        // }
     }
+    componentWillReceiveProps(nextProps) {
+      // for (let i = 0; i < this.nextProps.dishes.length; i++) {
+      //   this.state.dishes.push(<Dish val = {this.nextProps.dishes[i]}/>);
+      // }
+  }
     addFriendName(e) {
         console.log(e.target.value);
         this.setState({name: e.target.value});
@@ -47,28 +56,19 @@ class FriendInvite extends React.Component {
     handleEmail() {
 
     }
-    addDish(e) {
-        let context = this;
-        this.state.bringDishes = [];
-        this.setState({bringDishes: [...this.state.bringDishes, e.target.value]}, ()=> {
-          console.log({name: this.state.name, email: this.state.email, dishes: context.state.bringDishes});
-
-          this.props.addEvent({name: this.state.name, email: this.state.email, bringDishes: context.state.bringDishes});
-        });
-        // this.state.bringdDishes.push(e.target.value);
-        // let bringDishes  = this.state.bringDishes;
-        // this.setState({bringDishes:bringDishes}, () => {
-        //   console.log(this.state.bringDishes);
-        // });
-
-        // this.setState({bringDishes: []}, ()=> {
-        //   context.setState({bringDishes: [...context.state.bringDishes, e.target.value]}, ()=> {
-        //       console.log(context.state.bringDishes);
-        //   });
-        // });
+    addDishDB() {
     }
+    // addDish(e) {
+    //     let context = this;
+    //     this.state.bringDishes = [];
+    //     this.setState({bringDishes: [...this.state.bringDishes, e.target.value]}, ()=> {
+    //       console.log({name: this.state.name, email: this.state.email, dishes: context.state.bringDishes});
+
+    //       // this.props.addEvent({name: this.state.name, email: this.state.email, bringDishes: context.state.bringDishes});
+    //     });
+    // }
     addDishEntry() { 
-        this.setState({dishes: [...this.state.dishes, <Dish addDish = {this.addDish}/>]}); 
+        this.setState({dishes: [...this.state.dishes, <Dish addDish/>]}); 
     }
     deletDishEntry (element) { 
          this.state.dishes.splice(this.state.dishes.length -1, 1);
@@ -90,12 +90,14 @@ class FriendInvite extends React.Component {
                 <input className = {styles.friendsRow}
                 type="text"
                 onChange={this.addFriendName}
+                defaultValue = {this.props.name}
                 placeholder = "Add A Friend's Name" />
 
                 <input className = {styles.friendsRow}
                 type="text" 
                 placeholder = "Add A Friend's Email" 
                 onChange = {this.addFriendEmail}
+                defaultValue = {this.props.email}
                 />
                  <button  onClick = {this.addDishEntry}>
                   Add a Dish
@@ -106,10 +108,11 @@ class FriendInvite extends React.Component {
                 </button>
                 </div>
                 {dishes}
-                  
         </div>
       );
     }
   }
 
 module.exports = FriendInvite;
+
+

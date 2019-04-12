@@ -141,6 +141,7 @@
    display: flex;
    flex-direction: column;
    width: 40%;
+   border-top: 1px solid grey;
    margin: 50px;
 }
 
@@ -235,7 +236,23 @@
   margin: 20px;
 }
 
+.dinnerGuest {
+  margin: 5px;
+}
 
+.dinnerGuestDish {
+  margin: 5px;
+}
+
+.editSubmitButtons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.togetherHeader {
+  font-family: 'Cinzel', serif;
+  transform: translate(38%, 0);
+}
 
 
 

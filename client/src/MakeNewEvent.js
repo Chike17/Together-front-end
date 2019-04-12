@@ -11,10 +11,9 @@ import { withStyles } from '@material-ui/core/styles';
 import { MuiPickersUtilsProvider, DatePicker } from 'material-ui-pickers';
 import TimeInput from 'material-ui-time-picker'
 import axios from 'axios';
-import {NavLink} from 'react-router-dom';
 const BASE_URL = 'http://localhost:8888/';
 
-class EditEvent extends React.Component {
+class MakeNewEvent extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
@@ -39,7 +38,8 @@ class EditEvent extends React.Component {
         description: 'description',
         guests: {},
         events: [],
-        event: {}
+        event: {title:"", location: ""},
+        image: ""
       };
 
       this.selectImages = this.selectImages.bind(this);
@@ -49,7 +49,6 @@ class EditEvent extends React.Component {
       this.deleteFriendField = this.deleteFriendField.bind(this);
       this.submitEvent = this.submitEvent.bind(this);
       this.addEvent = this.addEvent.bind(this);
-      this.updateEvent = this.updateEvent.bind(this);
       this.handleStartChange = this.handleStartChange.bind(this);
       this.handleEndChange = this.handleEndChange.bind(this);
       this.handleDayChange = this.handleDayChange.bind(this);
@@ -58,43 +57,43 @@ class EditEvent extends React.Component {
       this.handleDescription= this.handleDescription.bind(this);
     }
     componentDidMount () {
-        let context = this;
-    //     this.setState({friendFields: [...this.state.friendFields, 
-    //     <FriendInvite friendNum = {++this.state.friendNum} addEvent = {this.addEvent }/>
-    // ]}, ()=> {
-    //     console.log(this.props.match.params.id);
-        axios.get(`http://localhost:3000/event/${this.props.match.params.id}`)
-        .then(function (response) {
-            let data = response.data;
-            console.log('///&&&&&&&&&&&&&&////')
-            console.log(data);
-            let event = context.state.event;
-            event.title =  data.title;
-            event.location = data.location;
-            event.startTime = data.startTime;
-            event.endTime = data.endTime;
-            event.day = data.day;
-            event.description = data.description;
-            let myGuests = [];
-            context.setState({event: event}, () => {
-                for (let i = 0; i < data.guests.length; i++) {
-                    let guest = data.guests[i];
-                    console.log(guest.dishes, "999999999");
-                    myGuests.push(<FriendInvite 
-                                    friendNum = {++context.state.friendNum}  
-                                    email = {guest.email}
-                                    name = {guest.firstName}
-                                    dishes = {guest.dishes}
-                                    />);
-                }
-                context.setState({friendFields: [...context.state.friendFields, ...myGuests]});
-            });
-        }, () =>{
-        })
-        .catch(function (error) {
-            console.log(error);
-        });
-    // });
+    //     let context = this;
+    // //     this.setState({friendFields: [...this.state.friendFields, 
+    // //     <FriendInvite friendNum = {++this.state.friendNum} addEvent = {this.addEvent }/>
+    // // ]}, ()=> {
+    // //     console.log(this.props.match.params.id);
+    //     axios.get(`http://localhost:3000/event/${this.props.match.params.id}`)
+    //     .then(function (response) {
+    //         let data = response.data;
+    //         console.log('///&&&&&&&&&&&&&&////')
+    //         console.log(data);
+    //         let event = context.state.event;
+    //         event.title =  data.title;
+    //         event.location = data.location;
+    //         event.startTime = data.startTime;
+    //         event.endTime = data.endTime;
+    //         event.day = data.day;
+    //         event.description = data.description;
+    //         let myGuests = [];
+    //         context.setState({event: event}, () => {
+    //             for (let i = 0; i < data.guests.length; i++) {
+    //                 let guest = data.guests[i];
+    //                 console.log(guest.dishes, "999999999");
+    //                 myGuests.push(<FriendInvite 
+    //                                 friendNum = {++context.state.friendNum}  
+    //                                 email = {guest.email}
+    //                                 name = {guest.firstName}
+    //                                 dishes = {guest.dishes}
+    //                                 />);
+    //             }
+    //             context.setState({friendFields: [...context.state.friendFields, ...myGuests]});
+    //         });
+    //     }, () =>{
+    //     })
+    //     .catch(function (error) {
+    //         console.log(error);
+    //     });
+    // // });
     }
     selectImages(event) {
         let images = []
@@ -151,6 +150,7 @@ class EditEvent extends React.Component {
             startTime: this.state.startTime,
             day: this.state.day, 
             location: this.state.location,
+            image: this.state.image,
             host: 1,
             guests: [] 
         }
@@ -173,43 +173,6 @@ class EditEvent extends React.Component {
             event.guests.push(guest);
           });
         axios.post(`http://localhost:3000/event/${this.props.match.params.id}`, event)
-          .then(function (response) {
-            console.log(response.data, "0000000000000000000000");
-          })
-          .catch(function (error) {
-            console.log(error);
-          });
-    }
-    updateEvent() {
-        let event = {
-            description: this.state.description,
-            title: this.state.title,
-            endTime: this.state.endTime,
-            startTime: this.state.startTime,
-            day: this.state.day, 
-            location: this.state.location,
-            host: 1,
-            guests: [] 
-        }
-        $('.friend').each(function(index, friend){
-            let inputs = $(friend).find(':input');
-            let guest = {
-                dishes: []
-            };
-            inputs.each((index, input)=>{
-                if (index === 0){
-                    guest.firstName = input.value
-                }  else if (index === 1) {
-                    guest.email = input.value;
-                } else {
-                    if  (input.value.length) {
-                        guest.dishes.push(input.value);
-                    }
-                }
-            });
-            event.guests.push(guest);
-          });
-        axios.put(`http://localhost:3000/event/${this.props.match.params.id}`, event)
           .then(function (response) {
             console.log(response.data, "0000000000000000000000");
           })
@@ -257,6 +220,7 @@ class EditEvent extends React.Component {
                                                        endTime: this.state.endTime,
                                                        day: this.state.day,
                                                        description: this.state.description
+                                            
                                                        }]}, () => {
                                                         console.log(this.state.events, '000000000000000');
                                                        });  
@@ -298,7 +262,6 @@ class EditEvent extends React.Component {
     return (
     
         <div className = {styles.editorContainer}>
-              <h1 className = {styles.togetherHeader}> TOGETHER </h1>
              <input className = {styles.titleRow}
             type="text" defaultValue= {this.state.event.title}
             onChange={this.handleTitle}  
@@ -350,7 +313,7 @@ class EditEvent extends React.Component {
                         { 
                         this.state.imageUrls.map((url, i) => (
                         <div className="" key={i}>
-                        {console.log(url)}
+                        {this.setState({image: BASE_URL + url})}
                         <img src={BASE_URL + url} className= {styles.eventImage}
                         alt="not available"/><br/>
                         </div>
@@ -369,25 +332,15 @@ class EditEvent extends React.Component {
             </ul> 
 
             {this.state.friendFields}
-             <div className = {styles.editSubmitButtons}>
-            <NavLink to="/"> 
-                <button className={styles.submitButton} className = {"btn btn-primary"} onClick = {this.submitEvent}>Submit Event</button>
-            </NavLink>
 
-            <NavLink to="/"> 
-                <button className={styles.submitButton} className = {"btn btn-primary"} onClick = {this.updateEvent}>Update Event</button>
-            </NavLink>   
-             </div>        
+            <button className={styles.submitButton} onClick = {this.submitEvent}>Submit Event</button>
+             
         </div>
       );
     }
   }
 
-module.exports =  withStyles(styles)(EditEvent);
-
-
-
-
+module.exports =  withStyles(styles)(MakeNewEvent);
 
 
 

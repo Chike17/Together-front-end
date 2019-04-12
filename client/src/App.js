@@ -6,6 +6,7 @@ import {HashRouter, Route, Switch} from 'react-router-dom';
 import EventList from "./EventList";
 import EditEvent from "./EditEvent"; 
 import EventReadView from "./EventReadView"; 
+import MakeNewEvent from "./MakeNewEvent";
 
 class App extends React.Component {
   constructor (props) {
@@ -23,6 +24,7 @@ class App extends React.Component {
             <Route path ="/" component={EventList} exact/>
             <Route path="/editevent/:id" component={EditEvent} />
             <Route path="/readevent/:id" component={EventReadView}/>
+            <Route path="/createevent" component={MakeNewEvent}/>
           </Switch>
         </HashRouter>
       </div>

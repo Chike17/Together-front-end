@@ -10,15 +10,16 @@ class Dish extends React.Component {
        this.handleDish = this.handleDish.bind(this);
     }
     handleDish(e) {
-        this.setState({dish:e.target.value})
+        this.setState({dish:e.target.value});
     }
     render() {
-    return (
-        <input className = {styles.addItemRow}
-        type="text"
-        placeholder = "Dish to bring" 
-        onChange = {this.props.addDish}/>
-    );
+        return (
+            <input className = {styles.addItemRow}
+            type="text"
+            placeholder = "Dish to bring" 
+            onChange = {this.props.addDish}
+            defaultValue = {this.props.val}/>
+        );
     }
 }
 

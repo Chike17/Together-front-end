@@ -63,7 +63,7 @@
 	
 	var _reactRedux = __webpack_require__(/*! react-redux */ 538);
 	
-	var _store = __webpack_require__(/*! ./store.js */ 604);
+	var _store = __webpack_require__(/*! ./store.js */ 605);
 	
 	var _store2 = _interopRequireDefault(_store);
 	
@@ -25478,6 +25478,10 @@
 	
 	var _EventReadView2 = _interopRequireDefault(_EventReadView);
 	
+	var _MakeNewEvent = __webpack_require__(/*! ./MakeNewEvent */ 604);
+	
+	var _MakeNewEvent2 = _interopRequireDefault(_MakeNewEvent);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25512,7 +25516,8 @@
 	            null,
 	            _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _EventList2.default, exact: true }),
 	            _react2.default.createElement(_reactRouterDom.Route, { path: '/editevent/:id', component: _EditEvent2.default }),
-	            _react2.default.createElement(_reactRouterDom.Route, { path: '/readevent/:id', component: _EventReadView2.default })
+	            _react2.default.createElement(_reactRouterDom.Route, { path: '/readevent/:id', component: _EventReadView2.default }),
+	            _react2.default.createElement(_reactRouterDom.Route, { path: '/createevent', component: _MakeNewEvent2.default })
 	          )
 	        )
 	      );
@@ -25608,7 +25613,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".styles__editorContainer___1Cg_p {\n   display: flex;\n   flex-direction: column;\n   justify-content: space-around;\n   margin: 0 auto;\n   margin-top: 300px;\n   height: 2000px;\n   width: 75%;\n   border: 1px solid grey;\n}\n\n.styles__row___yxAup {\n  margin: 10px;\n}\n\n.styles__titleRow___2Wo7J{\n width: 80%;\n height: 25px;\n transform: translate(10%, 0);\n}\n\n.styles__locationRow___4pUnc{\n  width: 80%;\n  height: 25px;\n  transform: translate(10%, 0);\n}\n\n.styles__calendarContainer___1VJEg{\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__dateAndTimeRow___2slG1{\n    height: 25px;\n\n}\n\n.styles__timeInputStart___3ks1Y {\n    margin: 0 auto;\n    margin-left: 35%;\n    width: 10%;\n    text-align: center;\n}\n\n.styles__imageUploadContainer___ZsFyH{\n    transform: translate(38%, 0);\n}\n\n.styles__eventImage___3iZrl {\n    width: 30%;\n    height: 30%;\n    border-radius: 14px;\n    margin-top: 25px;\n}\n\n.styles__submitButton___cSXCx {\n    width: 15% !important;\n    height: 30px !important;\n    margin-bottom: 80px;\n    transform: translate(285%, 0); \n}\n\n.styles__timeInputEnd___3slub {\n    margin: 0 auto;\n    width: 10%;\n    margin-right: 35%;\n    text-align: center;\n}\n\n.styles__timeContainer___sGPPo {\n    display: flex;\n    justify-content: space-around;\n    align-items: baseline;\n}\n.styles__dateAndTimeRow___2slG1{\n\n}\n\n.styles__dateAndTimeRow___2slG1 {\n\n}\n\n.styles__addFriend___1M2M9 {\n  margin-right: 3%;\n}\n\n.styles__deleteFriend___24kv_ {\n  margin-left: 3%; \n}\n\n.styles__dayInput___34ZEW {\n    margin: 0 auto;\n    width:  12%;\n    text-align: center;\n    transform: translate(350%, 0);\n}\n\n.styles__imageRow___3LvJv{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n\n}\n\n.styles__addDeleteFriend___3OR6-{\n   transform: translate(35%, 0);\n}\n\n.styles__descriptionRow___2P7IU{\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(5%, 0);\n}\n\n.styles__dayTime___2hbtx{\n  width: 50%;\n  height: 20px;\n  transform: translate(75%, 0);\n}\n\n.styles__friendContainer___1hYOB {\n    display: flex;\n    justify-content: space-around;\n    align-items: baseline;\n}\n  \n.styles__friendsRow___2i8Mh {\n    height: 25px;\n}\n\n.styles__addItemRow___23xUp {\n    width: 80%;\n    height: 25px;\n    transform: translate(10%, 0);\n    z-index: 3;\n}\n\n\n.styles__eventEntry___1V9CF {\n   display: flex;\n   flex-direction: column;\n   width: 40%;\n   margin: 50px;\n}\n\n.styles__dateTitleRow___3lTfy {\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__startEndTime___3nzme {\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__dateEntry___1mjTd {\n  margin:5px;\n}\n\n.styles__titleEntry___3ZUWa {\n  margin:20px;\n}\n\n.styles__entryImage___A4qNx {\n  transform: translate(38%, 0);\n  margin:20px;\n}\n\n.styles__locationEntry___45TJ2 {\n  transform: translate(42%, 0);\n  margin:10px;\n}\n\n.styles__eventListContainer___3crKy {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-top: 250px;\n}\n\n.styles__eventReadContainer___1QdvQ {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-top: 250px;\n  margin-bottom: 250px;\n  \n}\n\n.styles__singleDateTitle___3e6Gi {\n  display: flex;\n  align-items: baseline;\n}\n\n.styles__singleDate___1-Y8y {\n  margin: 30px;\n}\n\n.styles__singleTitle___2jy9I {\n  margin: 30px;\n}\n\n.styles__singleDescription___2jz_m {\n  margin: 30px;\n}\n\n.styles__singleImage___2UIzg {\n  margin: 30px;\n}\n\n.styles__singleStartEnd___1LQ5l {\n   display: flex;\n}\n\n.styles__singleStart___9f9b5 {\n   margin: 30px;\n}\n\n.styles__singleEnd___DH-j1 {\n  margin: 30px;\n}\n\n.styles__readEditEntry___1d-LO {\n  display:  flex;\n  transform: translate(28%, 0);\n\n}\n\n.styles__readEntry___1oiqP {\n  margin: 20px;\n}\n\n.styles__editEntry___K1HgT {\n  margin: 20px;\n}\n\n\n\n\n\n", ""]);
+	exports.push([module.id, ".styles__editorContainer___1Cg_p {\n   display: flex;\n   flex-direction: column;\n   justify-content: space-around;\n   margin: 0 auto;\n   margin-top: 300px;\n   height: 2000px;\n   width: 75%;\n   border: 1px solid grey;\n}\n\n.styles__row___yxAup {\n  margin: 10px;\n}\n\n.styles__titleRow___2Wo7J{\n width: 80%;\n height: 25px;\n transform: translate(10%, 0);\n}\n\n.styles__locationRow___4pUnc{\n  width: 80%;\n  height: 25px;\n  transform: translate(10%, 0);\n}\n\n.styles__calendarContainer___1VJEg{\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__dateAndTimeRow___2slG1{\n    height: 25px;\n\n}\n\n.styles__timeInputStart___3ks1Y {\n    margin: 0 auto;\n    margin-left: 35%;\n    width: 10%;\n    text-align: center;\n}\n\n.styles__imageUploadContainer___ZsFyH{\n    transform: translate(38%, 0);\n}\n\n.styles__eventImage___3iZrl {\n    width: 30%;\n    height: 30%;\n    border-radius: 14px;\n    margin-top: 25px;\n}\n\n.styles__submitButton___cSXCx {\n    width: 15% !important;\n    height: 30px !important;\n    margin-bottom: 80px;\n    transform: translate(285%, 0); \n}\n\n.styles__timeInputEnd___3slub {\n    margin: 0 auto;\n    width: 10%;\n    margin-right: 35%;\n    text-align: center;\n}\n\n.styles__timeContainer___sGPPo {\n    display: flex;\n    justify-content: space-around;\n    align-items: baseline;\n}\n.styles__dateAndTimeRow___2slG1{\n\n}\n\n.styles__dateAndTimeRow___2slG1 {\n\n}\n\n.styles__addFriend___1M2M9 {\n  margin-right: 3%;\n}\n\n.styles__deleteFriend___24kv_ {\n  margin-left: 3%; \n}\n\n.styles__dayInput___34ZEW {\n    margin: 0 auto;\n    width:  12%;\n    text-align: center;\n    transform: translate(350%, 0);\n}\n\n.styles__imageRow___3LvJv{\n  height: 300px;\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(20%, 0);\n\n}\n\n.styles__addDeleteFriend___3OR6-{\n   transform: translate(35%, 0);\n}\n\n.styles__descriptionRow___2P7IU{\n  width: 70%;\n  margin: 0 auto;\n  transform: translate(5%, 0);\n}\n\n.styles__dayTime___2hbtx{\n  width: 50%;\n  height: 20px;\n  transform: translate(75%, 0);\n}\n\n.styles__friendContainer___1hYOB {\n    display: flex;\n    justify-content: space-around;\n    align-items: baseline;\n}\n  \n.styles__friendsRow___2i8Mh {\n    height: 25px;\n}\n\n.styles__addItemRow___23xUp {\n    width: 80%;\n    height: 25px;\n    transform: translate(10%, 0);\n    z-index: 3;\n}\n\n\n.styles__eventEntry___1V9CF {\n   display: flex;\n   flex-direction: column;\n   width: 40%;\n   border-top: 1px solid grey;\n   margin: 50px;\n}\n\n.styles__dateTitleRow___3lTfy {\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__startEndTime___3nzme {\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__dateEntry___1mjTd {\n  margin:5px;\n}\n\n.styles__titleEntry___3ZUWa {\n  margin:20px;\n}\n\n.styles__entryImage___A4qNx {\n  transform: translate(38%, 0);\n  margin:20px;\n}\n\n.styles__locationEntry___45TJ2 {\n  transform: translate(42%, 0);\n  margin:10px;\n}\n\n.styles__eventListContainer___3crKy {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-top: 250px;\n}\n\n.styles__eventReadContainer___1QdvQ {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-top: 250px;\n  margin-bottom: 250px;\n  \n}\n\n.styles__singleDateTitle___3e6Gi {\n  display: flex;\n  align-items: baseline;\n}\n\n.styles__singleDate___1-Y8y {\n  margin: 30px;\n}\n\n.styles__singleTitle___2jy9I {\n  margin: 30px;\n}\n\n.styles__singleDescription___2jz_m {\n  margin: 30px;\n}\n\n.styles__singleImage___2UIzg {\n  margin: 30px;\n}\n\n.styles__singleStartEnd___1LQ5l {\n   display: flex;\n}\n\n.styles__singleStart___9f9b5 {\n   margin: 30px;\n}\n\n.styles__singleEnd___DH-j1 {\n  margin: 30px;\n}\n\n.styles__readEditEntry___1d-LO {\n  display:  flex;\n  transform: translate(28%, 0);\n\n}\n\n.styles__readEntry___1oiqP {\n  margin: 20px;\n}\n\n.styles__editEntry___K1HgT {\n  margin: 20px;\n}\n\n.styles__dinnerGuest___2d7n9 {\n  margin: 5px;\n}\n\n.styles__dinnerGuestDish___1MNTw {\n  margin: 5px;\n}\n\n.styles__editSubmitButtons___2BRxs {\n  display: flex;\n  justify-content: space-around;\n}\n\n.styles__togetherHeader___1TKU0 {\n  font-family: 'Cinzel', serif;\n  transform: translate(38%, 0);\n}\n\n\n\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -25653,7 +25658,11 @@
 		"singleEnd": "styles__singleEnd___DH-j1",
 		"readEditEntry": "styles__readEditEntry___1d-LO",
 		"readEntry": "styles__readEntry___1oiqP",
-		"editEntry": "styles__editEntry___K1HgT"
+		"editEntry": "styles__editEntry___K1HgT",
+		"dinnerGuest": "styles__dinnerGuest___2d7n9",
+		"dinnerGuestDish": "styles__dinnerGuestDish___1MNTw",
+		"editSubmitButtons": "styles__editSubmitButtons___2BRxs",
+		"togetherHeader": "styles__togetherHeader___1TKU0"
 	};
 
 /***/ }),
@@ -26317,6 +26326,8 @@
 	
 	var _axios2 = _interopRequireDefault(_axios);
 	
+	var _reactRouterDom = __webpack_require__(/*! react-router-dom */ 574);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
@@ -26365,6 +26376,7 @@
 	        _this.deleteFriendField = _this.deleteFriendField.bind(_this);
 	        _this.submitEvent = _this.submitEvent.bind(_this);
 	        _this.addEvent = _this.addEvent.bind(_this);
+	        _this.updateEvent = _this.updateEvent.bind(_this);
 	        _this.handleStartChange = _this.handleStartChange.bind(_this);
 	        _this.handleEndChange = _this.handleEndChange.bind(_this);
 	        _this.handleDayChange = _this.handleDayChange.bind(_this);
@@ -26377,26 +26389,40 @@
 	    _createClass(EditEvent, [{
 	        key: 'componentDidMount',
 	        value: function componentDidMount() {
-	            var _this2 = this;
-	
 	            var context = this;
-	            this.setState({ friendFields: [].concat(_toConsumableArray(this.state.friendFields), [_react2.default.createElement(_FriendInvite2.default, { friendNum: ++this.state.friendNum, addEvent: this.addEvent })]) }, function () {
-	                console.log(_this2.props.match.params.id);
-	                _axios2.default.get('http://localhost:3000/event/' + _this2.props.match.params.id).then(function (response) {
-	                    var data = response.data;
-	                    console.log(data);
-	                    var event = context.state.event;
-	                    event.title = data.title;
-	                    event.location = data.location;
-	                    event.startTime = data.startTime;
-	                    event.endTime = data.endTime;
-	                    event.day = data.day;
-	                    event.description = data.description;
-	                    context.setState({ event: event });
-	                }).catch(function (error) {
-	                    console.log(error);
+	            //     this.setState({friendFields: [...this.state.friendFields, 
+	            //     <FriendInvite friendNum = {++this.state.friendNum} addEvent = {this.addEvent }/>
+	            // ]}, ()=> {
+	            //     console.log(this.props.match.params.id);
+	            _axios2.default.get('http://localhost:3000/event/' + this.props.match.params.id).then(function (response) {
+	                var data = response.data;
+	                console.log('///&&&&&&&&&&&&&&////');
+	                console.log(data);
+	                var event = context.state.event;
+	                event.title = data.title;
+	                event.location = data.location;
+	                event.startTime = data.startTime;
+	                event.endTime = data.endTime;
+	                event.day = data.day;
+	                event.description = data.description;
+	                var myGuests = [];
+	                context.setState({ event: event }, function () {
+	                    for (var i = 0; i < data.guests.length; i++) {
+	                        var guest = data.guests[i];
+	                        console.log(guest.dishes, "999999999");
+	                        myGuests.push(_react2.default.createElement(_FriendInvite2.default, {
+	                            friendNum: ++context.state.friendNum,
+	                            email: guest.email,
+	                            name: guest.firstName,
+	                            dishes: guest.dishes
+	                        }));
+	                    }
+	                    context.setState({ friendFields: [].concat(_toConsumableArray(context.state.friendFields), myGuests) });
 	                });
+	            }, function () {}).catch(function (error) {
+	                console.log(error);
 	            });
+	            // });
 	        }
 	    }, {
 	        key: 'selectImages',
@@ -26414,15 +26440,15 @@
 	    }, {
 	        key: 'uploadImages',
 	        value: function uploadImages() {
-	            var _this3 = this;
+	            var _this2 = this;
 	
 	            var uploaders = this.state.images.map(function (image) {
 	                var data = new FormData();
 	                data.append("image", image, image.name);
 	                // Make an AJAX upload request using Axios
 	                return _axios2.default.post(BASE_URL + 'upload', data).then(function (response) {
-	                    _this3.setState({
-	                        imageUrls: [response.data.imageUrl].concat(_toConsumableArray(_this3.state.imageUrls))
+	                    _this2.setState({
+	                        imageUrls: [response.data.imageUrl].concat(_toConsumableArray(_this2.state.imageUrls))
 	                    });
 	                });
 	            });
@@ -26470,9 +26496,9 @@
 	            var event = {
 	                description: this.state.description,
 	                title: this.state.title,
-	                endTime: this.state.endTime.toLocaleTimeString(),
-	                startTime: this.state.startTime.toLocaleTimeString(),
-	                day: this.state.day.toLocaleDateString(),
+	                endTime: this.state.endTime,
+	                startTime: this.state.startTime,
+	                day: this.state.day,
 	                location: this.state.location,
 	                host: 1,
 	                guests: []
@@ -26495,7 +26521,48 @@
 	                });
 	                event.guests.push(guest);
 	            });
-	            console.log(event);
+	            _axios2.default.post('http://localhost:3000/event/' + this.props.match.params.id, event).then(function (response) {
+	                console.log(response.data, "0000000000000000000000");
+	            }).catch(function (error) {
+	                console.log(error);
+	            });
+	        }
+	    }, {
+	        key: 'updateEvent',
+	        value: function updateEvent() {
+	            var event = {
+	                description: this.state.description,
+	                title: this.state.title,
+	                endTime: this.state.endTime,
+	                startTime: this.state.startTime,
+	                day: this.state.day,
+	                location: this.state.location,
+	                host: 1,
+	                guests: []
+	            };
+	            $('.friend').each(function (index, friend) {
+	                var inputs = $(friend).find(':input');
+	                var guest = {
+	                    dishes: []
+	                };
+	                inputs.each(function (index, input) {
+	                    if (index === 0) {
+	                        guest.firstName = input.value;
+	                    } else if (index === 1) {
+	                        guest.email = input.value;
+	                    } else {
+	                        if (input.value.length) {
+	                            guest.dishes.push(input.value);
+	                        }
+	                    }
+	                });
+	                event.guests.push(guest);
+	            });
+	            _axios2.default.put('http://localhost:3000/event/' + this.props.match.params.id, event).then(function (response) {
+	                console.log(response.data, "0000000000000000000000");
+	            }).catch(function (error) {
+	                console.log(error);
+	            });
 	        }
 	    }, {
 	        key: 'handleStartChange',
@@ -26525,7 +26592,7 @@
 	    }, {
 	        key: 'addEvent',
 	        value: function addEvent(friend) {
-	            var _this4 = this;
+	            var _this3 = this;
 	
 	            // this.state.events.push({
 	            //                         name: friend.name,
@@ -26547,9 +26614,8 @@
 	                    endTime: this.state.endTime,
 	                    day: this.state.day,
 	                    description: this.state.description
-	
 	                }]) }, function () {
-	                console.log(_this4.state.events, '000000000000000');
+	                console.log(_this3.state.events, '000000000000000');
 	            });
 	        }
 	    }, {
@@ -26587,17 +26653,25 @@
 	    }, {
 	        key: 'render',
 	        value: function render() {
-	            console.log(this.state.event.description, '//////');
-	            console.log(this.state.event.description, '/////');
-	            console.log(this.state.event.description, '//////');
-	            console.log(this.state.event.description, '//////');
-	            console.log(this.state.event.description, '//////');
+	            var _React$createElement3, _React$createElement4;
+	
+	            // console.log(this.state.event.description, '//////')
+	            // console.log(this.state.event.description, '/////')
+	            // console.log(this.state.event.description, '//////')
+	            // console.log(this.state.event.description, '//////')
+	            // console.log(this.state.event.description, '//////')
 	            var description = this.state.event.description;
 	            var startTime = new Date(this.state.event.startTime);
 	            var endTime = new Date(this.state.event.endTime);
+	            console.log(this.state.friendFields, '***********');
 	            return _react2.default.createElement(
 	                'div',
 	                { className: _styles2.default.editorContainer },
+	                _react2.default.createElement(
+	                    'h1',
+	                    { className: _styles2.default.togetherHeader },
+	                    ' TOGETHER '
+	                ),
 	                _react2.default.createElement('input', { className: _styles2.default.titleRow,
 	                    type: 'text', defaultValue: this.state.event.title,
 	                    onChange: this.handleTitle,
@@ -26624,13 +26698,13 @@
 	                        label: 'start time',
 	                        className: _styles2.default.timeInputStart,
 	                        onChange: this.handleStartChange,
-	                        value: startTime
+	                        value: this.state.startTime
 	                    }),
 	                    _react2.default.createElement(_materialUiTimePicker2.default, {
 	                        label: 'end Time',
 	                        className: _styles2.default.timeInputEnd,
 	                        onChange: this.handleEndChange,
-	                        value: endTime
+	                        value: this.state.endTime
 	                    })
 	                ),
 	                _react2.default.createElement(
@@ -26702,9 +26776,26 @@
 	                ),
 	                this.state.friendFields,
 	                _react2.default.createElement(
-	                    'button',
-	                    { className: _styles2.default.submitButton, onClick: this.submitEvent },
-	                    'Submit Event'
+	                    'div',
+	                    { className: _styles2.default.editSubmitButtons },
+	                    _react2.default.createElement(
+	                        _reactRouterDom.NavLink,
+	                        { to: '/' },
+	                        _react2.default.createElement(
+	                            'button',
+	                            (_React$createElement3 = { className: _styles2.default.submitButton }, _defineProperty(_React$createElement3, 'className', "btn btn-primary"), _defineProperty(_React$createElement3, 'onClick', this.submitEvent), _React$createElement3),
+	                            'Submit Event'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        _reactRouterDom.NavLink,
+	                        { to: '/' },
+	                        _react2.default.createElement(
+	                            'button',
+	                            (_React$createElement4 = { className: _styles2.default.submitButton }, _defineProperty(_React$createElement4, 'className', "btn btn-primary"), _defineProperty(_React$createElement4, 'onClick', this.updateEvent), _React$createElement4),
+	                            'Update Event'
+	                        )
+	                    )
 	                )
 	            );
 	        }
@@ -26758,29 +26849,40 @@
 	
 	    _this.addDishEntry = _this.addDishEntry.bind(_this);
 	    _this.deletDishEntry = _this.deletDishEntry.bind(_this);
-	    _this.addDish = _this.addDish.bind(_this);
+	    // this.addDish = this.addDish.bind(this);
 	    _this.addFriendName = _this.addFriendName.bind(_this);
 	    _this.addFriendEmail = _this.addFriendEmail.bind(_this);
 	
 	    _this.state = {
 	      dishNum: 1,
-	      dishes: [_react2.default.createElement(_Dish2.default, { addDish: _this.addDish })],
+	      dishes: [],
 	      dishId: 1,
 	      name: '',
 	      email: '',
 	      friend: {},
-	      bringDishes: []
+	      bringDishes: _this.props.dishes
 	    };;
+	    if (_this.props.dishes) {
+	      for (var i = 0; i < _this.props.dishes.length; i++) {
+	        _this.state.dishes.push(_react2.default.createElement(_Dish2.default, { val: _this.props.dishes[i] }));
+	      }
+	    }
 	    return _this;
 	  }
 	
 	  _createClass(FriendInvite, [{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      console.log({ firstName: this.state.name,
-	        email: this.state.email,
-	        bringDishes: this.state.bringDishes
-	      });
+	      // for (let i = 0; i < this.props.dishes.length; i++) {
+	      //   this.state.dishes.push(<Dish val = {this.props.dishes[i]}/>);
+	      // }
+	    }
+	  }, {
+	    key: 'componentWillReceiveProps',
+	    value: function componentWillReceiveProps(nextProps) {
+	      // for (let i = 0; i < this.nextProps.dishes.length; i++) {
+	      //   this.state.dishes.push(<Dish val = {this.nextProps.dishes[i]}/>);
+	      // }
 	    }
 	  }, {
 	    key: 'addFriendName',
@@ -26808,33 +26910,22 @@
 	    key: 'handleEmail',
 	    value: function handleEmail() {}
 	  }, {
-	    key: 'addDish',
-	    value: function addDish(e) {
-	      var _this2 = this;
+	    key: 'addDishDB',
+	    value: function addDishDB() {}
+	    // addDish(e) {
+	    //     let context = this;
+	    //     this.state.bringDishes = [];
+	    //     this.setState({bringDishes: [...this.state.bringDishes, e.target.value]}, ()=> {
+	    //       console.log({name: this.state.name, email: this.state.email, dishes: context.state.bringDishes});
 	
-	      var context = this;
-	      this.state.bringDishes = [];
-	      this.setState({ bringDishes: [].concat(_toConsumableArray(this.state.bringDishes), [e.target.value]) }, function () {
-	        console.log({ name: _this2.state.name, email: _this2.state.email, dishes: context.state.bringDishes });
+	    //       // this.props.addEvent({name: this.state.name, email: this.state.email, bringDishes: context.state.bringDishes});
+	    //     });
+	    // }
 	
-	        _this2.props.addEvent({ name: _this2.state.name, email: _this2.state.email, bringDishes: context.state.bringDishes });
-	      });
-	      // this.state.bringdDishes.push(e.target.value);
-	      // let bringDishes  = this.state.bringDishes;
-	      // this.setState({bringDishes:bringDishes}, () => {
-	      //   console.log(this.state.bringDishes);
-	      // });
-	
-	      // this.setState({bringDishes: []}, ()=> {
-	      //   context.setState({bringDishes: [...context.state.bringDishes, e.target.value]}, ()=> {
-	      //       console.log(context.state.bringDishes);
-	      //   });
-	      // });
-	    }
 	  }, {
 	    key: 'addDishEntry',
 	    value: function addDishEntry() {
-	      this.setState({ dishes: [].concat(_toConsumableArray(this.state.dishes), [_react2.default.createElement(_Dish2.default, { addDish: this.addDish })]) });
+	      this.setState({ dishes: [].concat(_toConsumableArray(this.state.dishes), [_react2.default.createElement(_Dish2.default, { addDish: true })]) });
 	    }
 	  }, {
 	    key: 'deletDishEntry',
@@ -26871,11 +26962,13 @@
 	          _react2.default.createElement('input', { className: _styles2.default.friendsRow,
 	            type: 'text',
 	            onChange: this.addFriendName,
+	            defaultValue: this.props.name,
 	            placeholder: 'Add A Friend\'s Name' }),
 	          _react2.default.createElement('input', { className: _styles2.default.friendsRow,
 	            type: 'text',
 	            placeholder: 'Add A Friend\'s Email',
-	            onChange: this.addFriendEmail
+	            onChange: this.addFriendEmail,
+	            defaultValue: this.props.email
 	          }),
 	          _react2.default.createElement(
 	            'button',
@@ -26951,7 +27044,8 @@
 	            return _react2.default.createElement('input', { className: _styles2.default.addItemRow,
 	                type: 'text',
 	                placeholder: 'Dish to bring',
-	                onChange: this.props.addDish });
+	                onChange: this.props.addDish,
+	                defaultValue: this.props.val });
 	        }
 	    }]);
 	
@@ -27000,30 +27094,60 @@
 	        var _this = _possibleConstructorReturn(this, (EventReadView.__proto__ || Object.getPrototypeOf(EventReadView)).call(this, props));
 	
 	        _this.state = {
-	            event: {}
+	            event: {},
+	            guests: []
 	        };
+	        console.log(_this.props.match.params.id);
+	        var context = _this;
+	        _axios2.default.get('http://localhost:3000/event/' + _this.props.match.params.id).then(function (response) {
+	            var data = response.data;
+	            var event = context.state.event;
+	            event.title = data.title;
+	            event.location = data.location;
+	            event.startTime = new Date(data.startTime).toLocaleTimeString(), event.endTime = new Date(data.endTime).toLocaleTimeString(), event.day = new Date(data.endTime).toLocaleDateString(), event.description = data.description;
+	            event.image = data.image;
+	            event.guests = data.guests;
+	            var invites = [];
+	            for (var i = 0; i < event.guests.length; i++) {
+	                var dinnerGuest = event.guests[i];
+	                console.log(dinnerGuest);
+	                // context.state.guests.push(<h4 className = {styles.dinnerGuest}> {`${i + 1}  ${dinnerGuest.firstName}`} </h4>);
+	                invites.push(_react2.default.createElement(
+	                    'h4',
+	                    { className: _styles2.default.dinnerGuest },
+	                    ' ',
+	                    i + 1 + '  ' + dinnerGuest.firstName,
+	                    ' '
+	                ));
+	                var dishes = dinnerGuest.dishes;
+	                console.log(dishes);
+	                for (var j = 0; j < dishes.length; j++) {
+	                    // context.state.guests.push(
+	                    //     <p className = {styles.dinnerGuestDish}> {dishes[j]}</p>      
+	                    // );
+	                    invites.push(_react2.default.createElement(
+	                        'p',
+	                        { className: _styles2.default.dinnerGuestDish },
+	                        ' ',
+	                        dishes[j]
+	                    ));
+	                }
+	            }
+	            context.setState({ event: event });
+	            context.setState({ guests: invites });
+	        }).catch(function (error) {
+	            console.log(error);
+	        });
 	        return _this;
 	    }
 	
 	    _createClass(EventReadView, [{
 	        key: 'componentDidMount',
-	        value: function componentDidMount() {
-	            console.log(this.props.match.params.id);
-	            var context = this;
-	            _axios2.default.get('http://localhost:3000/event/' + this.props.match.params.id).then(function (response) {
-	                var data = response.data;
-	                var event = context.state.event;
-	                event.title = data.title;
-	                event.location = data.location;
-	                event.startTime = new Date(data.startTime).toLocaleTimeString(), event.endTime = new Date(data.endTime).toLocaleTimeString(), event.day = new Date(data.endTime).toLocaleDateString(), event.description = data.description;
-	                context.setState({ event: event });
-	            }).catch(function (error) {
-	                console.log(error);
-	            });
-	        }
+	        value: function componentDidMount() {}
 	    }, {
 	        key: 'render',
 	        value: function render() {
+	            console.log(this.state.guests, '9999999');
 	            return _react2.default.createElement(
 	                'div',
 	                { className: _styles2.default.eventReadContainer },
@@ -27054,7 +27178,9 @@
 	                _react2.default.createElement(
 	                    'h1',
 	                    { className: _styles2.default.singleImage },
-	                    ' Some Image '
+	                    ' ',
+	                    this.state.event.image,
+	                    ' '
 	                ),
 	                _react2.default.createElement(
 	                    'p',
@@ -27078,7 +27204,8 @@
 	                        this.state.event.endTime,
 	                        '  '
 	                    )
-	                )
+	                ),
+	                this.state.guests
 	            );
 	        }
 	    }]);
@@ -106002,6 +106129,8 @@
 	
 	var _axios2 = _interopRequireDefault(_axios);
 	
+	var _reactRouterDom = __webpack_require__(/*! react-router-dom */ 574);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -106019,7 +106148,8 @@
 	        var _this = _possibleConstructorReturn(this, (EventList.__proto__ || Object.getPrototypeOf(EventList)).call(this, props));
 	
 	        _this.state = {
-	            events: []
+	            events: [],
+	            event: {}
 	        };
 	        return _this;
 	    }
@@ -106029,17 +106159,29 @@
 	        value: function componentDidMount() {
 	            var context = this;
 	            _axios2.default.get('http://localhost:3000/event').then(function (response) {
+	                response.data = response.data.reverse();
 	                console.log(response.data);
-	                response.data.forEach(function (event, index) {
+	                response.data.forEach(function (data, index) {
+	                    var event = context.state.event;
+	                    event.title = data.title;
+	                    event.location = data.location;
+	                    event.startTime = new Date(data.startTime);
+	                    event.endTime = new Date(data.endTime);
+	                    event.day = new Date(data.endTime);
+	                    event.description = data.description;
+	                    event.guests = data.guests;
+	                    event.image = data.image;
+	                    event.id = data._id;
 	                    console.log(event);
+	
 	                    context.state.events.push(_react2.default.createElement(_EventEntry2.default, {
 	                        day: new Date(event.day).toLocaleDateString(),
 	                        title: event.title,
 	                        location: event.location,
 	                        startTime: new Date(event.startTime).toLocaleTimeString(),
 	                        endTime: new Date(event.endTime).toLocaleTimeString(),
-	                        id: event._id,
-	                        image: 'placeholder' }));
+	                        id: event.id,
+	                        image: event.image }));
 	                });
 	                context.setState({ events: context.state.events });
 	            }).catch(function (error) {
@@ -106049,7 +106191,6 @@
 	    }, {
 	        key: 'render',
 	        value: function render() {
-	            console.log(this.state.events);
 	            return _react2.default.createElement(
 	                'div',
 	                { className: _styles2.default.eventListContainer },
@@ -106183,6 +106324,486 @@
 
 /***/ }),
 /* 604 */
+/*!************************************!*\
+  !*** ./client/src/MakeNewEvent.js ***!
+  \************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _styles = __webpack_require__(/*! ./styles.css */ 20);
+	
+	var _styles2 = _interopRequireDefault(_styles);
+	
+	var _FriendInvite = __webpack_require__(/*! ./FriendInvite */ 27);
+	
+	var _FriendInvite2 = _interopRequireDefault(_FriendInvite);
+	
+	var _EventReadView = __webpack_require__(/*! ./EventReadView */ 29);
+	
+	var _EventReadView2 = _interopRequireDefault(_EventReadView);
+	
+	var _reactDayPicker = __webpack_require__(/*! react-day-picker */ 56);
+	
+	var _reactDayPicker2 = _interopRequireDefault(_reactDayPicker);
+	
+	__webpack_require__(/*! react-day-picker/lib/style.css */ 79);
+	
+	var _moment = __webpack_require__(/*! @date-io/moment */ 81);
+	
+	var _moment2 = _interopRequireDefault(_moment);
+	
+	var _luxon = __webpack_require__(/*! @date-io/luxon */ 212);
+	
+	var _luxon2 = _interopRequireDefault(_luxon);
+	
+	var _dateFns = __webpack_require__(/*! @date-io/date-fns */ 214);
+	
+	var _dateFns2 = _interopRequireDefault(_dateFns);
+	
+	var _styles3 = __webpack_require__(/*! @material-ui/core/styles */ 279);
+	
+	var _materialUiPickers = __webpack_require__(/*! material-ui-pickers */ 386);
+	
+	var _materialUiTimePicker = __webpack_require__(/*! material-ui-time-picker */ 532);
+	
+	var _materialUiTimePicker2 = _interopRequireDefault(_materialUiTimePicker);
+	
+	var _axios = __webpack_require__(/*! axios */ 30);
+	
+	var _axios2 = _interopRequireDefault(_axios);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+	
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var BASE_URL = 'http://localhost:8888/';
+	
+	var MakeNewEvent = function (_React$Component) {
+	    _inherits(MakeNewEvent, _React$Component);
+	
+	    function MakeNewEvent(props) {
+	        var _this$state;
+	
+	        _classCallCheck(this, MakeNewEvent);
+	
+	        var _this = _possibleConstructorReturn(this, (MakeNewEvent.__proto__ || Object.getPrototypeOf(MakeNewEvent)).call(this, props));
+	
+	        _this.state = (_this$state = {
+	            startTime: '9:00 am',
+	            endTIme: '5:00  pm',
+	            day: new Date(),
+	            month: 'some month ',
+	            title: 'some title',
+	            location: 'some location',
+	            host: 'some host',
+	            guest: ['guest 1', 'guest 2', 'guest 3'],
+	            value: "some data",
+	            friendFields: [],
+	            friendNum: 0,
+	            images: [],
+	            imageUrls: [],
+	            message: ''
+	        }, _defineProperty(_this$state, 'title', ''), _defineProperty(_this$state, 'location', ''), _defineProperty(_this$state, 'startTime', new Date()), _defineProperty(_this$state, 'endTime', new Date()), _defineProperty(_this$state, 'description', 'description'), _defineProperty(_this$state, 'guests', {}), _defineProperty(_this$state, 'events', []), _defineProperty(_this$state, 'event', { title: "", location: "" }), _defineProperty(_this$state, 'image', ""), _this$state);
+	
+	        _this.selectImages = _this.selectImages.bind(_this);
+	        _this.uploadImages = _this.uploadImages.bind(_this);
+	        _this.dummyFunc = _this.dummyFunc.bind(_this);
+	        _this.addFriend = _this.addFriend.bind(_this);
+	        _this.deleteFriendField = _this.deleteFriendField.bind(_this);
+	        _this.submitEvent = _this.submitEvent.bind(_this);
+	        _this.addEvent = _this.addEvent.bind(_this);
+	        _this.handleStartChange = _this.handleStartChange.bind(_this);
+	        _this.handleEndChange = _this.handleEndChange.bind(_this);
+	        _this.handleDayChange = _this.handleDayChange.bind(_this);
+	        _this.handleTitle = _this.handleTitle.bind(_this);
+	        _this.handleLocation = _this.handleLocation.bind(_this);
+	        _this.handleDescription = _this.handleDescription.bind(_this);
+	        return _this;
+	    }
+	
+	    _createClass(MakeNewEvent, [{
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {
+	            //     let context = this;
+	            // //     this.setState({friendFields: [...this.state.friendFields, 
+	            // //     <FriendInvite friendNum = {++this.state.friendNum} addEvent = {this.addEvent }/>
+	            // // ]}, ()=> {
+	            // //     console.log(this.props.match.params.id);
+	            //     axios.get(`http://localhost:3000/event/${this.props.match.params.id}`)
+	            //     .then(function (response) {
+	            //         let data = response.data;
+	            //         console.log('///&&&&&&&&&&&&&&////')
+	            //         console.log(data);
+	            //         let event = context.state.event;
+	            //         event.title =  data.title;
+	            //         event.location = data.location;
+	            //         event.startTime = data.startTime;
+	            //         event.endTime = data.endTime;
+	            //         event.day = data.day;
+	            //         event.description = data.description;
+	            //         let myGuests = [];
+	            //         context.setState({event: event}, () => {
+	            //             for (let i = 0; i < data.guests.length; i++) {
+	            //                 let guest = data.guests[i];
+	            //                 console.log(guest.dishes, "999999999");
+	            //                 myGuests.push(<FriendInvite 
+	            //                                 friendNum = {++context.state.friendNum}  
+	            //                                 email = {guest.email}
+	            //                                 name = {guest.firstName}
+	            //                                 dishes = {guest.dishes}
+	            //                                 />);
+	            //             }
+	            //             context.setState({friendFields: [...context.state.friendFields, ...myGuests]});
+	            //         });
+	            //     }, () =>{
+	            //     })
+	            //     .catch(function (error) {
+	            //         console.log(error);
+	            //     });
+	            // // });
+	        }
+	    }, {
+	        key: 'selectImages',
+	        value: function selectImages(event) {
+	            var images = [];
+	            for (var i = 0; i < event.target.files.length; i++) {
+	                images[i] = event.target.files.item(i);
+	            }
+	            images = images.filter(function (image) {
+	                return image.name.match(/\.(jpg|jpeg|png|gif)$/);
+	            });
+	            var message = images.length + ' valid image(s) selected';
+	            this.setState({ images: images, message: message });
+	        }
+	    }, {
+	        key: 'uploadImages',
+	        value: function uploadImages() {
+	            var _this2 = this;
+	
+	            var uploaders = this.state.images.map(function (image) {
+	                var data = new FormData();
+	                data.append("image", image, image.name);
+	                // Make an AJAX upload request using Axios
+	                return _axios2.default.post(BASE_URL + 'upload', data).then(function (response) {
+	                    _this2.setState({
+	                        imageUrls: [response.data.imageUrl].concat(_toConsumableArray(_this2.state.imageUrls))
+	                    });
+	                });
+	            });
+	            // Once all the files are uploaded 
+	            _axios2.default.all(uploaders).then(function () {
+	                console.log('done');
+	            }).catch(function (err) {
+	                return alert(err.message);
+	            });
+	        }
+	    }, {
+	        key: 'dummyFunc',
+	        value: function dummyFunc(e) {
+	            console.log(e.target.value);
+	        }
+	    }, {
+	        key: 'addGuest',
+	        value: function addGuest(guest, dishes) {
+	            this.guests[guest] = dishes;
+	        }
+	    }, {
+	        key: 'addEvent',
+	        value: function addEvent(event) {
+	            this.events.push(event);
+	        }
+	    }, {
+	        key: 'addFriend',
+	        value: function addFriend() {
+	            this.state.friendNum++;
+	            this.setState({ friendFields: [].concat(_toConsumableArray(this.state.friendFields), [_react2.default.createElement(_FriendInvite2.default, {
+	                    friendNum: this.state.friendNum,
+	                    submitEvent: this.submitEvent,
+	                    addEvent: this.addEvent })]) });
+	        }
+	    }, {
+	        key: 'deleteFriendField',
+	        value: function deleteFriendField() {
+	            this.state.friendNum--;
+	            this.state.friendFields.splice(this.state.friendFields.length - 1, 1);
+	            this.setState({ friendFields: [].concat(_toConsumableArray(this.state.friendFields)) });
+	        }
+	    }, {
+	        key: 'submitEvent',
+	        value: function submitEvent() {
+	            var event = {
+	                description: this.state.description,
+	                title: this.state.title,
+	                endTime: this.state.endTime,
+	                startTime: this.state.startTime,
+	                day: this.state.day,
+	                location: this.state.location,
+	                image: this.state.image,
+	                host: 1,
+	                guests: []
+	            };
+	            $('.friend').each(function (index, friend) {
+	                var inputs = $(friend).find(':input');
+	                var guest = {
+	                    dishes: []
+	                };
+	                inputs.each(function (index, input) {
+	                    if (index === 0) {
+	                        guest.firstName = input.value;
+	                    } else if (index === 1) {
+	                        guest.email = input.value;
+	                    } else {
+	                        if (input.value.length) {
+	                            guest.dishes.push(input.value);
+	                        }
+	                    }
+	                });
+	                event.guests.push(guest);
+	            });
+	            _axios2.default.post('http://localhost:3000/event/' + this.props.match.params.id, event).then(function (response) {
+	                console.log(response.data, "0000000000000000000000");
+	            }).catch(function (error) {
+	                console.log(error);
+	            });
+	        }
+	    }, {
+	        key: 'handleStartChange',
+	        value: function handleStartChange(time) {
+	            var context = this;
+	            this.setState({ startTime: time }, function () {
+	                console.log(context.state.startTime);
+	            });
+	        }
+	    }, {
+	        key: 'handleEndChange',
+	        value: function handleEndChange(time) {
+	            var context = this;
+	            this.setState({ endTime: time }, function () {
+	                console.log(context.state.endTime);
+	            });
+	        }
+	    }, {
+	        key: 'handleDayChange',
+	        value: function handleDayChange(day) {
+	            var context = this;
+	            console.log(day);
+	            this.setState({ day: day }, function () {
+	                console.log(context.state.day);
+	            });
+	        }
+	    }, {
+	        key: 'addEvent',
+	        value: function addEvent(friend) {
+	            var _this3 = this;
+	
+	            // this.state.events.push({
+	            //                         name: friend.name,
+	            //                         email: friend.email,
+	            //                         dishes: friend.bringDishes,
+	            //                         startTime: this.state.startTime,
+	            //                         endTime: this.state.endTime, 
+	            //                         day: this.state.day
+	            //                     });
+	            var context = this;
+	            this.state.events = [];
+	            // this.setState({
+	            //     startTime: 
+	            // });
+	            this.setState({ events: [].concat(_toConsumableArray(this.state.events), [{ name: friend.name,
+	                    email: friend.email,
+	                    dishes: friend.bringDishes,
+	                    startTime: this.state.startTime,
+	                    endTime: this.state.endTime,
+	                    day: this.state.day,
+	                    description: this.state.description
+	
+	                }]) }, function () {
+	                console.log(_this3.state.events, '000000000000000');
+	            });
+	        }
+	    }, {
+	        key: 'submit',
+	        value: function submit() {
+	            console.log(this.state.events, '***********');
+	        }
+	    }, {
+	        key: 'handleDescription',
+	        value: function handleDescription(e) {
+	            var context = this;
+	            this.setState({ description: e.target.value }, function () {
+	                console.log(context.state.description);
+	            });
+	        }
+	    }, {
+	        key: 'handleTitle',
+	        value: function handleTitle(e) {
+	            var context = this;
+	            this.setState({ title: e.target.value }, function () {
+	                console.log(context.state.title);
+	            });
+	        }
+	    }, {
+	        key: 'handleLocation',
+	        value: function handleLocation(e) {
+	            var context = this;
+	            this.setState({ location: e.target.value }, function () {
+	                console.log(context.state.location);
+	            });
+	        }
+	    }, {
+	        key: 'event',
+	        value: function event() {}
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            var _this4 = this;
+	
+	            // console.log(this.state.event.description, '//////')
+	            // console.log(this.state.event.description, '/////')
+	            // console.log(this.state.event.description, '//////')
+	            // console.log(this.state.event.description, '//////')
+	            // console.log(this.state.event.description, '//////')
+	            var description = this.state.event.description;
+	            var startTime = new Date(this.state.event.startTime);
+	            var endTime = new Date(this.state.event.endTime);
+	            console.log(this.state.friendFields, '***********');
+	            return _react2.default.createElement(
+	                'div',
+	                { className: _styles2.default.editorContainer },
+	                _react2.default.createElement('input', { className: _styles2.default.titleRow,
+	                    type: 'text', defaultValue: this.state.event.title,
+	                    onChange: this.handleTitle,
+	                    placeholder: 'Title' }),
+	                _react2.default.createElement('input', { className: _styles2.default.locationRow,
+	                    type: 'text', defaultValue: this.state.event.location,
+	                    onChange: this.handleLocation,
+	                    placeholder: 'Location' }),
+	                _react2.default.createElement(
+	                    _materialUiPickers.MuiPickersUtilsProvider,
+	                    { utils: _dateFns2.default },
+	                    _react2.default.createElement(_materialUiPickers.DatePicker, {
+	                        margin: 'normal',
+	                        label: '',
+	                        value: this.state.day,
+	                        onChange: this.handleDayChange,
+	                        className: _styles2.default.dayInput
+	                    })
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: _styles2.default.timeContainer },
+	                    _react2.default.createElement(_materialUiTimePicker2.default, {
+	                        label: 'start time',
+	                        className: _styles2.default.timeInputStart,
+	                        onChange: this.handleStartChange,
+	                        value: this.state.startTime
+	                    }),
+	                    _react2.default.createElement(_materialUiTimePicker2.default, {
+	                        label: 'end Time',
+	                        className: _styles2.default.timeInputEnd,
+	                        onChange: this.handleEndChange,
+	                        value: this.state.endTime
+	                    })
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: _styles2.default.imageUploadContainer },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: '' },
+	                        _react2.default.createElement(
+	                            'h3',
+	                            null,
+	                            'Upload an Image'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: '' },
+	                            _react2.default.createElement('input', { className: '', type: 'file',
+	                                onChange: this.selectImages, multiple: true })
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            { className: '' },
+	                            this.state.message
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: '' },
+	                            _react2.default.createElement(
+	                                'button',
+	                                { className: 'btn btn-primary', value: 'Submit',
+	                                    onClick: this.uploadImages },
+	                                'Submit'
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'r' },
+	                        this.state.imageUrls.map(function (url, i) {
+	                            return _react2.default.createElement(
+	                                'div',
+	                                { className: '', key: i },
+	                                _this4.setState({ image: BASE_URL + url }),
+	                                _react2.default.createElement('img', { src: BASE_URL + url, className: _styles2.default.eventImage,
+	                                    alt: 'not available' }),
+	                                _react2.default.createElement('br', null)
+	                            );
+	                        })
+	                    )
+	                ),
+	                _react2.default.createElement('input', {
+	                    className: _styles2.default.descriptionRow,
+	                    type: 'text',
+	                    onChange: this.handleDescription,
+	                    placeholder: "Description", defaultValue: description }),
+	                _react2.default.createElement(
+	                    'ul',
+	                    { className: _styles2.default.addDeleteFriend },
+	                    _react2.default.createElement(
+	                        'button',
+	                        _defineProperty({ className: _styles2.default.addFriend, onClick: this.addFriend }, 'className', _styles2.default.addFriend),
+	                        ' Add Guest'
+	                    ),
+	                    _react2.default.createElement(
+	                        'button',
+	                        _defineProperty({ className: _styles2.default.deleteFriend, onClick: this.deleteFriendField }, 'className', _styles2.default.addFriend),
+	                        ' Delete Guest '
+	                    )
+	                ),
+	                this.state.friendFields,
+	                _react2.default.createElement(
+	                    'button',
+	                    { className: _styles2.default.submitButton, onClick: this.submitEvent },
+	                    'Submit Event'
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return MakeNewEvent;
+	}(_react2.default.Component);
+	
+	module.exports = (0, _styles3.withStyles)(_styles2.default)(MakeNewEvent);
+
+/***/ }),
+/* 605 */
 /*!*****************************!*\
   !*** ./client/src/store.js ***!
   \*****************************/
@@ -106196,13 +106817,13 @@
 	
 	var _redux = __webpack_require__(/*! redux */ 549);
 	
-	var _reduxLogger = __webpack_require__(/*! redux-logger */ 605);
+	var _reduxLogger = __webpack_require__(/*! redux-logger */ 606);
 	
 	var _reduxLogger2 = _interopRequireDefault(_reduxLogger);
 	
 	var _reactRedux = __webpack_require__(/*! react-redux */ 538);
 	
-	var _SomeReducer = __webpack_require__(/*! ./Reducers/SomeReducer */ 606);
+	var _SomeReducer = __webpack_require__(/*! ./Reducers/SomeReducer */ 607);
 	
 	var _SomeReducer2 = _interopRequireDefault(_SomeReducer);
 	
@@ -106230,7 +106851,7 @@
 	exports.default = store;
 
 /***/ }),
-/* 605 */
+/* 606 */
 /*!*********************************************!*\
   !*** ./~/redux-logger/dist/redux-logger.js ***!
   \*********************************************/
@@ -106241,7 +106862,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ }),
-/* 606 */
+/* 607 */
 /*!********************************************!*\
   !*** ./client/src/Reducers/SomeReducer.js ***!
   \********************************************/
@@ -106253,7 +106874,7 @@
 	  value: true
 	});
 	
-	var _init = __webpack_require__(/*! ../init.js */ 607);
+	var _init = __webpack_require__(/*! ../init.js */ 608);
 	
 	var _init2 = _interopRequireDefault(_init);
 	
@@ -106283,7 +106904,7 @@
 	exports.default = someReducer;
 
 /***/ }),
-/* 607 */
+/* 608 */
 /*!****************************!*\
   !*** ./client/src/init.js ***!
   \****************************/
